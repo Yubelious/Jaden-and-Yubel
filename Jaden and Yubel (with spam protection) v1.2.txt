@@ -1,0 +1,528 @@
+/*
+Stylish by Yubelious!
+Inspired by O OO.
+Open for testing and feedback.
+Compatible with 1920x1080 resolution.
+For optimal viewing, press F11.
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://duelingnexus.com/") {
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) no-repeat center center fixed; /*Image by the amazing Moribuden*/
+}
+div {
+    cursor: default;
+}
+body {
+    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1152x864. Repeat on all pages.*/;
+    line-height: 1;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+}
+.loadmore, hr {
+    display: none;
+}
+.h2, h2 {
+    font-size: 2.25em;
+    font-style: italic;
+    margin: 15px 0 15px 0;
+}
+.h4, h4 {
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    color: antiquewhite;
+    text-shadow: 0.5px 0.5px 0.5px rgba(10, 100, 10, 0.3), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+}
+.h6, h6 {
+    font-size: 0.875em;
+    color: antiquewhite;
+}
+.container {
+    width: 100%;
+}
+.container-fluid {
+    color: antiquewhite;
+    background-color: rgba(118, 109, 135, 0.9);
+    padding-left: 25.4vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-nav>li>a {
+    -webkit-transition: color 1s, background-color 2s;
+    -moz-transition: color 1s, background-color 2s;
+    -ms-transition: color 1s, background-color 2s;
+    -o-transition: color 1s, background-color 2s;
+    transition: color 1s, background-color 2s;
+    color: antiquewhite;
+    background-color: rgba(118, 109, 135, 0.9);
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-size: 0.75em;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    -webkit-transition: color 1s, background-color 2s;
+    -moz-transition: color 1s, background-color 2s;
+    -ms-transition: color 1s, background-color 2s;
+    -o-transition: color 1s, background-color 2s;
+    transition: color 1s, background-color 2s;
+    color: rgba(48, 167, 145, 0.9);
+    background-color: rgba(193, 158, 77, 0.9);
+}
+.button {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    width: 50%;
+    color: rgba(193, 158, 77, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: -2px;
+    margin-right:-2px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgba(193, 158, 77, 0.9);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.button:hover {
+    color: antiquewhite;
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
+    background-color: rgba(200, 200, 200, 0.2);
+    margin-left: -2px;
+    margin-right: -2px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgba(193, 158, 77, 0.9);
+    border-collapse: collapse;
+    overflow: hidden;
+    cursor: pointer;
+}
+button#lobby-duels-hide-gamelist {
+    width: 100%;
+    font-size: 1.5em;
+    margin-left: -2px;
+    text-align: center;
+    border-collapse: collapse;
+}
+#tab-duel p {
+    position: fixed;
+    margin-top: -20vh;
+    z-index: 5;
+}
+#tab-duel-home .button {
+    font-size: 1.5em;
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 8vh;
+}
+#tab-duel-searching .button {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    font-size: 1.5em;
+    color: rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 25vh;
+    border: 2px solid rgba(48, 167, 145, 0.9);
+}
+#tab-duel-searching .button:focus {
+    height: 105vh;
+    width: 110%;
+    margin-top: 0vh;
+    position: relative;
+    top: -15vh;
+    left: -15vh;
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
+    opacity: 1;
+    z-index: 5;
+}
+.table {
+    opacity: 0.9;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 1px 10px -1px;
+    font-size: 1.125em;
+    color: bisque;
+    text-shadow: 1px 1px 1px black;
+    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"); /* Source retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka.*/
+    background-size: 199%;
+    text-align: justify;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+}
+
+}
+
+
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+html {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
+}
+body {
+    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1080x720. Repeat on all pages. (Default value is 16px)*/;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+}
+
+#game-room-container {
+    width: 50%;
+    padding: 40px;
+    margin-top: 15vh;
+}
+#game-room-left-buttons, #game-room-right-buttons {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#game-room-right-buttons:active {
+    -webkit-animation: mymove 2s infinite;
+    animation: mymove 2s infinite;
+    cursor: progress;
+}
+@-webkit-keyframes mymove {
+    100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+}
+#game-deck-selection {
+    display: none;
+    position: absolute;
+    border: 2px solid antiquewhite;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 5px;
+    padding: 10px 0px 15px 15px;
+    z-index: 1;
+    max-width: 600px;
+}
+#game-deck-selection:hover {
+    display: none;
+    position: absolute;
+    background: radial-gradient(gray, black);
+    border-radius: 10%;
+    margin-top: 5px;
+    padding: 10px 0px 15px 15px;
+    z-index: 1;
+    max-width: 600px;
+}
+#game-rps-container {
+    text-align: center;
+    margin-top: 22vh;
+}
+/*#game-column {
+    float: left;
+    width: 50%;
+    overflow-x: visible;
+    overflow-y: visible;
+    box-sizing: border-box;
+    margin: 12px 0 0 -12px;
+}*/
+#card-column {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+/*    margin: 12px 0 0 -12px;*/
+}
+#card-name {
+    text-align: center;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    font-size: 2em;
+}
+#card-picture {
+	width: 55% /*45%*/;
+	max-width: 100%;
+}
+#card-description-box {
+    height: 25vh !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    font-size: 1.5em;
+}
+#game-chat-area {
+    height: 12vh !important;
+    width: 25%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 1em;
+}
+.engine-text-box {
+	height: 4vh;
+	width: 23vw;
+	box-sizing: border-box;
+	border: 3px double #f0f0f0;
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5));
+    position: fixed;
+    bottom: 7px;
+    left: 7px;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 1em;
+}
+.game-avatar {
+    border: 8px solid rgba(193, 158, 77, 0.7);
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+    border-radius: 10%;
+    position: relative;
+    Right: 8px;
+}
+.engine-button {
+    color: rgba(193, 158, 77, 0.9);
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
+    background: linear-gradient(rgba(150, 150, 150, 0.9), rgba(75, 75, 75, 0.9));
+    border: 0.5px solid #f0f0f0;
+    min-height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.engine-button-success {
+    background:
+    repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+}
+.engine-button-danger {
+    background: linear-gradient(rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+} 
+.engine-button-success:hover {
+    color: green;
+    font-weight: bold;
+    background:
+    repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+}
+.engine-button-danger:hover {
+    color: red;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.8);   
+}
+.game-field-zone {
+    border: 1px solid antiquewhite;
+    height: 300%;
+    background:
+    repeating-linear-gradient(
+    -45deg,
+    transparent, transparent 2px,
+    rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+}
+#options-window {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px double antiquewhite;
+    border-radius: 25%;
+    padding: 25px;
+    margin-top: -25px;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 10;
+}
+#options-window:hover {
+    background: radial-gradient(black, gray);
+    border-radius: 25%;
+    padding: 25px;
+    margin-top: -25px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+#game-end-window {
+    width: 110%;
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 0px 0px 2px black, 0px 0px 4px antiquewhite;
+    z-index: 9;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    background:
+    repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(193, 158, 77, 0.9) 10px,
+    rgba(78, 78, 78, 0.9) 20px
+    ),
+    linear-gradient(
+    to bottom,
+    rgba(78, 78, 78, 0.9),
+    rgba(0, 0, 0, 0.9));
+}
+   
+}
+
+
+@-moz-document url-prefix("https://duelingnexus.com/editor/") {
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg)!important; /*image by Moribuden*/
+    background-repeat: no-repeat;
+}
+body {
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1280x720. Repeat on all pages. (Default value is 16px)*/;
+}
+.engine-button {
+    height: 3.1415926535897932384626433832795028841971693993751058209749445923vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
+    padding-left: 29px;
+    padding-right: 29px;
+    color: antiquewhite;
+    font-weight: bold;
+    border: 0.5px solid #f0f0f0;
+    float: left;
+    position: relative;
+    left: 2vh;
+}
+.engine-button:focus {
+    color: antiquewhite;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    border: 0.5px solid #f0f0f0;
+    min-height: 32px;
+    padding-left: 29px;
+    padding-right: 29px;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.engine-button-primary {
+    background-color: rgba(48, 167, 145, 0.7);
+}
+.engine-button-primary:hover {
+    background-color: rgba(48, 167, 145, 0.9);
+}
+.engine-button-danger {
+    background-color: rgba(193, 158, 77, 0.7);
+}
+.engine-button-danger:hover {
+    background-color: rgba(193, 158, 77, 0.9);
+}
+#editor-menu-container {
+    font-weight: bold;
+    background:
+    repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+    height: 50px;
+    margin: 0 0 24px 0;
+}
+#editor-menu-title {
+    font-size: 1.5em;
+    text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+/*    position: absolute;
+    top: 3vh;
+    right: 10vw;*/
+}
+#card-column {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+#card-name {
+    text-align: center;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    font-size: 2em;
+}
+#card-picture {
+	width: 55% /*45%*/;
+	max-width: 100%;
+}
+#card-description-box {
+    height: 25vh !important;
+    overflow-y: scroll;
+    text-align: justify;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    font-size: 1.5em;
+}
+#editor-decks-column {
+    height: 77.7vh;
+    border: 1px dashed antiquewhite;
+}
+#editor-search-column {
+    height: 77.7vh;
+    border: 1px dashed antiquewhite;
+}
+.editor-search-result {
+	width: 50.19% /*Pain in the butt!*/;
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: 0 -2px -2px 0;
+	cursor: pointer;
+}
+.editor-search-card {
+    position: relative;
+	width: 33%;
+	float: left;
+}
+.editor-search-description {
+    font-size: 0.625em /*1em*/;
+    position: absolute;
+    margin-left: 33%;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+.editor-search-description:hover {
+    position: absolute;
+    overflow: visible;
+    margin-left: 0px;
+}
+
+}
+
+/*Changelog
+1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
+1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, and contained chat inside a box with the help of Skelton.*/
