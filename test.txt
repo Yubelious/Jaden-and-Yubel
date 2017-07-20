@@ -1,27 +1,26 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("duelingnexus.com") {
-
+/*h*/
 body:before {
     font-size: 1em;
     content:" Does this make my body look fat?";
 }
-/*h*/
 h2:after {/*page title*/
-	font-size: 1em;
-	font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
     color: orange;
     content:" This is h2!";
 }
 h4:after {/*profile header, deck headers, search headers, and a few things in duel*/
-	font-size: 1em;
-	font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
     color: green;
     content:" This is h4!";
 }
 h6:after {/*card id*/
-	font-size: 1em;
-	font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
     color: indigo;
     content:" This is h6!";
 }
@@ -67,6 +66,13 @@ hr:after {
     font-size: 1em;
     content:" This is an .engine-dark-box.";
 }
+.engine-text-box:hover {
+    border: 2px solid transparent;
+    border-image-source: url('https://sunpig.com/martin/code/2010/marchingants/ants-horizontal.gif');
+    border-image-slice: 1;
+    border-image-repeat: repeat repeat;
+}
+
 .engine-window:after {
     font-size: 1em;
     content:" This is an .engine-window.";
@@ -84,24 +90,48 @@ hr:after {
     content:" This is an .engine-vertically-center.";
 }
 
-/*other*/
+/*#*/
+#card-picture-container {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    width: 55%;
+}
+#card-picture-container:hover {
+    width: 45%;
+}
 #card-description-box:after {
     font-size: 1em;
     content:" This is a #card-description-box.";
 }
-.container #profile:after {/*obsolete?*/
+#game-room-container:after {
     font-size: 1em;
-    content:" This is a container for #profile.";
+    content:" This is a #game-room-container.";
 }
-.container-fluid:after {
+#game-room-container h4:after {
     font-size: 1em;
-    content:" This is containter-fluid."
+    content:" This is h4 of #game-room-container.";
 }
-.table:before {
+
+#game-room-players:after {
     font-size: 1em;
-    content: " This is a table.";
+    content:" These are #game-room-players.";
 }
-button#lobby-duels-hide-gamelist:after {
+#game-room-left-buttons:after {
+    font-size: 1em;
+    content:" This is a left button.";
+}
+#game-room-right-buttons:after {
+    font-size: 1em;
+    content:" This is a right button.";
+}
+#game-room-deck-selection:after {
+    font-size: 1em;
+    content:" This is #game-room-deck-selection.";
+}
+/*button#lobby-duels-hide-gamelist:after {
     font-size: 1em;
     content: " This is button#lobby-duels-hide-gamelist.";
 }
@@ -122,8 +152,18 @@ button#lobby-duels-hide-gamelist:after {
     text-align: center;
 }
 #game-rps-container:after {
-    content:" This is #game-rps-container";
     font-size: 30px;
+    content:" This is #game-rps-container";
+}*/
+
+/*other*/
+.loadmore:after {
+    font-size: 30px;
+    content:" Click here to load more.";
+}
+.a:after {
+    font-size: 30px;
+    content:" This is .a";
 }
  
 }
