@@ -1,1 +1,1 @@
-If you wish to contribute, DM
+If you wish to contribute, DM me
