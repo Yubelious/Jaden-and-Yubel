@@ -1,1 +1,542 @@
+/*
+Stylish by Yubelious!
+Inspired by O OO.
+Open for testing and feedback.
+Compatible with 1920x1080 resolution.
+For optimal viewing, press F11.
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://duelingnexus.com/")
+{
+  html
+  {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) no-repeat center center fixed;
+ /*Image by the amazing Moribuden*/;
+  }
+
+  div
+  {
+    cursor: default;
+  }
+
+  .container
+  {
+    width: 100%;
+  }
+
+  .container #profile
+  {
+    margin-top: 5%;
+  }
+
+  .container-fluid
+  {
+    background-color: rgba(118, 109, 135, 0.9);
+    padding-right: 50px;
+    padding-left: 365px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #game-rps-container
+  {
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  body
+  {
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+  }
+
+  .button
+  {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    width: 50%;
+    color: rgba(193, 158, 77, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: -2px;
+    margin-right: -2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgba(193, 158, 77, 0.9);
+    border-collapse: collapse;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button:hover
+  {
+    width: 50%;
+    color: rgba(193, 158, 77, 1);
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
+    background-color: rgba(200, 200, 200, 0.1);
+    margin-left: -2px;
+    margin-right: -2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgba(193, 158, 77, 0.9);
+    border-collapse: collapse;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  button#lobby-duels-hide-gamelist
+  {
+    width: 100%;
+    font-size: 25px;
+    margin: 10px 0 0 -2px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  .h2, h2
+  {
+    font-size: 36px;
+    font-style: italic;
+  }
+
+  hr
+  {
+    margin: 0 0 0 0;
+    opacity: 0;
+    border: none;
+  }
+
+  #tab-duel p
+  {
+    position: fixed;
+    z-index: 5;
+    margin-top: -205px;
+  }
+
+  #tab-duel-home .button
+  {
+    font-size: 25px;
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  #tab-duel-searching .button
+  {
+    font-size: 25px;
+    color: rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 14%;
+    border: 2px solid rgba(48, 167, 145, 0.9);
+  }
+
+  .table
+  {
+    opacity: 0.9;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 1px 30px -1px;
+    font-size: 20px;
+    color: bisque;
+    text-shadow: 1px 1px 1px black;
+    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg");
+ /* Source retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka.*/
+    background-size: 199%;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-collapse: collapse;
+  }
+
+  .navbar-nav>li>a
+  {
+    -webkit-transition: color 1s, background-color 2s;
+    -moz-transition: color 1s, background-color 2s;
+    -ms-transition: color 1s, background-color 2s;
+    -o-transition: color 1s, background-color 2s;
+    transition: color 1s, background-color 2s;
+    color: antiquewhite;
+    background-color: rgba(118, 109, 135, 0.9);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .nav>li>a:focus, .nav>li>a:hover
+  {
+    -webkit-transition: color 1s, background-color 2s;
+    -moz-transition: color 1s, background-color 2s;
+    -ms-transition: color 1s, background-color 2s;
+    -o-transition: color 1s, background-color 2s;
+    transition: color 1s, background-color 2s;
+    color: rgba(48, 167, 145, 0.9);
+    background-color: rgba(193, 158, 77, 0.9);
+  }
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/game/")
+{
+  html
+  {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important;
+ /*Image by either Dyunasumon or Moribuden*/;
+  }
+
+  body
+  {
+    font-size: 14px;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+  }
+
+  #game-room-container
+  {
+    width: 50%;
+    padding: 40px;
+    margin-top: 18%;
+  }
+
+  #game-room-left-buttons
+  {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #game-room-right-buttons
+  {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #game-room-right-buttons:active
+  {
+    -webkit-animation: mymove 2s infinite;
+    animation: mymove 2s infinite;
+    cursor: progress;
+  }
+@  -webkit-keyframes mymove
+  {
+    100% {-webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes mymove
+{
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+#game-deck-selection
+{
+  display: none;
+  position: absolute;
+  border: 2px solid antiquewhite;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 5px;
+  padding: 10px 0px 15px 15px;
+  z-index: 1;
+  max-width: 600px;
+}
+
+#game-deck-selection:hover
+{
+  display: none;
+  position: absolute;
+  background: radial-gradient(gray, black);
+  border-radius: 10%;
+  margin-top: 5px;
+  padding: 10px 0px 15px 15px;
+  z-index: 1;
+  max-width: 600px;
+}
+
+#game-rps-container
+{
+  text-align: center;
+  margin-top: 22%;
+}
+/*#game-column {
+    float: left;
+    width: 50%;
+    overflow-x: visible;
+    overflow-y: visible;
+    box-sizing: border-box;
+    margin: 12px 0 0 -12px;
+}*/
+#card-column
+{
+  float: left;
+  width: 25%;
+  overflow-x: visible;
+  overflow-y: visible;
+  box-sizing: border-box;
+/*    margin: 12px 0 0 -12px;*/;
+}
+
+#card-name
+{
+  text-align: center;
+  color: antiquewhite;
+  border: 1px dashed antiquewhite;
+  padding: 10px 5px 5px 10px;
+  font-size: 30px;
+}
+
+#card-description-box
+{
+  text-align: justify;
+  color: antiquewhite;
+  border: 1px dashed antiquewhite;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.game-avatar
+{
+  border: 8px solid rgba(193, 158, 77, 0.7);
+  box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+  border-radius: 10%;
+  position: relative;
+  Right: 8px;
+}
+
+.engine-button
+{
+  color: rgba(193, 158, 77, 0.9);
+  font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
+  background: linear-gradient(rgba(150, 150, 150, 0.9), rgba(75, 75, 75, 0.9));
+  border: 0.5px solid #f0f0f0;
+  min-height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.engine-button-success
+{
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+}
+
+.engine-button-danger
+{
+  background: linear-gradient(rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+}
+
+.engine-button-success:hover
+{
+  color: green;
+  font-weight: bold;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+}
+
+.engine-button-danger:hover
+{
+  color: red;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.game-field-zone
+{
+  border: 1px solid antiquewhite;
+  height: 300%;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent, transparent 2px,
+    rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+}
+
+#options-window
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px double antiquewhite;
+  border-radius: 25%;
+  padding: 25px;
+  margin-top: -25px;
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 10;
+}
+
+#options-window:hover
+{
+  background: radial-gradient(black, gray);
+  border-radius: 25%;
+  padding: 25px;
+  margin-top: -25px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+}
+
+#game-end-window
+{
+  width: 110%;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 0px 0px 2px black, 0px 0px 4px antiquewhite;
+  z-index: 9;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(193, 158, 77, 0.9) 10px,
+    rgba(78, 78, 78, 0.9) 20px
+    ),
+    linear-gradient(
+    to bottom,
+    rgba(78, 78, 78, 0.9),
+    rgba(0, 0, 0, 0.9));
+}
+   
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/editor/")
+{
+  html
+  {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg)!important;
+ /*image by Moribuden*/
+    background-repeat: no-repeat;
+  }
+
+  .engine-button
+  {
+    color: rgba(193, 158, 77, 0.9);
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0.5px solid #f0f0f0;
+    min-height: 32px;
+    padding-left: 29px;
+    padding-right: 29px;
+    float: left;
+    position: relative;
+    left: 10px;
+  }
+
+  .engine-button:focus
+  {
+    color: antiquewhite;
+    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0.5px solid #f0f0f0;
+    min-height: 32px;
+    padding-left: 29px;
+    padding-right: 29px;
+    float: left;
+    position: relative;
+    left: 10px;
+  }
+
+  #editor-menu-container
+  {
+    font-weight: bold;
+    background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(75, 75, 75, 0.9) 10px,
+    rgba(0, 0, 0, 0.9) 20px
+    ),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+    height: 50px;
+    margin: 0 0 24px 0;
+  }
+
+  #editor-menu-title
+  {
+    font-size: 24px;
+    text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+  }
+/*#?-column {
+    float: left;
+    width: 25%;
+    overflow-x: visible;
+    overflow-y: visible;
+    box-sizing: border-box;
+    margin: -12px 0 0 -12px;
+}
+#?-column {
+    float: left;
+    width: 25%;
+    overflow-x: visible;
+    overflow-y: visible;
+    box-sizing: border-box;
+    margin: -12px 0 0 -12px;
+}*/
+  #card-column
+  {
+    float: left;
+    width: 25%;
+ /*33%*/
+    overflow-x: visible;
+    overflow-y: visible;
+    box-sizing: border-box;
+/*    margin: -12px 0 0 -12px;*/;
+  }
+
+  #card-name
+  {
+    text-align: center;
+    color: antiquewhite;
+    border: 1px dashed antiquewhite;
+    padding: 10px 5px 5px 10px;
+    font-size: 30px;
+  }
+
+  #card-description-box
+  {
+    text-align: justify;
+    color: antiquewhite;
+    border: 1px dashed antiquewhite;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+  }
+}
+
+/*Changelog
+1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.*/
 
