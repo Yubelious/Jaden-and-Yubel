@@ -1,0 +1,129 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("duelingnexus.com") {
+
+body:before {
+    font-size: 1em;
+    content:" Does this make my body look fat?";
+}
+/*h*/
+h2:after {/*page title*/
+	font-size: 1em;
+	font-weight: bold;
+    color: orange;
+    content:" This is h2!";
+}
+h4:after {/*profile header, deck headers, search headers, and a few things in duel*/
+	font-size: 1em;
+	font-weight: bold;
+    color: green;
+    content:" This is h4!";
+}
+h6:after {/*card id*/
+	font-size: 1em;
+	font-weight: bold;
+    color: indigo;
+    content:" This is h6!";
+}
+hr:after {
+    font-size: 1em;
+    content:" This is hr!";
+}
+
+/*engines and buttons*/
+.button:after {
+    font-size: 1em;
+    content:" This is a button (obviously).";
+}
+.engine-button:after {
+    font-size: 1em;
+    content:" This is an .engine-button.";
+}
+.engine-button-small:after {
+    font-size: 1em;
+    content:" This is a small engine button.";
+}
+.engine-button-large:after {
+    font-size: 1em;
+    content:" This is a large engine button.";
+}
+.engine-button-disabled:after {
+    font-size: 1em;
+    content:" This engine button is disabled.";
+}
+.engine-button-primary:after {
+    font-size: 1em;
+    content:" This is a primary engine button.";
+}
+.engine-button-success:after {
+    font-size: 1em;
+    content:" This engine button is successful.";
+}
+.engine-button-danger:after {
+    font-size: 1em;
+    content:" Beware! This engine button is dangerous.";
+}
+.engine-dark-box:after {
+    font-size: 1em;
+    content:" This is an .engine-dark-box.";
+}
+.engine-window:after {
+    font-size: 1em;
+    content:" This is an .engine-window.";
+}
+.engine-window p:after {
+    font-size: 1em;
+    content:" This is an .engine-window p.";
+}
+.engine-window-frame:after {
+    font-size: 1em;
+    content:" This is an .engine-window-frame.";
+}
+.engine-vertically-center:after {
+    font-size: 1em;
+    content:" This is an .engine-vertically-center.";
+}
+
+/*other*/
+#card-description-box:after {
+    font-size: 1em;
+    content:" This is a #card-description-box.";
+}
+.container #profile:after {/*obsolete?*/
+    font-size: 1em;
+    content:" This is a container for #profile.";
+}
+.container-fluid:after {
+    font-size: 1em;
+    content:" This is containter-fluid."
+}
+.table:before {
+    font-size: 1em;
+    content: " This is a table.";
+}
+button#lobby-duels-hide-gamelist:after {
+    font-size: 1em;
+    content: " This is button#lobby-duels-hide-gamelist.";
+}
+#tab-duel p:after {
+    font-size: 1em;
+    content: " This is #tab-duel p.";
+}
+#tab-duel-home .button:after {
+    font-size: 1em;
+    content: " This is #tab-duel-home .button.";
+}
+#tab-duel-searching .button:after {
+    font-size: 1em;
+    content: " This is #tab-duel-searching .button.";
+}
+#game-rps-container {
+    margin-top: 20vh;
+    text-align: center;
+}
+#game-rps-container:after {
+    content:" This is #game-rps-container";
+    font-size: 30px;
+}
+
+}
