@@ -39,11 +39,11 @@ hr:after {
     content:" This is an .engine-button.";
 }
 .engine-button-small:after {
-    font-size: 1em;
+    font-size: 0.5em;
     content:" This is a small engine button.";
 }
 .engine-button-large:after {
-    font-size: 1em;
+    font-size: 1.5em;
     content:" This is a large engine button.";
 }
 .engine-button-disabled:after {
