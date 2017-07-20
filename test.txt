@@ -125,5 +125,5 @@ button#lobby-duels-hide-gamelist:after {
     content:" This is #game-rps-container";
     font-size: 30px;
 }
-
+ 
 }
