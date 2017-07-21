@@ -3,7 +3,7 @@
 @-moz-document domain("duelingnexus.com") {
 /*h*/
 body:before {
-    font-size: 1em;
+    font-size: 14px;
     content:" Does this make my body look fat?";
 }
 h2:after {/*page title*/
@@ -30,6 +30,14 @@ hr:after {
 }
 
 /*engines and buttons*/
+.loadmore:after {
+    font-size: 1em;
+    content:" Click here to load more.";
+}
+.a:after {
+    font-size: 1em;
+    content:" This is .a";
+}
 .button:after {
     font-size: 1em;
     content:" This is a button (obviously).";
@@ -89,6 +97,10 @@ hr:after {
     font-size: 1em;
     content:" This is an .engine-vertically-center.";
 }
+.game-phase-button:after {
+    font-size: 1em;
+    content:" A .game-phase-button is a button for #game-column." !important;
+}
 
 /*#*/
 #card-picture-container {
@@ -114,7 +126,6 @@ hr:after {
     font-size: 1em;
     content:" This is an h4 of a Game Room container.";
 }
-
 #game-room-players:before {
     font-size: 1em;
     content:" This is the player column of the Game Room. It has a table.";
@@ -187,11 +198,27 @@ hr:after {
 }
 #game-column .engine-button:after {
     font-size: 1em;
-    content:" This is the .engine-button for #game-column.";
+    content:" This is also an .engine-button for #game-column.";
 }
 #game-field:before {
     font-size: 1em;
     content:" This is the #game-field.";    
+}
+#game-loading-container p:after {
+    font-size: 1em;
+    content:" This is the #game-loading-container p."; 
+}
+#game-tooltip:after {
+    font-size: 1em;
+    content:" Peek-a-boo! This is the #game-tooltip. It's usually not displayed."
+}
+#game-action-menu:after {
+    font-size: 1em;
+    content:" This is the #game-action-menu."
+}
+#game-surrender-menu:after {
+    font-size: 1em;
+    content:" This is the #game-action-menu."
 }
 /*button#lobby-duels-hide-gamelist:after {
     font-size: 1em;
@@ -212,14 +239,6 @@ hr:after {
 */
 
 /*other*/
-.loadmore:after {
-    font-size: 1em;
-    content:" Click here to load more.";
-}
-.a:after {
-    font-size: 1em;
-    content:" This is .a";
-}
 .game-room-deck-element:after {
     font-size: 1em;
     content:" This is .game-room-deck-element";
@@ -251,11 +270,35 @@ hr:after {
     font-size: 1em;
     content:" This is a .game-life-bar."
 }
-.game-life-bar-part:hover {
-    background-color: gold;
+.game-field-zone-content:after {
+    font-size: 1em;
+    content:" This is .game-field-zone-content."
 }
-.game-timer-bar-part {
-	background-color: silver;
+.game-field-zone:before {
+    font-size: 1em;
+    content:" This is the .game-field-zone."
 }
+.game-card-negated:after {
+	font-size: 1em;
+    content:" This card is negated. Get rekt m8."
+}
+.game-field-hand:after {
+	font-size: 1em;
+    content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean."
+}
+.game-field-stats-text:after {
+    font-size: 1em;
+    content:" This is the .game-field-stats-text."
+}
+.game-selectable-card:after {
+	font-size: 1em;
+    content:" This card is selectable. Click it. You know you want to."
+}
+.game-selected-card:after {
+	font-size: 1em;
+    content:" You actually clicked it?! What were you thinking?!"
+}
+
+
 
 }
