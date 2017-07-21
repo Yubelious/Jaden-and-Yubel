@@ -165,12 +165,12 @@ hr:after {
     -ms-transition-duration: .2s;
     -o-transition-duration: .2s;
     transition-duration: .2s;
-	transform: rotate(180deg);
-	margin-bottom: 20px;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
 }
 #game-rps-move-opponent:hover {
     transform: rotate(90deg);
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 #card-column:before {
     font-size: 1em;
@@ -205,8 +205,9 @@ hr:after {
     content:" This is the #game-field.";    
 }
 #game-loading-container p:after {
+    transition-delay: 30s;
     font-size: 1em;
-    content:" This is the #game-loading-container p."; 
+    content:" This is the #game-loading-container p. Get your game on!"; 
 }
 #game-tooltip:after {
     font-size: 1em;
@@ -214,11 +215,91 @@ hr:after {
 }
 #game-action-menu:after {
     font-size: 1em;
-    content:" This is the #game-action-menu."
+    content:" This is the #game-action-menu. It has a button."
 }
 #game-surrender-menu:after {
     font-size: 1em;
-    content:" This is the #game-action-menu."
+    content:" This is the #game-surrender-menu. It has a button."
+}
+#game-waiting-window:after {
+    font-size: 1em;
+    content:" This is the #game-waiting-window."
+}
+#game-message-window:after {
+    font-size: 1em;
+    content:" This is the #game-message-window."
+}
+#game-end-window:after {
+    font-size: 1em;
+    content:" This is the #game-end-window. Mommy! It's over!"
+}
+#game-end-title:after {
+    font-size: 1em;
+    content:" This is the #game-end-title."
+}
+#game-end-button:after {
+    font-size: 1em;
+    content:" This is the #game-end-button."
+}
+#game-alert-darkener:after {
+    font-size: 1em;
+    content:" This is the #game-alert-darknener."
+}
+#game-alert-window:after {
+    font-size: 1em;
+    content:" This is the #game-alert-darknener. It's z-index is over 9000!"
+}
+#game-alert-title:after {
+    font-size: 1em;
+    content:" This is the #game-alert-title.";
+}
+#game-alert-button:after {
+    font-size: 1em;
+    content:" This is a #game-alert-button.";
+}
+#game-yesno-window:after {
+    font-size: 1em;
+    content:" This is the #game-yesno-window."
+}
+#game-position-window:after {
+    font-size: 1em;
+    content:" This is the #game-position-window. It has an image."
+}
+#game-option-window:after {
+    font-size: 1em;
+    content:" This is the #game-option-window."
+}
+#game-selection-window:after {
+    font-size: 1em;
+    content:" This is the #game-selection-window."
+}
+#game-highlight-card:after {
+    font-size: 1em;
+    content:" This is the #game-highlight-card";
+}
+#game-announce-window:after {
+    font-size: 1em;
+    content:" Another window? Damn there's a lot of these. This one's called #game-announce-window";
+}
+#game-announce-card-window:after {
+    font-size: 1em;
+    content:" This is the #game-announce-card-window";
+}
+#game-next-turn:after {
+    font-size: 1em;
+    content:" This is the #game-next-turn. It has text.";
+}
+#game-life-change:after {
+    font-size: 1em;
+    content:" This is the #game-life-change. It has text, good, and bad.";
+}
+#game-chat-content:before {
+    font-size: 1em;
+    content:" This is the #game-chat-content. It has a p.";
+}
+#game-chat-area:before {
+    font-size: 1em;
+    content:" This is the #game-chat-area. Width: 30%. It takes up 30% of the entire screen!";
 }
 /*button#lobby-duels-hide-gamelist:after {
     font-size: 1em;
@@ -279,11 +360,11 @@ hr:after {
     content:" This is the .game-field-zone."
 }
 .game-card-negated:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This card is negated. Get rekt m8."
 }
 .game-field-hand:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean."
 }
 .game-field-stats-text:after {
@@ -291,14 +372,24 @@ hr:after {
     content:" This is the .game-field-stats-text."
 }
 .game-selectable-card:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This card is selectable. Click it. You know you want to."
 }
 .game-selected-card:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" You actually clicked it?! What were you thinking?!"
 }
-
-
-
+.game-selection-card:after {
+    font-size: 1em;
+    content:" This is .game-selection-card."
 }
+.game-attack-animation:after {
+    font-size: 1em;
+    content:" ATTACK!!!"
+}
+.game-avatar:after {
+    font-size: 1em;
+    content:" This is .game-avatar."
+}
+
+
