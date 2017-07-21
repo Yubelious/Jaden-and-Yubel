@@ -109,10 +109,10 @@ hr:after {
     -ms-transition-duration: .2s;
     -o-transition-duration: .2s;
     transition-duration: .2s;
-    width: 40%;
+    width: 25%;
 }
 #card-picture-container:hover {
-    width: 35%;
+    width: 15%;
 }
 #card-description-box:after {
     font-size: 1em;
@@ -165,12 +165,12 @@ hr:after {
     -ms-transition-duration: .2s;
     -o-transition-duration: .2s;
     transition-duration: .2s;
-    transform: rotate(180deg);
-    margin-bottom: 20px;
+	transform: rotate(180deg);
+	margin-bottom: 20px;
 }
 #game-rps-move-opponent:hover {
     transform: rotate(90deg);
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 #card-column:before {
     font-size: 1em;
@@ -301,6 +301,43 @@ hr:after {
     font-size: 1em;
     content:" This is the #game-chat-area. Width: 30%. It takes up 30% of the entire screen!";
 }
+#game-result-container p:after {
+    font-size: 1em;
+    content:" This is the #game-result-container p.";
+}
+#game-siding-column:after {
+    font-size: 1em;
+    content:" This is the first #game-siding-column.";
+}
+#game-siding-column-2:after {
+    font-size: 1em;
+    content:" This is the second #game-siding-column.";
+}
+#siding-deck-main-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-main-title";
+}
+#siding-search-title:after {
+    font-size: 1em;
+    content:" This is the #siding-search-title.";
+}
+#siding-deck-extra-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-extra-title.";
+}
+#siding-deck-side-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-side-title.";
+}
+#options-area {
+    font-size: 1em;
+    content:" This is the #options-area.";
+}
+#options-window {
+    font-size: 1em;
+    content:" This is the #options-window. It has a p.";
+}
+
 /*button#lobby-duels-hide-gamelist:after {
     font-size: 1em;
     content: " This is button#lobby-duels-hide-gamelist.";
@@ -360,11 +397,11 @@ hr:after {
     content:" This is the .game-field-zone."
 }
 .game-card-negated:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" This card is negated. Get rekt m8."
 }
 .game-field-hand:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean."
 }
 .game-field-stats-text:after {
@@ -372,24 +409,24 @@ hr:after {
     content:" This is the .game-field-stats-text."
 }
 .game-selectable-card:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" This card is selectable. Click it. You know you want to."
 }
 .game-selected-card:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" You actually clicked it?! What were you thinking?!"
 }
 .game-selection-card:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" This is .game-selection-card."
 }
 .game-attack-animation:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" ATTACK!!!"
 }
 .game-avatar:after {
-    font-size: 1em;
+	font-size: 1em;
     content:" This is .game-avatar."
 }
 
-
+}
