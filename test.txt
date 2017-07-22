@@ -429,7 +429,8 @@ hr:after {
     content:" This is .game-avatar."
 }
 #editor-container {
-
+    font-size: 1em;
+    content:" This is #editor-container."
 }
 
 #editor-menu-container {
