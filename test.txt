@@ -337,6 +337,17 @@ hr:after {
     font-size: 1em;
     content:" This is the #options-window. It has a p.";
 }
+#editor-container {
+    font-size: 1em;
+    content:" This is the #editor-container."
+}#editor-menu-container {
+    font-size: 1em;
+    content:" This is the #editor-menu-container."
+}
+#editor-menu-content {
+    font-size: 1em;
+    content:" This is the #editor-menu-content."
+}
 
 /*button#lobby-duels-hide-gamelist:after {
     font-size: 1em;
@@ -428,18 +439,11 @@ hr:after {
     font-size: 1em;
     content:" This is .game-avatar."
 }
-#editor-container {
-    font-size: 1em;
-    content:" This is #editor-container."
-}
 
-#editor-menu-container {
 
-}
 
-#editor-menu-content {
 
-}
+
 
 #editor-menu-title {
 
