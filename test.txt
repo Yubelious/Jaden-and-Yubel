@@ -164,13 +164,13 @@ hr:after {
     -moz-transition-duration: .2s;
     -ms-transition-duration: .2s;
     -o-transition-duration: .2s;
-    transition-duration: .2s;
-	transform: rotate(180deg);
-	margin-bottom: 20px;
+    transition-duration: .2s;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
 }
 #game-rps-move-opponent:hover {
-    transform: rotate(90deg);
-	margin-bottom: 30px;
+    transform: rotate(90deg);
+    margin-bottom: 30px;
 }
 #card-column:before {
     font-size: 1em;
@@ -397,11 +397,11 @@ hr:after {
     content:" This is the .game-field-zone."
 }
 .game-card-negated:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This card is negated. Get rekt m8."
 }
 .game-field-hand:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean."
 }
 .game-field-stats-text:after {
@@ -409,23 +409,23 @@ hr:after {
     content:" This is the .game-field-stats-text."
 }
 .game-selectable-card:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This card is selectable. Click it. You know you want to."
 }
 .game-selected-card:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" You actually clicked it?! What were you thinking?!"
 }
 .game-selection-card:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This is .game-selection-card."
 }
 .game-attack-animation:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" ATTACK!!!"
 }
 .game-avatar:after {
-	font-size: 1em;
+    font-size: 1em;
     content:" This is .game-avatar."
 }
 #editor-container {
