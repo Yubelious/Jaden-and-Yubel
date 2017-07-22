@@ -164,13 +164,13 @@ hr:after {
     -moz-transition-duration: .2s;
     -ms-transition-duration: .2s;
     -o-transition-duration: .2s;
-    transition-duration: .2s;
-    transform: rotate(180deg);
-    margin-bottom: 20px;
+    transition-duration: .2s;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
 }
 #game-rps-move-opponent:hover {
-    transform: rotate(90deg);
-    margin-bottom: 30px;
+    transform: rotate(90deg);
+    margin-bottom: 30px;
 }
 #card-column:before {
     font-size: 1em;
@@ -211,43 +211,43 @@ hr:after {
 }
 #game-tooltip:after {
     font-size: 1em;
-    content:" Peek-a-boo! This is the #game-tooltip. It's usually not displayed."
+    content:" Peek-a-boo! This is the #game-tooltip. It's usually not displayed.";
 }
 #game-action-menu:after {
     font-size: 1em;
-    content:" This is the #game-action-menu. It has a button."
+    content:" This is the #game-action-menu. It has a button.";
 }
 #game-surrender-menu:after {
     font-size: 1em;
-    content:" This is the #game-surrender-menu. It has a button."
+    content:" This is the #game-surrender-menu. It has a button.";
 }
 #game-waiting-window:after {
     font-size: 1em;
-    content:" This is the #game-waiting-window."
+    content:" This is the #game-waiting-window.";
 }
 #game-message-window:after {
     font-size: 1em;
-    content:" This is the #game-message-window."
+    content:" This is the #game-message-window.";
 }
 #game-end-window:after {
     font-size: 1em;
-    content:" This is the #game-end-window. Mommy! It's over!"
+    content:" This is the #game-end-window. Mommy! It's over!";
 }
 #game-end-title:after {
     font-size: 1em;
-    content:" This is the #game-end-title."
+    content:" This is the #game-end-title.";
 }
 #game-end-button:after {
     font-size: 1em;
-    content:" This is the #game-end-button."
+    content:" This is the #game-end-button.";
 }
 #game-alert-darkener:after {
     font-size: 1em;
-    content:" This is the #game-alert-darknener."
+    content:" This is the #game-alert-darknener.";
 }
 #game-alert-window:after {
     font-size: 1em;
-    content:" This is the #game-alert-darknener. It's z-index is over 9000!"
+    content:" This is the #game-alert-darknener. It's z-index is over 9000!";
 }
 #game-alert-title:after {
     font-size: 1em;
@@ -259,19 +259,19 @@ hr:after {
 }
 #game-yesno-window:after {
     font-size: 1em;
-    content:" This is the #game-yesno-window."
+    content:" This is the #game-yesno-window.";
 }
 #game-position-window:after {
     font-size: 1em;
-    content:" This is the #game-position-window. It has an image."
+    content:" This is the #game-position-window. It has an image.";
 }
 #game-option-window:after {
     font-size: 1em;
-    content:" This is the #game-option-window."
+    content:" This is the #game-option-window.";
 }
 #game-selection-window:after {
     font-size: 1em;
-    content:" This is the #game-selection-window."
+    content:" This is the #game-selection-window.";
 }
 #game-highlight-card:after {
     font-size: 1em;
@@ -329,24 +329,58 @@ hr:after {
     font-size: 1em;
     content:" This is the #siding-deck-side-title.";
 }
-#options-area {
+#options-area:after {
     font-size: 1em;
     content:" This is the #options-area.";
 }
-#options-window {
+#options-window:after {
     font-size: 1em;
     content:" This is the #options-window. It has a p.";
 }
-#editor-container {
+#editor-container:before {
     font-size: 1em;
-    content:" This is the #editor-container."
-}#editor-menu-container {
-    font-size: 1em;
-    content:" This is the #editor-menu-container."
+    content:" This is the #editor-container.";
 }
-#editor-menu-content {
+#editor-menu-container:before {
     font-size: 1em;
-    content:" This is the #editor-menu-content."
+    content:" This is the #editor-menu-container.";
+}
+#editor-menu-content:before {
+    font-size: 1em;
+    content:" This is the #editor-menu-content.";
+}
+#editor-menu-title:before {
+    font-size: 1em;
+    content:" This is the #editor-menu-title.";
+}
+#editor-menu-spacer {
+    font-size: 1em;
+    content:" This is the #editor-menu-spacer."
+}
+#editor-deck-main-title:after {
+    font-size: 1em;
+    content:" This is #editor-deck-main-title.";
+}
+#editor-search-title:after {
+    font-size: 1em;
+    content:" This is #editor-search-title.";
+}
+
+#editor-deck-extra-title:after {
+    font-size: 1em;
+    content:" This is #editor-extra-title.";
+}
+#editor-deck-side-title:after {
+    font-size: 1em;
+    content:" This is #editor-deck-side-title.";
+}
+#editor-decks-column:before {
+    font-size: 1em;
+    content:" This is the #editor-decks-column";
+}
+#editor-search-column:before {
+    font-size: 1em;
+    content:" This is #editor-search-column.";
 }
 
 /*button#lobby-duels-hide-gamelist:after {
@@ -397,99 +431,67 @@ hr:after {
 }
 .game-life-bar:before {
     font-size: 1em;
-    content:" This is a .game-life-bar."
+    content:" This is a .game-life-bar.";
 }
 .game-field-zone-content:after {
     font-size: 1em;
-    content:" This is .game-field-zone-content."
+    content:" This is .game-field-zone-content.";
 }
 .game-field-zone:before {
     font-size: 1em;
-    content:" This is the .game-field-zone."
+    content:" This is the .game-field-zone.";
 }
 .game-card-negated:after {
-    font-size: 1em;
-    content:" This card is negated. Get rekt m8."
+    font-size: 1em;
+    content:" This card is negated. Get rekt m8.";
 }
 .game-field-hand:after {
-    font-size: 1em;
-    content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean."
+    font-size: 1em;
+    content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean.";
 }
 .game-field-stats-text:after {
     font-size: 1em;
-    content:" This is the .game-field-stats-text."
+    content:" This is the .game-field-stats-text.";
 }
 .game-selectable-card:after {
-    font-size: 1em;
-    content:" This card is selectable. Click it. You know you want to."
+    font-size: 1em;
+    content:" This card is selectable. Click it. You know you want to.";
 }
 .game-selected-card:after {
-    font-size: 1em;
-    content:" You actually clicked it?! What were you thinking?!"
+    font-size: 1em;
+    content:" You actually clicked it?! What were you thinking?!";
 }
 .game-selection-card:after {
-    font-size: 1em;
-    content:" This is .game-selection-card."
+    font-size: 1em;
+    content:" This is .game-selection-card.";
 }
 .game-attack-animation:after {
-    font-size: 1em;
-    content:" ATTACK!!!"
+    font-size: 1em;
+    content:" ATTACK!!!";
 }
 .game-avatar:after {
-    font-size: 1em;
-    content:" This is .game-avatar."
+    font-size: 1em;
+    content:" This is .game-avatar.";
+}
+.editor-card-small:hover {
+    visibility: hidden;
+}
+.editor-search-card:after {
+    font-size: 1em;
+    content:" This is .editor-search-card.";
+}
+.editor-search-description:after {
+    font-size: 1em;
+    content:" This is .editor-search-description.";
+}
+.editor-search-result:before {
+    font-size: 1em;
+    content:" This is .editor-search-result.";
 }
 
-
-
-
-
-
-#editor-menu-title {
-
-}
-
-#editor-menu-spacer {
-
-}
-
-#editor-deck-main-title, #editor-search-title {
-
-}
-
-#editor-deck-extra-title, #editor-deck-side-title {
-
-}
-
-.editor-card-small {
-
-}
-.editor-search-card {
-
-}
-.editor-search-banlist-icon {
-
-}
-.editor-search-description {
-
-}
-.editor-search-result {
-
-}
-#editor-decks-column {
-
-}
-#editor-search-column {
-
-}
-.editor-deck-container {
-
-}
-#editor-banlist-icons {
-
-}
-#editor-decks-column h4, #editor-search-box h4 {
-
+.editor-deck-container:before {
+    font-size: 1em;
+    content:" This is .editor-deck-container.";
 }
 
 }
