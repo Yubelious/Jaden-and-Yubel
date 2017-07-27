@@ -58,8 +58,10 @@ body {
     -o-transition: color 2s ease-in-out;
     transition: color 2s ease-in-out;
     color: rgba(193, 158, 77, 0.9);
+    border: 1px dotted rgba(193, 158, 77, 0.9);
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    margin-left: 2px;
     font-size: 0.75em;
     font-style: normal;
 }
@@ -70,6 +72,7 @@ body {
     -o-transition: color 2s ease-in-out;
     transition: color 2s ease-in-out;
     color: rgba(48, 167, 145, 0.9);
+    border: 1px dotted rgba(48, 167, 145, 0.9);
     background-color: rgba(118, 109, 135, 0.8);
 }
 .nav>li.disabled>a, .nav>li.disabled>a:focus,.nav>li.disabled>a:hover {
@@ -86,6 +89,11 @@ body {
     to bottom,
     rgba(78, 78, 78, 0.2),
     rgba(0, 0, 0, 0.2));
+}
+.navbar-text {
+    font-size: 0.75em;
+    color: antiquewhite;
+    margin: 1.9em 0.9em 0.9em 1.9em;
 }
 .a, a {
     -webkit-transition-duration: 1s;
@@ -243,8 +251,8 @@ button#lobby-duels-hide-gamelist {
     font-size: 1.125em;
     color: bisque;
     text-shadow: 1px 1px 1px black;
-    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"); /* Source retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka.*/
-    background-size: 199%;
+    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"), url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*Source 1 retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka. In the event that the first image is censored, I have a morbid moribuden to cover.*/
+    background-size: 100%;
     text-align: justify;
     border: 2px solid rgba(0, 0, 0, 0);
     border-collapse: collapse;
