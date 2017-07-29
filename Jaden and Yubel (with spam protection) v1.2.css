@@ -46,17 +46,17 @@ body {
     width: 100%;
 }
 .container-fluid {
-    background-color: rgba(118, 109, 135, 0.9);
+    background-color: #766D87;
     padding-left: 25.4vw;
     margin-right: auto;
     margin-left: auto;
 }
 .navbar-nav>li>a {
-    -webkit-transition: color 2s ease-in-out;
-    -moz-transition: color 2s ease-in-out;
-    -ms-transition: color 2s ease-in-out;
-    -o-transition: color 2s ease-in-out;
-    transition: color 2s ease-in-out;
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
     color: rgba(193, 158, 77, 0.9);
     border: 1px dotted rgba(193, 158, 77, 0.9);
     padding-top: 1.5em;
@@ -66,11 +66,11 @@ body {
     font-style: normal;
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    -webkit-transition: color 2s ease-in-out;
-    -moz-transition: color 2s ease-in-out;
-    -ms-transition: color 2s ease-in-out;
-    -o-transition: color 2s ease-in-out;
-    transition: color 2s ease-in-out;
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
     color: rgba(48, 167, 145, 0.9);
     border: 1px dotted rgba(48, 167, 145, 0.9);
     background-color: rgba(118, 109, 135, 0.8);
@@ -217,7 +217,7 @@ button#lobby-duels-hide-gamelist {
     font-size: 1.5em;
     opacity: 0.9;
     width: 100%;
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 #tab-duel-searching .button {
     -webkit-transition-duration: .5s;
@@ -251,7 +251,7 @@ button#lobby-duels-hide-gamelist {
     font-size: 1.125em;
     color: bisque;
     text-shadow: 1px 1px 1px black;
-    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"), url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*Source 1 retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka. In the event that the first image is censored, I have a morbid moribuden to cover.*/
+    background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"), url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*Source 1 retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka. In the event that the first image is censored, I have a morbid Moribuden to cover.*/
     background-size: 100%;
     text-align: justify;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -285,7 +285,6 @@ body {
 #game-room-right-buttons:active {
     -webkit-animation: mymove 2s infinite;
     animation: mymove 2s infinite;
-    cursor: progress;
 }
 @-webkit-keyframes mymove {
     100% {-webkit-transform: rotate(360deg);}
@@ -296,23 +295,30 @@ body {
 #game-deck-selection {
     display: none;
     position: absolute;
-    border: 2px solid antiquewhite;
-    border-radius: 10%;
     background-color: rgba(0, 0, 0, 0.9);
+    border: solid antiquewhite;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
     margin-top: 5px;
-    padding: 10px 0px 15px 15px;
-    z-index: 1;
-    max-width: 600px;
+    padding: 5px;
+    z-index: 2;
+    width: 45vw;
+    overflow-y: scroll;
+    cursor: s-resize;
 }
 #game-deck-selection:hover {
     display: none;
     position: absolute;
     background: radial-gradient(gray, black);
-    border-radius: 10%;
+    border: solid antiquewhite;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
     margin-top: 5px;
-    padding: 10px 0px 15px 15px;
+    padding: 5px;
     z-index: 1;
-    max-width: 600px;
+    width: 50vw;
+    overflow-y: scroll;
+    cursor: s-resize;
 }
 #game-rps-container {
     text-align: center;
@@ -336,20 +342,21 @@ body {
 }
 #card-description-box {
     height: 25vh !important;
-    overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
     text-align: justify;
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
     font-size: 1.5em;
+    cursor: s-resize;
 }
 #game-chat-area {
     height: 12vh !important;
     width: 25%;
     box-sizing: border-box;
-    overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
@@ -381,54 +388,67 @@ body {
     font-size: 1em;
     font-weight: bold;
     text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
-    background: linear-gradient(rgba(150, 150, 150, 0.9), rgba(75, 75, 75, 0.9));
+    background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(75, 75, 75, 0.5));
     border: 0.5px solid #f0f0f0;
     min-height: 32px;
     padding-left: 8px;
     padding-right: 8px;
 }
 .engine-button-success {
-    background:
-    repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    rgba(75, 75, 75, 0.9) 10px,
-    rgba(0, 0, 0, 0.9) 20px
-    ),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+    background: linear-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8));
+}
+.engine-button-success:hover {
+    color: #30A791;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 .engine-button-danger {
-    background: linear-gradient(rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
-} 
-.engine-button-success:hover {
-    color: green;
-    font-weight: bold;
-    background:
-    repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    rgba(75, 75, 75, 0.9) 10px,
-    rgba(0, 0, 0, 0.9) 20px
-    ),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+        background:
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
 }
 .engine-button-danger:hover {
     color: red;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.8);   
+    background:
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px),
+    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
 }
 .game-field-zone {
     border: 1px solid antiquewhite;
     height: 300%;
     background:
-    repeating-linear-gradient(
-    -45deg,
-    transparent, transparent 2px,
-    rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px
-    ),
+    repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px),
     linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+}
+.engine-window p, .game-selection-card{
+    cursor: s-resize;
+}
+.engine-window-frame {
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid antiquewhite;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 6;
+    width: 45vw !important;
+    overflow-y: scroll;
+    cursor: s-resize;
+}
+.engine-window-frame:hover {
+    font-size: 1em;
+    background: radial-gradient(rgba(125, 125, 125, 0.5), rgba(0, 0, 0, 0.5));
+    border: solid antiquewhite;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 6;
+    width: 45vw !important;
+    overflow-y: scroll;
+    cursor: s-resize;
 }
 #options-window {
     background-color: rgba(0, 0, 0, 0.8);
@@ -512,16 +532,19 @@ body {
     left: 10px;
 }
 .engine-button-primary {
-    background-color: rgba(48, 167, 145, 0.7);
-}
-.engine-button-primary:hover {
-    background-color: rgba(48, 167, 145, 0.9);
-}
-.engine-button-danger {
     background-color: rgba(193, 158, 77, 0.7);
 }
-.engine-button-danger:hover {
+.engine-button-primary:hover {
     background-color: rgba(193, 158, 77, 0.9);
+}
+.engine-button-danger {
+    background-color: rgba(48, 167, 145, 0.7);
+}
+.engine-button-danger:hover {
+    background-color: rgba(48, 167, 145, 0.9);
+}
+.engine-dark-box {
+	background-color: rgba(118, 109, 135, 0.7);
 }
 #editor-menu-container {
     font-weight: bold;
@@ -540,9 +563,6 @@ body {
 #editor-menu-title {
     font-size: 1.5em;
     text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
-/*    position: absolute;
-    top: 3vh;
-    right: 10vw;*/
 }
 #card-column {
     float: left;
@@ -554,7 +574,7 @@ body {
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
-    font-size: 2em;
+    font-size: 2.125em;
 }
 #card-picture {
 	width: 55% /*45%*/;
@@ -611,4 +631,4 @@ body {
 
 /*Changelog
 1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
-1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, and contained chat inside a box.*/
+1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, got rid of some things made obsolete by an update, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, changed some colours around in the .engine-buttons, added more scrollbars, and contained chat inside a box.*/
