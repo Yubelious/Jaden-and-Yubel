@@ -282,27 +282,6 @@ body {
     min-width: 280px;
 	padding: 2vh 1vw 2vh 2vw;
 }
-#game-room-information {
-	width: 16vw;
-    min-width: 160px;
-	padding: 2vh 2vw 2vh 1vw;
-}
-#game-deck-selection {/*This is the heart of this fix. It contains a scrollbar that prevents your decks from flooding off the bottom of the screen.*/
-    height: 16vh;
-    width: 28vw;
-    min-width: 280px;
-    border: solid #f0f0f0;
-    border-width: 15px 1px 1px 3px;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 2;
-    overflow-y: scroll;
-    cursor: s-resize;
-}
-/*This is an accompanyment fix to the Chat Spam Filter, and adds a scrollbar to the pre-duel screen's deck selection. This fix is designed to work on all resolutions, as it does not affect font size.*/
-}
 #game-room-left-buttons, #game-room-right-buttons {
     font-size: 1.25em;
     font-weight: bold;
@@ -318,32 +297,39 @@ body {
     100% {transform: rotate(360deg);}
 }
 #game-deck-selection {
-    display: none;
-    position: absolute;
+    height: 16vh;
+    width: 28vw;
+    min-width: 280px;
     background-color: rgba(0, 0, 0, 0.9);
-    border: solid antiquewhite;
+    border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
     margin-top: 5px;
     padding: 5px;
+    position: absolute;
     z-index: 2;
-    width: 45vw;
     overflow-y: scroll;
     cursor: s-resize;
 }
 #game-deck-selection:hover {
-    display: none;
-    position: absolute;
+    height: 16vh;
+    width: 28vw;
+    min-width: 280px;
     background: radial-gradient(gray, black);
-    border: solid antiquewhite;
+    border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
     margin-top: 5px;
     padding: 5px;
-    z-index: 1;
-    width: 50vw;
+    position: absolute;
+    z-index: 2;
     overflow-y: scroll;
     cursor: s-resize;
+}
+#game-room-information {
+	width: 16vw;
+    min-width: 160px;
+	padding: 2vh 2vw 2vh 1vw;
 }
 #game-rps-container {
     text-align: center;
