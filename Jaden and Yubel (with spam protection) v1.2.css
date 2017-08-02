@@ -17,7 +17,7 @@ div {
     cursor: default;
 }
 body {
-    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1152x864. Repeat on all pages.*/;
+    font-size: 2vh;
     line-height: 1;
     font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
     color: rgba(193, 158, 77, 0.9);
@@ -180,7 +180,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     margin-left: -2px;
     margin-right:-2px;
-    font-size: 1em;
+    font-size: 0.75em;
     font-weight: bold;
     text-align: center;
     border: 2px solid rgba(193, 158, 77, 0.9);
@@ -193,7 +193,7 @@ body {
     background-color: rgba(200, 200, 200, 0.2);
     margin-left: -2px;
     margin-right: -2px;
-    font-size: 1em;
+    font-size: 0.75em;
     font-weight: bold;
     text-align: center;
     border: 2px solid rgba(193, 158, 77, 0.9);
@@ -210,8 +210,8 @@ button#lobby-duels-hide-gamelist {
 }
 #tab-duel p {
     position: fixed;
-    margin-top: -197px;
-    z-index: 5;
+    top: 2.5vh;
+    z-index: 2;
 }
 #tab-duel-home .button {
     font-size: 1.5em;
@@ -266,7 +266,7 @@ html {
     background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
 }
 body {
-    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1080x720. Repeat on all pages. (Default value is 16px)*/;
+    font-size: 2vh;
     font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
     color: rgba(193, 158, 77, 0.9);
     text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
@@ -274,13 +274,9 @@ body {
     overflow-x: hidden;
 }
 #game-room-container {
-    width: 50vw;
-    min-width: 500px;
-}
-#game-room-players {
-	width: 28vw;
-    min-width: 280px;
-	padding: 2vh 1vw 2vh 2vw;
+    width: 60vw;
+    padding: 40px;
+    margin-top: 15vh;
 }
 #game-room-left-buttons, #game-room-right-buttons {
     font-size: 1.25em;
@@ -297,9 +293,8 @@ body {
     100% {transform: rotate(360deg);}
 }
 #game-deck-selection {
-    height: 16vh;
-    width: 28vw;
-    min-width: 280px;
+    height: 10vh;
+    width: 45vw;
     background-color: rgba(0, 0, 0, 0.9);
     border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
@@ -312,10 +307,9 @@ body {
     cursor: s-resize;
 }
 #game-deck-selection:hover {
-    height: 16vh;
-    width: 28vw;
-    min-width: 280px;
-    background: radial-gradient(gray, black);
+    height: 10vh;
+    width: 45vw;
+    background: radial-gradient(rgba(128,128,128, 0.9), rgba(0, 0, 0, 0.9));
     border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
@@ -325,11 +319,6 @@ body {
     z-index: 2;
     overflow-y: scroll;
     cursor: s-resize;
-}
-#game-room-information {
-	width: 16vw;
-    min-width: 160px;
-	padding: 2vh 2vw 2vh 1vw;
 }
 #game-rps-container {
     text-align: center;
@@ -432,34 +421,20 @@ body {
     repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px),
     linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
 }
-.engine-window p, .game-selection-card{
+#game-selection-window {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #f0f0f0;
+    overflow-y: scroll;
+    margin-top: 3vh;
+    margin-left: 30vw;
+    height: 38vh;
+    width: 60vw;
+    z-index: 6;
     cursor: s-resize;
 }
-.engine-window-frame {
-    font-size: 1em;
-    background: rgba(0, 0, 0, 0.5);
-    border: solid antiquewhite;
-    border-width: 15px 1px 1px 3px;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding: 5px;
-    z-index: 6;
-    width: 45vw !important;
-    overflow-y: scroll;
-    cursor: s-resize;
-}
-.engine-window-frame:hover {
-    font-size: 1em;
-    background: radial-gradient(rgba(125, 125, 125, 0.5), rgba(0, 0, 0, 0.5));
-    border: solid antiquewhite;
-    border-width: 15px 1px 1px 3px;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding: 5px;
-    z-index: 6;
-    width: 45vw !important;
-    overflow-y: scroll;
-    cursor: s-resize;
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+    z-index: 7;
 }
 #options-window {
     background-color: rgba(0, 0, 0, 0.8);
@@ -516,7 +491,7 @@ html {
 }
 body {
     font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
-    font-size: 16px /*Note: change this number to "10px" if your resolution is less than 1280x720. Repeat on all pages. (Default value is 16px)*/;
+    font-size: 2vh;
 }
 .engine-button {
     height: 3.1415926535897932384626433832795028841971693993751058209749445923vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
