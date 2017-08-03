@@ -47,6 +47,7 @@ padding-right
 padding-bottom
 padding-left
 float
+z-index
 position
 top
 right
