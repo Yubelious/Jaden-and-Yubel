@@ -15,6 +15,7 @@ text-align
 text-shadow
 background
 background-color
+background-image
 background-size
 border
 border-collapse
