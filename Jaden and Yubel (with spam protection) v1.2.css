@@ -283,8 +283,8 @@ body {
 }
 #game-room-container {
     width: 60vw;
-    padding: 40px;
     margin-top: 15vh;
+    padding: 40px;
 }
 #game-room-left-buttons, #game-room-right-buttons {
     font-size: 1.25em;
@@ -292,115 +292,127 @@ body {
 }
 #game-room-right-buttons:active {
     -webkit-animation: mymove 2s infinite;
+    -moz-animation: mymove 2s infinite;
+    -ms-animation: mymove 2s infinite;
+    -o-animation: mymove 2s infinite;
     animation: mymove 2s infinite;
 }
 @-webkit-keyframes mymove {
     100% {-webkit-transform: rotate(360deg);}
 }
+@-moz-keyframes mymove {
+    100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes mymove {
+    100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes mymove {
+    100% {-o-transform: rotate(360deg);}
+}
 @keyframes mymove {
     100% {transform: rotate(360deg);}
 }
 #game-deck-selection {
-    height: 10vh;
-    width: 45vw;
     background-color: rgba(0, 0, 0, 0.9);
     border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
-    margin-top: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 2;
-    overflow-y: scroll;
     cursor: s-resize;
-}
-#game-deck-selection:hover {
+    overflow-y: scroll;
     height: 10vh;
     width: 45vw;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+}
+#game-deck-selection:hover {
     background: radial-gradient(rgba(128,128,128, 0.9), rgba(0, 0, 0, 0.9));
     border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
+    cursor: s-resize;
+    overflow-y: scroll;
+    height: 10vh;
+    width: 45vw;
     margin-top: 5px;
     padding: 5px;
-    position: absolute;
     z-index: 2;
-    overflow-y: scroll;
-    cursor: s-resize;
+    position: absolute;
 }
 #game-rps-container {
     text-align: center;
     margin-top: 22vh;
 }
 #card-column {
-    float: left;
-    width: 25%;
     box-sizing: border-box;
+    width: 25%;
+    float: left;
 }
 #card-name {
-    text-align: center;
+    font-size: 2em;
     color: antiquewhite;
+    text-align: center;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
-    font-size: 2em;
 }
 #card-picture {
 	width: 55% /*45%*/;
 	max-width: 100%;
 }
 #card-description-box {
-    height: 25vh !important;
+    font-size: 1.5em;
+    color: antiquewhite;
+    text-align: justify;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    cursor: s-resize;
     overflow-x: hidden;
     overflow-y: scroll;
-    text-align: justify;
+    height: 25vh !important;
+}
+#game-chat-area {
+    font-size: 1em;
+    font-family: inherit;
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
-    font-size: 1.5em;
-    cursor: s-resize;
-}
-#game-chat-area {
-    height: 12vh !important;
-    width: 25%;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
-    color: antiquewhite;
-    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
-    border: 1px dashed antiquewhite;
-    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
-    font-size: 1em;
+    height: 12vh !important;
+    width: 25%;
 }
 .engine-text-box {
+    font-size: 1em;
+    font-family: inherit;
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5));
+	border: 3px double #f0f0f0;
+	box-sizing: border-box;
 	height: 4vh;
 	width: 23vw;
-	box-sizing: border-box;
-	border: 3px double #f0f0f0;
-    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5));
     position: fixed;
     bottom: 7px;
     left: 7px;
-    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
-    font-size: 1em;
 }
 .game-avatar {
     border: 8px solid rgba(193, 158, 77, 0.7);
-    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
     border-radius: 10%;
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
     position: relative;
-    Right: 8px;
+    right: 8px;
 }
 .engine-button {
-    color: rgba(193, 158, 77, 0.9);
-    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
     font-size: 1em;
     font-weight: bold;
+    font-family: inherit;
+    color: rgba(193, 158, 77, 0.9);
     text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
     background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(75, 75, 75, 0.5));
     border: 0.5px solid #f0f0f0;
     min-height: 32px;
-    padding-left: 8px;
     padding-right: 8px;
+    padding-left: 8px;
 }
 .engine-button-success {
     background: linear-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8));
@@ -411,38 +423,32 @@ body {
     background-color: rgba(0, 0, 0, 0.9); 
 }
 .engine-button-danger {
-        background:
-    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
 }
 .engine-button-danger:hover {
     color: red;
     font-weight: bold;
-    background:
-    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
 }
 .game-field-zone {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px solid antiquewhite;
     height: 300%;
-    background:
-    repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px),
-    linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
 }
 #game-selection-window {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: #f0f0f0;
+    cursor: s-resize;
     overflow-y: scroll;
-    margin-top: 3vh;
-    margin-left: 30vw;
     height: 38vh;
     width: 60vw;
+    margin-top: 3vh;
+    margin-left: 30vw;
     z-index: 6;
-    cursor: s-resize;
 }
 .game-selection-card {
-    margin: 1vh 1vw 1vh 1vw;
     z-index: 7;
+    margin: 1vh 1vw 1vh 1vw;
 }
 #options-window {
     background-color: rgba(0, 0, 0, 0.8);
