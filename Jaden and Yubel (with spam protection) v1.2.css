@@ -435,6 +435,26 @@ body {
     border: 1px solid antiquewhite;
     height: 300%;
 }
+.game-field-zone-content p {
+    z-index: 2 !important;
+	position: absolute;
+}
+.game-field-card {
+    z-index: 2 !important;
+	position: absolute;
+}
+.game-field-zone-activate {
+	z-index: 10;
+	position: absolute;
+}
+.game-field-stats-text {
+    color: antiquewhite !important;
+    z-index: 3;
+	position: absolute;
+}
+.game-card-negated {
+    z-index: 4;
+}
 #game-selection-window {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: #f0f0f0;
@@ -444,11 +464,16 @@ body {
     width: 60vw;
     margin-top: 3vh;
     margin-left: 30vw;
-    z-index: 6;
+    z-index: 5;
 }
 .game-selection-card {
     margin: 1vh 1vw 1vh 1vw;
-    z-index: 7;
+}
+#game-tooltip {
+    color: antiquewhite !important;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 6;
+	position: fixed;
 }
 #options-window {
     background-color: rgba(0, 0, 0, 0.8);
