@@ -228,10 +228,6 @@ button#lobby-duels-hide-gamelist {
     margin-top: 6vh;
 }
 #tab-duel-searching .button {
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -ms-transition-duration: .5s;
-    -o-transition-duration: .5s;
     transition-duration: .5s;
     font-size: 1.5em;
     color: rgba(48, 167, 145, 0.9);
@@ -239,17 +235,6 @@ button#lobby-duels-hide-gamelist {
     opacity: 0.9;
     width: 100%;
     margin-top: 25vh;
-}
-#tab-duel-searching .button:focus {
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
-    opacity: 1;
-    height: 105vh;
-    width: 110%;
-    z-index: 5;
-    margin-top: 0vh;
-    position: relative;
-    top: -15vh;
-    left: -15vh;
 }
 .table {
     font-size: 1.125em;
@@ -264,6 +249,10 @@ button#lobby-duels-hide-gamelist {
     width: 100%;
     max-width: 100%;
     margin: 10px 1px 10px -1px;
+}
+#tab-profile p {
+    font: inherit;
+    color: antiquewhite;
 }
 
 }
@@ -505,14 +494,14 @@ body {
     z-index: 7;
 }
 #options-window {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border: 3px double antiquewhite;
     border-radius: 25%;
     padding: 20px;
     margin-top: -20px;
     z-index: 8;
     position: fixed;
-    right: 10vw;
+    right: 20vw;
     bottom: 0;
 }
 #options-window:hover {
