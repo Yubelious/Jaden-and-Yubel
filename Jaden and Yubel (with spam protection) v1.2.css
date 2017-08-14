@@ -35,6 +35,7 @@ body {
     margin: 15px 0 15px 0;
 }
 .h4, h4 {
+    font-size: 1.5em;
 /*    font-family: inherit;*/
     color: rgba(48, 167, 145, 0.9);
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
@@ -271,7 +272,7 @@ body {
     overflow-x: hidden;
 }
 #game-room-container {
-    background: radial-gradient(#000, #323232, #646464);
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
     border: 1px dashed antiquewhite;
     width: 50vw;
     min-width: 500px;
@@ -325,7 +326,7 @@ body {
     cursor: s-resize;
 }
 #game-deck-selection:hover {
-    background: radial-gradient(#646464, #323232, #000);
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
 }
 #game-room-information {
 	width: 16vw;
@@ -345,7 +346,7 @@ body {
     font-size: 2em;
     color: antiquewhite;
     text-align: center;
-    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
 }
 #card-picture {
@@ -355,7 +356,7 @@ body {
     font-size: 1.5em;
     color: antiquewhite;
     text-align: justify;
-    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
     cursor: s-resize;
     overflow-x: hidden;
@@ -366,7 +367,7 @@ body {
     font-size: 1em;
     font-family: inherit;
     color: antiquewhite;
-    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -377,7 +378,7 @@ body {
 .engine-text-box {
     font-size: 1em;
     font-family: inherit;
-    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5));
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
     border: 3px double #f0f0f0;
     box-sizing: border-box;
     height: 4vh;
@@ -396,22 +397,24 @@ body {
 .engine-button {
     font-size: 1em;
     font-weight: bold;
-    font-family: inherit;
     color: rgba(193, 158, 77, 0.9);
     text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
-    background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(75, 75, 75, 0.5));
-    border: 0.5px solid #f0f0f0;
+    background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.5));
+    border: 0.5px solid antiquewhite;
     min-height: 32px;
     padding-right: 8px;
     padding-left: 8px;
 }
+.engine-button:hover {
+    background: linear-gradient(rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
+}
 .engine-button-success {
-    background: linear-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8));
+    background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
 }
 .engine-button-success:hover {
     color: #30A791;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.9); 
+    background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(150, 150, 150, 0.7));
 }
 .engine-button-danger {
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
@@ -420,6 +423,14 @@ body {
     color: red;
     font-weight: bold;
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
+}
+.engine-window {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.engine-window p{
+    font-size: 1.25em;
+    color: #766D87;
+    text-shadow: 0px 0px 1px antiquewhite, 0.5px 0.5px 1px #766D87, 0.5px 0.5px 1.5px antiquewhite;
 }
 #options-area {
     position: fixed;
@@ -431,16 +442,12 @@ body {
     margin: 0 0 0 0;
 }
 .game-field-zone {
-    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
     border: 1px solid antiquewhite;
     height: 300%;
 }
 .game-field-card {
     z-index: 2 !important;
-}
-.game-field-zone-activate {
-    z-index: 10;
-    position: absolute;
 }
 .game-field-zone-content p {
     color: antiquewhite !important;
@@ -456,7 +463,6 @@ body {
     z-index: 4;
 }
 #game-selection-window {
-    background-color: rgba(0, 0, 0, 0.5);
     border-color: #f0f0f0;
     cursor: s-resize;
     overflow-y: scroll;
@@ -465,6 +471,7 @@ body {
     margin-top: 3vh;
     margin-left: 30vw;
     z-index: 5;
+    position: fixed;
 }
 .game-selection-card {
     margin: 1vh 1vw 1vh 1vw;
@@ -483,8 +490,6 @@ body {
     -moz-transform: rotate(42deg);
     -ms-transform: rotate(42deg);
     -o-transform: rotate(42deg);
-    color: antiquewhite;
-    text-shadow: 0px 0px 2px black, 0px 0px 4px antiquewhite;
     background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(193, 158, 77, 0.9) 10px, rgba(78, 78, 78, 0.9) 20px), linear-gradient(45deg, #000, #323232, #646464);
     border-top: 0.5vh solid #323232;
     border-right: none;
@@ -495,6 +500,11 @@ body {
     margin: -5vh 0 0 -22vw;
     padding: 0.5vh;
     z-index: 7;
+    position: fixed;
+}
+.game-field-zone-activate {
+    z-index: 8;
+    position: absolute;
 }
 #options-window {
     background-color: rgba(0, 0, 0, 0.7);
@@ -502,13 +512,13 @@ body {
     border-radius: 25%;
     padding: 20px;
     margin-top: -20px;
-    z-index: 8;
+    z-index: 9;
     position: fixed;
     right: 20vw;
     bottom: 0;
 }
 #options-window:hover {
-    background: radial-gradient(black, gray);
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
 }
    
 }
