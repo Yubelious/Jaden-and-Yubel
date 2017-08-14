@@ -1,7 +1,24 @@
 Hourglass sand gif
+
 Timeout on connecting to a duel
+
 Background color or gradient while the image loads
+
 Flipping avatars
+
 Gradient borders
+
 All white coloured
+
 Transition effect to joining bot duel
+#tab-duel-searching .button:focus {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
+    opacity: 1;
+    height: 105vh;
+    width: 110%;
+    z-index: 5;
+    margin-top: 0vh;
+    position: relative;
+    top: -15vh;
+    left: -15vh;
+}
