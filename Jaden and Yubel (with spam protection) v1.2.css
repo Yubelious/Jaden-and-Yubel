@@ -11,7 +11,7 @@ For optimal viewing, press F11.
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
 html {
-    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) no-repeat center center fixed; /*Image by the amazing Moribuden*/
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) left top/cover no-repeat; /*Image by the amazing Moribuden*/
 }
 div {
     cursor: default;
@@ -261,11 +261,11 @@ button#lobby-duels-hide-gamelist {
 
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
 html {
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) left top/cover no-repeat; /*Image by either Dyunasumon or Moribuden*/
 }
 body {
     font-size: 2vh;
-    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-family: "Geneva", Ariel, sans-serif;
     color: rgba(193, 158, 77, 0.9);
     text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0);
@@ -525,44 +525,51 @@ body {
 
 @-moz-document url-prefix("https://duelingnexus.com/editor/") {
 html {
-    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg)!important; /*image by Moribuden*/
-    background-repeat: no-repeat;
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg) left top/cover no-repeat; /*image by Moribuden*/
 }
 body {
-    font-family: "Geneva", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
+    font-family: "Geneva", Ariel, sans-serif;
     font-size: 2vh;
 }
 .engine-button {
-    font-weight: bold;
     font-family: inherit;
+    font-weight: bold;
     color: antiquewhite;
+    background-color: rgba(100, 100, 100, 0.4);
     border: 0.5px solid #f0f0f0;
     height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 2vw;
+    padding-right: 2vw;
     float: left;
     position: relative;
     left: 2vh;
 }
-.engine-button:focus {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: antiquewhite;
-    border: 0.5px solid #f0f0f0;
-    padding-left: 29px;
-    padding-right: 29px;
-    float: left;
+.engine-button:hover, .engine-button:focus {
+    background-color: rgba(100, 100, 100, 0.8);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.engine-button:active{
+    background-color: rgba(100, 100, 100, 0.9);
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .engine-button-primary {
+    background-color: rgba(193, 158, 77, 0.5);
+}
+.engine-button-primary:hover, .engine-button-primary:focus {
     background-color: rgba(193, 158, 77, 0.7);
 }
-.engine-button-primary:hover {
+.engine-button-primary:active {
     background-color: rgba(193, 158, 77, 0.9);
 }
 .engine-button-danger {
+    background-color: rgba(48, 167, 145, 0.5);
+}
+.engine-button-danger:hover, .engine-button-danger:focus {
     background-color: rgba(48, 167, 145, 0.7);
 }
-.engine-button-danger:hover {
+.engine-button-danger:active {
     background-color: rgba(48, 167, 145, 0.9);
 }
 .engine-dark-box {
@@ -570,17 +577,19 @@ body {
 }
 #editor-menu-container {
     font-weight: bold;
-    background: repeating-linear-gradient( -45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));
+    background: repeating-linear-gradient( -45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     height: 50px;
     margin: 0 0 24px 0;
 }
 #editor-menu-title {
-    font-size: 1.5em;
+    font-size: 2em;
     text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+    position: absolute;
+    left: 25vw;
 }
 #card-column {
     box-sizing: border-box;
-    width: 25%;
+    width: 25vw;
     float: left;
 }
 #card-name {
@@ -605,11 +614,13 @@ body {
 }
 #editor-decks-column {
     border: 1px dashed antiquewhite;
-    height: 77.7vh;
+    height: 90vh;
+    width: 35vw;
 }
 #editor-search-column {
     border: 1px dashed antiquewhite;
-    height: 77.7vh;
+    height: 70vh;
+    width: 38vw;
 }
 .editor-search-result {
     color: antiquewhite;
