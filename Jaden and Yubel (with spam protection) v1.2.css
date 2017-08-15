@@ -429,8 +429,7 @@ body {
 }
 .engine-window p{
     font-size: 1.25em;
-    color: #766D87;
-    text-shadow: 0px 0px 1px antiquewhite, 0.5px 0.5px 1px #766D87, 0.5px 0.5px 1.5px antiquewhite;
+    color: antiquewhite;
 }
 #options-area {
     position: fixed;
@@ -518,7 +517,7 @@ body {
     bottom: 0;
 }
 #options-window:hover {
-    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
 }
    
 }
