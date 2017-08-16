@@ -17,13 +17,12 @@ div {
     cursor: default;
 }
 body {
-    font-size: 1vw;
+    font-size: 16px;
     font-family: "Geneva", Ariel, sans-serif;
     line-height: 1;
     color: rgba(193, 158, 77, 0.9);
     text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.1);
-    overflow-x: hidden;
 }
 .loadmore, hr {
     display: none;
@@ -31,18 +30,15 @@ body {
 .h2, h2 {
     font-size: 2.25em;
     font-style: italic;
-/*    font-family: inherit;*/
     margin: 15px 0 15px 0;
 }
 .h4, h4 {
     font-size: 1.5em;
-/*    font-family: inherit;*/
     color: rgba(48, 167, 145, 0.9);
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
 }
 .h6, h6 {
-    font-size: 0.875em;
-/*    font-family: inherit;*/
+    font-size: 1em;
     color: antiquewhite;
 }
 .container {
@@ -60,7 +56,7 @@ body {
     -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
-    font-size: 0.75em;
+    font-size: 0.75vw;
     font-style: normal;
     color: rgba(193, 158, 77, 0.9);
     border: 1px dotted rgba(193, 158, 77, 0.9);
@@ -83,7 +79,7 @@ body {
     background: repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(150, 150, 150, 0.2) 20px, rgba(78, 78, 78, 0.2) 10px), linear-gradient( to bottom, rgba(78, 78, 78, 0.2), rgba(0, 0, 0, 0.2));
 }
 .navbar-text {
-    font-size: 0.75em;
+    font-size: 0.75vw;
     color: antiquewhite;
     margin: 1.9em 0.9em 0.9em 1.9em;
 }
@@ -121,7 +117,6 @@ body {
     background-color: rgba(250, 235, 215, 0.7);
     border: 4px solid #C19E4D;
     box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.4), 0px 0px 8px rgba(193, 158, 77, 0.8), 0px 1px 8px rgba(0, 0, 0, 0.6);
-    height: 5vh;
     padding: 0;
 }
 .form-control:hover {
@@ -179,17 +174,16 @@ body {
     -ms-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    font-size: 0.75em;
+    font-size: 1.25vw;
     font-weight: bold;
     color: rgba(193, 158, 77, 0.9);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
     border: 2px solid rgba(193, 158, 77, 0.9);
-    border-collapse: collapse;
     overflow: hidden;
     width: 50%;
-    margin-right:-2px;
-    margin-left: -2px;
+    margin: -2px -3px -2px -2px;
+    padding: 1px;
 }
 .button:hover {
     -webkit-transition-duration: 2s;
@@ -197,24 +191,18 @@ body {
     -ms-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    font-size: 0.75em;
-    font-weight: bold;
     color: antiquewhite;
-    text-align: center;
     text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
     background-color: rgba(200, 200, 200, 0.2);
-    border: 2px solid rgba(193, 158, 77, 0.9);
-    border-collapse: collapse;
     cursor: pointer;
     overflow: hidden;
-    margin-right: -2px;
-    margin-left: -2px;
 }
-button#lobby-duels-hide-gamelist {
-    font-size: 1.5em;
+button#lobby-duels-hide-gamelist, #tab-duel-home .button {
+    font-size: 1.75vw;
     text-align: center;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 6vh;
     margin-left: -2px;
 }
 #tab-duel p {
@@ -222,15 +210,9 @@ button#lobby-duels-hide-gamelist {
     position: fixed;
     top: 2.5vh;
 }
-#tab-duel-home .button {
-    font-size: 1.5em;
-    opacity: 0.9;
-    width: 100%;
-    margin-top: 6vh;
-}
 #tab-duel-searching .button {
     transition-duration: .5s;
-    font-size: 1.5em;
+    font-size: 1.75vw;
     color: rgba(48, 167, 145, 0.9);
     border: 2px solid rgba(48, 167, 145, 0.9);
     opacity: 0.9;
@@ -238,18 +220,22 @@ button#lobby-duels-hide-gamelist {
     margin-top: 25vh;
 }
 .table {
-    font-size: 1.125em;
+    font-size: 1vw;
     color: bisque;
     text-align: justify;
     text-shadow: 1px 1px 1px black;
     background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"), url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*Source 1 retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka. In the event that the first image is censored, I have a morbid Moribuden to cover.*/
     background-size: 100%;
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
-    opacity: 0.9;
     width: 100%;
-    max-width: 100%;
-    margin: 10px 1px 10px -1px;
+    margin: 10vh 0.1vw 10vh -0.1vw;
+}
+#tab-decks .button {
+    width: 97vw !important;
+    margin: 10.5vh 0;
+    position: fixed;
+    bottom: 68vh;
 }
 #tab-profile p {
     font: inherit;
@@ -664,3 +650,4 @@ body {
 1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
 1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, got rid of some things made obsolete by an update, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, changed some colours around in the .engine-buttons, added more scrollbars, and contained chat inside a box.*/
 }
+
