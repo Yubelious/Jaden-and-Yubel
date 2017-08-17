@@ -11,7 +11,7 @@ For optimal viewing, press F11.
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
 html {
-    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) fixed; /*Image by the amazing Moribuden*/
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) bottom/cover fixed; /*Image by the amazing Moribuden*/
 }
 div {
     cursor: default;
@@ -228,23 +228,33 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
     width: 100%;
-    margin: 10vh 0.1vw 10vh -0.1vw;
-}
-#tab-decks p.button {
-    height: 4vh;
-    width: 100% !important;
-    min-width: 0;
-    padding: 0;
-    position: fixed;
-    top: 200% !important;
+    margin: 9vh 0.1vw 10vh -0.1vw;
 }
 #decks-create-button {
     height: 4vh;
-    width: 96.9% !important;
-    min-width: 0;
+    width: 47vw !important;
+    min-width: 0 !important;
+    margin: 0;
     padding: 0;
+    float: left;
     position: fixed;
-    top: 10vh;
+    top: 15vh;
+    right: 0;
+    bottom: 0;
+    left: 2.5vw;
+}
+#tab-decks p.button {
+    height: 4vh;
+    width: 47vw !important;
+    min-width: 0 !important;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 #tab-profile p {
     font: inherit;
