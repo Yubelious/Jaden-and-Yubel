@@ -11,34 +11,33 @@ For optimal viewing, press F11.
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
 html {
-    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) left top/cover no-repeat; /*Image by the amazing Moribuden*/
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) fixed; /*Image by the amazing Moribuden*/
 }
 div {
     cursor: default;
 }
 body {
-    font-size: 16px;
+    font-size: 0;
     font-family: "Geneva", Ariel, sans-serif;
     line-height: 1;
     color: rgba(193, 158, 77, 0.9);
-    text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.1);
 }
 .loadmore, hr {
     display: none;
 }
 .h2, h2 {
-    font-size: 2.25em;
+    font-size: 2.25vw;
     font-style: italic;
     margin: 15px 0 15px 0;
 }
 .h4, h4 {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: rgba(48, 167, 145, 0.9);
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
 }
 .h6, h6 {
-    font-size: 1em;
+    font-size: 1vw;
     color: antiquewhite;
 }
 .container {
@@ -61,8 +60,8 @@ body {
     color: rgba(193, 158, 77, 0.9);
     border: 1px dotted rgba(193, 158, 77, 0.9);
     margin-left: 2px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vw;
 }
 .nav>li>a:focus, .nav>li>a:hover {
     -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
@@ -81,7 +80,7 @@ body {
 .navbar-text {
     font-size: 0.75vw;
     color: antiquewhite;
-    margin: 1.9em 0.9em 0.9em 1.9em;
+    margin: 1.9vh 0.9vw 0.9vh 1.9vw;
 }
 .a, a {
     -webkit-transition-duration: 1s;
@@ -112,7 +111,7 @@ body {
     -ms-transition-property: color, background-color, border, box-shadow;
     -o-transition-property: color, background-color, border, box-shadow;
     transition-property: background-color, border, box-shadow;
-    font-size: 0.875em;
+    font-size: 1vw;
     color: rgba(118, 109, 135, 0.7) !important;
     background-color: rgba(250, 235, 215, 0.7);
     border: 4px solid #C19E4D;
@@ -181,8 +180,8 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border: 2px solid rgba(193, 158, 77, 0.9);
     overflow: hidden;
-    width: 50%;
-    margin: -2px -3px -2px -2px;
+    width: 50.061% /*50.1%*/;
+    margin: 0 0 -2px -2px;
     padding: 1px;
 }
 .button:hover {
@@ -231,11 +230,21 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     width: 100%;
     margin: 10vh 0.1vw 10vh -0.1vw;
 }
-#tab-decks .button {
-    width: 97vw !important;
-    margin: 10.5vh 0;
+#tab-decks p.button {
+    height: 4vh;
+    width: 100% !important;
+    min-width: 0;
+    padding: 0;
     position: fixed;
-    bottom: 68vh;
+    top: 200% !important;
+}
+#decks-create-button {
+    height: 4vh;
+    width: 96.9% !important;
+    min-width: 0;
+    padding: 0;
+    position: fixed;
+    top: 10vh;
 }
 #tab-profile p {
     font: inherit;
