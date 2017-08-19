@@ -27,13 +27,13 @@ body {
     display: none;
 }
 .h2, h2 {
-    font-size: 2.25vw;
+    font-size: 2.5vw;
     font-style: italic;
     margin: 15px 0 15px 0;
 }
 .h4, h4 {
-    font-size: 1.5vw;
-    color: rgba(48, 167, 145, 0.9);
+    font-size: 2vw;
+    color: #30a791;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
 }
 .h6, h6 {
@@ -45,7 +45,7 @@ body {
 }
 .container-fluid {
     background-color: #766D87;
-    padding-left: 25.4vw;
+    padding-left: 20vw;
     margin-right: auto;
     margin-left: auto;
 }
@@ -55,13 +55,13 @@ body {
     -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
-    font-size: 0.75vw;
-    font-style: normal;
+    font-size: 1vw;
     color: rgba(193, 158, 77, 0.9);
+    text-shadow: none;
     border: 1px dotted rgba(193, 158, 77, 0.9);
     margin-left: 2px;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .nav>li>a:focus, .nav>li>a:hover {
     -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
@@ -78,19 +78,21 @@ body {
     background: repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(150, 150, 150, 0.2) 20px, rgba(78, 78, 78, 0.2) 10px), linear-gradient( to bottom, rgba(78, 78, 78, 0.2), rgba(0, 0, 0, 0.2));
 }
 .navbar-text {
-    font-size: 0.75vw;
+    font-size: 1vw;
     color: antiquewhite;
-    margin: 1.9vh 0.9vw 0.9vh 1.9vw;
+    margin: 2.75vh 1vw 0 2vw;
 }
 .a, a {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    font-size: 1vw;
     color: rgba(193, 158, 77, 0.9) !important;
-    font-style: italic;
+    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    float: right;
 }
 .a:hover, a:hover, .a:focus, a:focus {
     -webkit-transition-duration: 1s;
@@ -99,6 +101,19 @@ body {
     -o-transition-duration: 1s;
     transition-duration: 1s;
     color: rgba(48, 167, 145, 0.9) !important;
+    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+#alerts {
+    font-size: 1vw !important;
+}
+.close {
+    font-size: 1vw;
+    margin:0;
+    padding: 0;
+}
+.form-group {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
 }
 .form-control {
     -webkit-transition-duration: 1s;
@@ -111,11 +126,12 @@ body {
     -ms-transition-property: color, background-color, border, box-shadow;
     -o-transition-property: color, background-color, border, box-shadow;
     transition-property: background-color, border, box-shadow;
-    font-size: 1vw;
+    font-size: 1.25vw;
     color: rgba(118, 109, 135, 0.7) !important;
     background-color: rgba(250, 235, 215, 0.7);
     border: 4px solid #C19E4D;
     box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.4), 0px 0px 8px rgba(193, 158, 77, 0.8), 0px 1px 8px rgba(0, 0, 0, 0.6);
+    height: 2.75vw;
     padding: 0;
 }
 .form-control:hover {
@@ -148,10 +164,10 @@ body {
     color: rgba(118, 109, 135, 0.9) !important;
     background-color: rgba(250, 235, 215, 0.3);
     border: 4px solid #30A791;
-    box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.6), 0px 0px 8px rgba(48, 167, 145, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 1px 1px rgba(193, 158, 77, 0.6), 0px 0px 8px rgba(48, 167, 145, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
 }
-.form-group {
-    margin-bottom: 5vh;
+.checkbox {
+    font-size: 1vw;
 }
 .btn, .btn:hover, .btn:focus {
     -webkit-transition-duration: 1s;
@@ -167,13 +183,21 @@ body {
     font-weight: bold;
     color: rgba(118, 109, 135, 0.7) !important;
 }
+#login-create-label {
+    margin: 0 25vw 0 25vw;
+}
+
+#newsMain {
+    font-size: 1vw;
+}
+
 .button {
     -webkit-transition-duration: 2s;
     -moz-transition-duration: 2s;
     -ms-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    font-size: 1.25vw;
+    font-size: 1.50vw;
     font-weight: bold;
     color: rgba(193, 158, 77, 0.9);
     text-align: center;
@@ -197,7 +221,7 @@ body {
     overflow: hidden;
 }
 button#lobby-duels-hide-gamelist, #tab-duel-home .button {
-    font-size: 1.75vw;
+    font-size: 2vw;
     text-align: center;
     border-collapse: collapse;
     width: 100%;
@@ -205,6 +229,7 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     margin-left: -2px;
 }
 #tab-duel p {
+    font-size: 1.25vw;
     z-index: 2;
     position: fixed;
     top: 2.5vh;
@@ -219,10 +244,9 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     margin-top: 25vh;
 }
 .table {
-    font-size: 1vw;
-    color: bisque;
+    font-size: 1.5vw;
+    color: #30a791;
     text-align: justify;
-    text-shadow: 1px 1px 1px black;
     background-image: url("http://simg4.gelbooru.com//images/2a/58/2a5883e70e94388d6bedaa768c5c6bac.jpg"), url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*Source 1 retroz.web.fc2.com/illust/gx/i/20090125_kira.jpg obsolete. Uploaded to Zerochan by Manaka. In the event that the first image is censored, I have a morbid Moribuden to cover.*/
     background-size: 100%;
     border: 2px solid rgba(0, 0, 0, 0.1);
@@ -232,7 +256,7 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
 }
 #decks-create-button {
     height: 4vh;
-    width: 47vw !important;
+    width: 45vw !important;
     min-width: 0 !important;
     margin: 0;
     padding: 0;
@@ -245,7 +269,7 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
 }
 #tab-decks p.button {
     height: 4vh;
-    width: 47vw !important;
+    width: 45vw !important;
     min-width: 0 !important;
     margin: 0;
     padding: 0;
@@ -257,8 +281,14 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     left: 0;
 }
 #tab-profile p {
-    font: inherit;
+    font-size: 1vw;
     color: antiquewhite;
+}
+#avatar-previous-button {
+    width: 2vw !important;
+}
+#avatar-next-button {
+    width: 2vw !important;
 }
 
 }
@@ -553,8 +583,8 @@ body {
     color: antiquewhite;
     content: "Yu-Gi-Oh! Dueling Nexus";
     position: fixed;
-    top: 80vh;
-    right: 4vw;
+    top: 90vh;
+    right: 3vw;
 }
 .engine-button {
     font-family: inherit;
@@ -628,12 +658,12 @@ body {
 }
 #editor-decks-column {
     border: 1px dashed antiquewhite;
-    height: 70vh;
+    height: 75vh;
     width: 33.33vw;
 }
 #editor-search-column {
     border: 1px dashed antiquewhite;
-    height: 70vh;
+    height: 75vh;
     width: 37.67vw;
 }
 .editor-search-result {
