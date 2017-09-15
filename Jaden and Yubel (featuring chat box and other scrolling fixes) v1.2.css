@@ -1,0 +1,705 @@
+/*
+Stylish by Yubelious!
+Inspired by O OO/The XAZ.
+Special thanks to Skeletonxf for finally coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
+Open for testing and feedback.
+Potentially compatible with any resolution. For smaller resolutions, there are options in notes if the current option doesn't do it for you.
+For optimal viewing, press F11.
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://duelingnexus.com/") {
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) bottom/cover fixed; /*Image by the amazing Moribuden*/
+}
+div {
+    cursor: default;
+}
+body {
+    font-size: 0;
+    font-family: "Geneva", Ariel, sans-serif;
+    line-height: 1;
+    color: rgba(193, 158, 77, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.loadmore, hr {
+    display: none;
+}
+.h2, h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+    margin: 15px 0 15px 0;
+}
+.h4, h4 {
+    font-size: 2vw;
+    color: #30a791;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+}
+.h6, h6 {
+    font-size: 1vw;
+    color: antiquewhite;
+}
+.container {
+    width: 100%;
+}
+.container-fluid {
+    background-color: #766D87;
+    padding-left: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-nav>li>a {
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    font-size: 1vw;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: none;
+    border: 1px dotted rgba(193, 158, 77, 0.9);
+    margin-left: 2px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(48, 167, 145, 0.9);
+    background-color: rgba(118, 109, 135, 0.8);
+    border: 1px dotted rgba(48, 167, 145, 0.9);
+}
+.nav>li.disabled>a, .nav>li.disabled>a:focus,.nav>li.disabled>a:hover {
+    color: rgba(193, 158, 77, 0.5) !important;
+    background: repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(150, 150, 150, 0.2) 20px, rgba(78, 78, 78, 0.2) 10px), linear-gradient( to bottom, rgba(78, 78, 78, 0.2), rgba(0, 0, 0, 0.2));
+}
+.navbar-text {
+    font-size: 1vw;
+    color: antiquewhite;
+    margin: 2.75vh 1vw 0 2vw;
+}
+.a, a {
+    -webkit-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -ms-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    font-size: 1vw;
+    color: rgba(193, 158, 77, 0.9) !important;
+    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    float: right;
+}
+.a:hover, a:hover, .a:focus, a:focus {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    color: rgba(48, 167, 145, 0.9) !important;
+    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+#alerts {
+    font-size: 1vw !important;
+}
+.close {
+    font-size: 1vw;
+    margin:0;
+    padding: 0;
+}
+.form-group {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+.form-control {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, background-color, border, box-shadow;
+    -moz-transition-property: color, background-color, border, box-shadow;
+    -ms-transition-property: color, background-color, border, box-shadow;
+    -o-transition-property: color, background-color, border, box-shadow;
+    transition-property: background-color, border, box-shadow;
+    font-size: 1.25vw;
+    color: rgba(118, 109, 135, 0.7) !important;
+    background-color: rgba(250, 235, 215, 0.7);
+    border: 4px solid #C19E4D;
+    box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.4), 0px 0px 8px rgba(193, 158, 77, 0.8), 0px 1px 8px rgba(0, 0, 0, 0.6);
+    height: 2.75vw;
+    padding: 0;
+}
+.form-control:hover {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, background-color, border, box-shadow;
+    -moz-transition-property: color, background-color, border, box-shadow;
+    -ms-transition-property: color, background-color, border, box-shadow;
+    -o-transition-property: color, background-color, border, box-shadow;
+    transition-property: color, background-color, border, box-shadow;
+    color: #766D87 !important;
+    background-color: antiquewhite;
+    border: 4px solid #C19E4D;
+    box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.6), 0px 0px 8px rgba(193, 158, 77, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
+}
+.form-control:focus {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: color, background-color, border, box-shadow;
+    -moz-transition-property: color, background-color, border, box-shadow;
+    -ms-transition-property: color, background-color, border, box-shadow;
+    -o-transition-property: color, background-color, border, box-shadow;
+    transition-property: color, background-color, border, box-shadow;
+    color: rgba(118, 109, 135, 0.9) !important;
+    background-color: rgba(250, 235, 215, 0.3);
+    border: 4px solid #30A791;
+    box-shadow: 0px 1px 1px rgba(193, 158, 77, 0.6), 0px 0px 8px rgba(48, 167, 145, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
+}
+.checkbox {
+    font-size: 1vw;
+}
+.btn, .btn:hover, .btn:focus {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, background-color, border, box-shadow;
+    -moz-transition-property: color, background-color, border, box-shadow;
+    -ms-transition-property: color, background-color, border, box-shadow;
+    -o-transition-property: color, background-color, border, box-shadow;
+    transition-property: color, background-color, border, box-shadow;
+    font-weight: bold;
+    color: rgba(118, 109, 135, 0.7) !important;
+}
+#login-create-label {
+    margin: 0 25vw 0 25vw;
+}
+
+#newsMain {
+    font-size: 1vw;
+}
+
+.button {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-size: 1.50vw;
+    font-weight: bold;
+    color: rgba(193, 158, 77, 0.9);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(193, 158, 77, 0.9);
+    overflow: hidden;
+    width: 50.061% /*50.1%*/;
+    margin: 0 0 -2px -2px;
+    padding: 1px;
+}
+.button:hover {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    color: antiquewhite;
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
+    background-color: rgba(200, 200, 200, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+button#lobby-duels-hide-gamelist, #tab-duel-home .button {
+    font-size: 2vw;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 6vh;
+    margin-left: -2px;
+}
+#tab-duel p {
+    font-size: 1.25vw;
+    z-index: 2;
+    position: fixed;
+    top: 2.5vh;
+}
+#tab-duel-searching .button {
+    transition-duration: .5s;
+    font-size: 1.75vw;
+    color: rgba(48, 167, 145, 0.9);
+    border: 2px solid rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 25vh;
+}
+.table {
+    font-size: 1.5vw;
+    color: #30a791;
+    text-align: justify;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*I have a morbid Moribuden for this one.*/
+    background-size: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    width: 100%;
+    margin: 9vh 0.1vw 10vh -0.1vw;
+}
+#decks-create-button {
+    height: 4vh;
+    width: 45vw !important;
+    min-width: 0 !important;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: fixed;
+    top: 15vh;
+    right: 0;
+    bottom: 0;
+    left: 2.5vw;
+}
+#tab-decks p.button {
+    height: 4vh;
+    width: 45vw !important;
+    min-width: 0 !important;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#tab-profile p {
+    font-size: 1vw;
+    color: antiquewhite;
+}
+#avatar-previous-button {
+    width: 2vw !important;
+}
+#avatar-next-button {
+    width: 2vw !important;
+}
+
+}
+
+
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+html {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) left top/cover no-repeat; /*Image by either Dyunasumon or Moribuden*/
+}
+body {
+    font-size: 1vw;
+    font-family: "Geneva", Ariel, sans-serif;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 0.3px 0.3px 0.3px rgba(48, 167, 145, 0.6), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+}
+h4 {
+    font-size: 1.5vw;
+}
+#game-room-container {
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
+    border: 1px dashed antiquewhite;
+    width: 50vw;
+    min-width: 500px;
+    margin-top: 15vh;
+    padding: 40px;
+}
+#game-room-players {
+    width: 28vw;
+    min-width: 280px;
+    padding: 2vh 1vw 2vh 2vw;
+  }
+#game-room-left-buttons, #game-room-right-buttons {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+#game-room-right-buttons:active {
+    -webkit-animation: mymove 2s infinite;
+    -moz-animation: mymove 2s infinite;
+    -ms-animation: mymove 2s infinite;
+    -o-animation: mymove 2s infinite;
+    animation: mymove 2s infinite;
+}
+@-webkit-keyframes mymove {
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes mymove {
+    100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes mymove {
+    100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes mymove {
+    100% {-o-transform: rotate(360deg);}
+}
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+}
+#game-deck-selection {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 16vh;
+    width: 28vw;
+    min-width: 280px;
+    border: solid #f0f0f0;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+    overflow-y: scroll;
+    cursor: s-resize;
+}
+#game-deck-selection:hover {
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
+}
+#game-room-information {
+	width: 16vw;
+    min-width: 160px;
+	padding: 2vh 2vw 2vh 1vw;
+}
+#game-rps-container {
+    text-align: center;
+    margin-top: 22vh;
+}
+#card-column {
+    box-sizing: border-box;
+    width: 25vw;
+    float: left;
+}
+#card-name {
+    font-size: 2em;
+    color: antiquewhite;
+    text-align: center;
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+}
+#card-picture {
+    width: 55% /*45%*/;
+}
+#card-description-box {
+    font-size: 1.5em;
+    color: antiquewhite;
+    text-align: justify;
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    cursor: s-resize;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 25vh !important;
+}
+#game-chat-area {
+    font-size: 1em;
+    font-family: inherit;
+    color: antiquewhite;
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 12vh !important;
+    width: 25%;
+}
+.engine-text-box {
+    font-size: 1em;
+    font-family: inherit;
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
+    border: 3px double #f0f0f0;
+    box-sizing: border-box;
+    height: 4vh;
+    width: 23vw;
+    position: fixed;
+    bottom: 7px;
+    left: 7px;
+}
+.game-avatar {
+    border: 0.5vw solid rgba(193, 158, 77, 0.7);
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+    position: relative;
+    right: 0.5vw;
+}
+.engine-button {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(193, 158, 77, 0.9);
+    text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
+    background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.5));
+    border: 0.5px solid antiquewhite;
+    min-height: 32px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.engine-button:hover {
+    background: linear-gradient(rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
+}
+.engine-button-success {
+    background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
+}
+.engine-button-success:hover {
+    color: #30A791;
+    font-weight: bold;
+    background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(150, 150, 150, 0.7));
+}
+.engine-button-danger {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+}
+.engine-button-danger:hover {
+    color: red;
+    font-weight: bold;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
+}
+.engine-window {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.engine-window p{
+    font-size: 1.25em;
+    color: antiquewhite;
+}
+#options-area {
+    position: fixed;
+    right: 20vw;
+    bottom: 2vh;
+}
+#game-column {
+    width: 75vh;
+    margin: 0 0 0 0;
+}
+.game-field-zone {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    border: 1px solid antiquewhite;
+    height: 300%;
+}
+.game-field-card {
+    z-index: 2;
+}
+.game-field-stats-text {
+    color: antiquewhite !important;
+    z-index: 3;
+    position: absolute;
+}
+.game-field-zone-content p {
+    color: antiquewhite !important;
+    z-index: 4 !important;
+    position: absolute;
+}
+.game-card-negated {
+    z-index: 5;
+}
+#game-selection-window {
+    border-color: #f0f0f0;
+    cursor: s-resize;
+    overflow-y: scroll;
+    height: 38vh;
+    width: 60vw;
+    margin-top: 3vh;
+    margin-left: 30vw;
+    z-index: 6;
+    position: fixed;
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+}
+#game-tooltip {
+    font-size: 1.25em;
+    color: antiquewhite !important;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    padding: 1vh;
+    z-index: 7;
+    position: fixed;
+}
+#game-end-window {
+    -webkit-transform: rotate(42deg);
+    -moz-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    -o-transform: rotate(42deg);
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(193, 158, 77, 0.9) 10px, rgba(78, 78, 78, 0.9) 20px), linear-gradient(45deg, #000, #323232, #646464);
+    border-top: 0.5vh solid #323232;
+    border-right: none;
+    border-bottom: 0.5vh solid #323232;
+    border-left: none;
+    width: 3000px;
+    max-width: 163vw;
+    margin: -5vh 0 0 -22vw;
+    padding: 0.5vh;
+    z-index: 8;
+    position: fixed;
+}
+.game-field-zone-activate {
+    z-index: 9;
+    position: absolute;
+}
+#options-window {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px double antiquewhite;
+    border-radius: 25%;
+    padding: 20px;
+    margin-top: -20px;
+    z-index: 10;
+    position: fixed;
+    right: 20vw;
+    bottom: 0;
+}
+#options-window:hover {
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
+}
+   
+}
+
+
+@-moz-document url-prefix("https://duelingnexus.com/editor/") {
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg) left top/cover no-repeat; /*image by Moribuden*/
+}
+body {
+    font-family: "Geneva", Ariel, sans-serif;
+    font-size: 1vw;
+}
+#editor-menu-container {
+    font-weight: bold;
+    background: repeating-linear-gradient( -45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    height: 50px;
+    margin: 0 0 24px 0;
+}
+#editor-menu-title {
+    font-size: 1.75em;
+    text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+    position: absolute;
+    left: 59vw;
+}
+#editor-menu-title:after {
+    font-size: 1.75em;
+    color: antiquewhite;
+    content: "Yu-Gi-Oh! Dueling Nexus";
+    position: fixed;
+    top: 90vh;
+    right: 3vw;
+}
+.engine-button {
+    font-family: inherit;
+    font-weight: bold;
+    color: antiquewhite;
+    background-color: rgba(100, 100, 100, 0.4);
+    border: 0.5px solid #f0f0f0;
+    height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
+    padding-left: 2vw;
+    padding-right: 2vw;
+    float: left;
+    position: relative;
+    left: 2vh;
+}
+.engine-button:hover, .engine-button:focus {
+    background-color: rgba(100, 100, 100, 0.8);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.engine-button:active{
+    background-color: rgba(100, 100, 100, 0.9);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.engine-button-primary {
+    background-color: rgba(193, 158, 77, 0.5);
+}
+.engine-button-primary:hover, .engine-button-primary:focus {
+    background-color: rgba(193, 158, 77, 0.7);
+}
+.engine-button-primary:active {
+    background-color: rgba(193, 158, 77, 0.9);
+}
+.engine-button-danger {
+    background-color: rgba(48, 167, 145, 0.5);
+}
+.engine-button-danger:hover, .engine-button-danger:focus {
+    background-color: rgba(48, 167, 145, 0.7);
+}
+.engine-button-danger:active {
+    background-color: rgba(48, 167, 145, 0.9);
+}
+.engine-dark-box {
+    background-color: rgba(118, 109, 135, 0.7);
+}
+#card-column {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 25vw;
+    float: left;
+}
+#card-name {
+    font-size: 2.125em;
+    color: antiquewhite;
+    text-align: center;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+}
+#card-picture {
+    width: 55% /*45%*/;
+    max-width: 100%;
+}
+#card-description-box {
+    font-size: 1.5em;
+    color: antiquewhite;
+    text-align: justify;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    overflow-y: scroll;
+    height: 25vh !important;
+}
+#editor-decks-column {
+    border: 1px dashed antiquewhite;
+    height: 75vh;
+    width: 33.33vw;
+}
+#editor-search-column {
+    border: 1px dashed antiquewhite;
+    height: 75vh;
+    width: 37.67vw;
+}
+.editor-search-result {
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 2px solid;
+    border-collapse: collapse;
+    cursor: pointer;
+    width: 50.19% /*Pain in the butt!*/;
+    margin: 0 -2px -2px 0;
+}
+.editor-search-card {
+    width: 33%;
+    float: left;
+    position: relative;
+}
+.editor-search-description {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-size: 1em;
+    margin-left: 33%;
+    position: absolute;
+}
+.editor-search-description:hover {
+    overflow: visible;
+    margin-left: 0px;
+    position: absolute;
+}
+/*Changelog
+1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
+1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, got rid of some things made obsolete by an update, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, changed some colours around in the .engine-buttons, added more scrollbars, and contained chat inside a box.*/
+}
+
