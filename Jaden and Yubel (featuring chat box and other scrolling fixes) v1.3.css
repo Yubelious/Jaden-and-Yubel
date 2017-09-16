@@ -497,9 +497,10 @@ h4 {
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
 }
 .engine-window {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid antiquewhite;
 }
-.engine-window p{
+.engine-window p {
     font-size: 1.25em;
     color: antiquewhite;
 }
@@ -555,6 +556,22 @@ h4 {
     padding: 1vh;
     z-index: 7;
     position: fixed;
+}
+#game-siding-column {
+    height: 37.67vw;
+    width: 33.33vw;
+}
+#siding-deck-main-title  {
+	margin: 0 0 1vw 0;
+}
+
+#siding-deck-extra-title, #siding-deck-side-title {
+	margin: 0.5vw 0;
+}
+#game-siding-column-2 {
+    border: 1px dashed antiquewhite;
+    height: 37.67vw;
+    width: 37.67vw;
 }
 #game-end-window {
     -webkit-transform: rotate(42deg);
@@ -747,5 +764,5 @@ body {
 /*Changelog
 1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
 1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, got rid of some things made obsolete by an update, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, changed some colours around in the .engine-buttons, added more scrollbars, and contained chat inside a box.
-1.3 Tested in multiple resolutions, darkened and resized table, added an indent + word-break to the username under the Avatar in-duel, cleaned up the deck constructor on 720p, and moved the chat box away from the bottom of the screen.*/
+1.3 Tested in multiple resolutions, darkened and resized table, added an indent + word-break to the username under the Avatar in-duel, cleaned up the deck constructor on 720p, moved the chat box away from the bottom of the screen, messed around with transparency, and fixed the siding screen*/
 }
