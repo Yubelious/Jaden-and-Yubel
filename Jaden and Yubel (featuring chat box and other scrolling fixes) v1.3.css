@@ -327,19 +327,27 @@ body {
 h4 {
     font-size: 1.5vw;
 }
+#game-loading-container p {
+    margin-top: 20vw;
+}
 #game-room-container {
     background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
     border: 1px dashed antiquewhite;
     width: 50vw;
     min-width: 500px;
-    margin-top: 15vh;
-    padding: 40px;
+    margin-top: 11vw;
+    padding: 1vw;
 }
 #game-room-players {
     width: 28vw;
     min-width: 280px;
     padding: 2vh 1vw 2vh 2vw;
-  }
+}
+#game-room-players-table tr, #game-room-information-table tr {
+    border-top: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+	height: 3vw;
+}
 #game-room-left-buttons, #game-room-right-buttons {
     font-size: 1.25em;
     font-weight: bold;
@@ -545,6 +553,10 @@ h4 {
     z-index: 6;
     position: fixed;
 }
+#game-yesno-menu {
+    background-color: rgba(118, 109, 135, 0.5);
+    z-index: 6;
+}
 .game-selection-card {
     margin: 1vh 1vw 1vh 1vw;
 }
@@ -731,7 +743,7 @@ body {
     border: 1px dashed antiquewhite;
     height: 37.67vw;
     width: 37.67vw;
-}
+}    
 .editor-search-result {
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
