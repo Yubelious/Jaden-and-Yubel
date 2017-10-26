@@ -207,8 +207,8 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border: 2px solid rgba(193, 158, 77, 0.9);
     overflow: hidden;
-    width: 50.061%;
-    margin: 0 -7px -2px -2px;
+    width: 50.042% /*50.08%*/;
+    margin: 0 -0.3vw -2px -2px;
     padding: 1px;
 }
 .button:hover {
