@@ -8,7 +8,7 @@ Flipping avatars
 
 Gradient borders
 
-All white coloured
+Reduce the frequency that buttons move to allow greater ease for clicking
 
 Transition effect to joining bot duel
 #tab-duel-searching .button:focus {
@@ -22,3 +22,5 @@ Transition effect to joining bot duel
     top: -15vh;
     left: -15vh;
 }
+
+Style the new banners
