@@ -12,6 +12,7 @@ transition
     transition-duration
     transition-timing-function
     transition-delay
+content
 font
     font-style
     font-variant
@@ -20,6 +21,7 @@ font
     line-height
     font-family
 color
+caret-color
 text-decoration
 text-shadow
 text-align
@@ -27,6 +29,10 @@ text-align-last
 text-indent
 text-overflow
 text-transform
+user-select
+word-break
+word-spacing
+word-wrap
 background
     background-color
     background-image
@@ -36,6 +42,7 @@ background
     background-origin
     background-clip
     background-attachment
+filter
 border
     border-width
     border-style
@@ -51,12 +58,22 @@ border-image
 border-collapse
 box-sizing
 box-shadow
-opacity
+column-span
+columns
+    column-width
+    column-count
+column-gap
+column-rule
+    column-rule-width
+    column-rule-style
+    column-rule-color
 display
-cursor
+visibility
+opacity
 overflow
-overflow-x
-overflow-y
+    overflow-x
+    overflow-y
+cursor
 height
 min-height
 max-height
@@ -64,19 +81,22 @@ width
 min-width
 max-width
 transform
-transform-origin
-transform-style
+    transform-origin
+    transform-style
 margin
-margin-top
-margin-right
-margin-bottom
-margin-left
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
 padding
-padding-top
-padding-right
-padding-bottom
-padding-left
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
 float
+clear
+perspective
+perspective-origin
 z-index
 position
 top
