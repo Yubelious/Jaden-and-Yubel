@@ -47,15 +47,15 @@ border
     border-width
     border-style
     border-color
-    border-spacing
-    border-radius
 border-image
     border-image-source
     border-image-slice
     border-image-width
     border-image-outset
     border-image-repeat
+border-radius
 border-collapse
+border-spacing
 box-sizing
 box-shadow
 column-span
