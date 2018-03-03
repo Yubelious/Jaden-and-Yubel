@@ -100,9 +100,7 @@ body {
     border-color: rgba(48, 167, 145, 0.9);
 }
 .button {
-    -webkit-transition-duration: 2s;
     -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
     font-size: 1.50vw;
@@ -117,9 +115,7 @@ body {
     padding: 1px;
 }
 .button:hover {
-    -webkit-transition-duration: 2s;
     -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
     color: antiquewhite;
@@ -129,14 +125,10 @@ body {
     overflow: hidden;
 }
 .btn, .btn:hover, .btn:focus {
-    -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
-    -webkit-transition-property: color, background-color, border, box-shadow;
     -moz-transition-property: color, background-color, border, box-shadow;
-    -ms-transition-property: color, background-color, border, box-shadow;
     -o-transition-property: color, background-color, border, box-shadow;
     transition-property: color, background-color, border, box-shadow;
     font-weight: bold;
@@ -237,6 +229,7 @@ body {
 }
 #newsMain {
     font-size: 1vw;
+    padding-bottom: 40px; /*increase this value if the taskbar blocks the interface on the news tab*/
 }
 #tab-news .button {
     animation: fadein 2s;
@@ -246,12 +239,34 @@ body {
     width: auto;
     padding-right: 1vw;
 }
-button#lobby-duels-hide-gamelist, #tab-duel-home .button {
-    font-size: 2vw;
-    text-align: center;
+#tab-duel {
+    overflow: hidden;
+}
+#tab-duel p {
+    font-size: 1.5vw;
+    text-align: left !important;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
     width: 100%;
-    margin-top: 6vh;
-    margin-left: -2px;
+    padding: 2vw !important;
+}
+.mlabel {
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125 #766D87;
+}
+#tab-duel-home .mlabel:after {
+    content: " ";
+    height: 2vw;
+    width: 100vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: -1;
+    position: absolute;
+    left: 0;
+}
+#tab-duel-home .button {
+    font-size: 2vw;
+    width: 100%;
+    margin-top: 2vw; /*reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
 }
 #tab-duel-searching .button {
     transition-duration: .5s;
@@ -262,46 +277,20 @@ button#lobby-duels-hide-gamelist, #tab-duel-home .button {
     width: 100%;
     margin-top: 25vh;
 }
-#tab-duel p {
-    font-size: 1.5vw;
-    text-align: left !important;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
+button#lobby-duels-hide-gamelist {
+    font-size: 2vw;
+    text-align: center;
     width: 100%;
-    padding 2vw !important;
+    margin-top: 6vh;
+    margin-left: -2px;
 }
-.profile-if-not-contributor {
+.profile-if-not-contributor, .progress {
     font-size: 1vw;
-    min-width: 0;
-    max-width: 96vw;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 2vw;
-    left: 2vw;
-}
-.progress {
     margin: 0;
     padding: 0;
 }
-
-.mlabel {
-    font-size: 1.25vw;
-    font-weight: bold;
-    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125 #766D87;
-}
-#tab-duel-home .mlabel:after {
-    content: " ";
-    height: 1.75vw;
-    width: 25vw;
-    background-color: rgba(0, 0, 0, 0.35);
-    z-index: -1;
-    position: absolute;
-    left: 0.8vw;
-}
-input[type=radio] {
-    border: 0px;
-    width: 0.5vw;
-    height: 0.5vw;
+#tab-duel .profile-if-not-contributor{
+    background-color: rgba(0, 0, 0, 0.4) !important
 }
 .table {
     font-size: 1.5vw;
@@ -333,7 +322,7 @@ input[type=radio] {
     right: 0; 
 }
 #tab-decks .table {
-    margin-top: 20vw;
+    margin-top: 25vw;
 }
 #decks-create-button {
     height: 2.5vw;
@@ -360,27 +349,14 @@ input[type=radio] {
     top: 15vw;
     right: 15vw;
 }
-#tab-profile .profile-if-not-contributor {
-    display: none;
+div#tab-profile {
+    padding-bottom: 40px /*If your taskbar blocks the interface on the profile tab, increase this number*/
 }
 #tab-profile p {
-    font-size: 0.75vw;
+    font-size: 1vw;
     color: antiquewhite;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
 }
-.form {
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-}
-#avatar-previous-button {
-    width: 2vw !important;
-}
-#avatar-next-button {
+#avatar-previous-button, #avatar-next-button {
     width: 2vw !important;
 }
 @keyframes fadein {
