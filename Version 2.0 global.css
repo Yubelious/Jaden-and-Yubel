@@ -14,7 +14,7 @@ body {
     color: rgba(193, 158, 77, 0.9);
     background-color: rgba(0, 0, 0, 0.1);
 }
-/*Things, such as headers and buttons, that starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
+/*Things, such as headers and the checkbox, that starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
 .loadmore, hr {
     display: none;
 }
@@ -70,4 +70,85 @@ body {
     background-color: rgba(200, 200, 200, 0.2);
     cursor: pointer;
     overflow: hidden;
+}
+/*This is the code for the navbar, which can be seen from any tab.*/
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) 0 3vw/cover fixed; /*Image by the amazing Moribuden*/
+}
+.container-fluid {
+    background-color: #766D87;
+    height: 3vw;
+    min-height: 0;
+    max-height: 33vh;
+    width: 100vw;
+    padding-left: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+    position: fixed;
+}
+.navbar-text {
+    font-size: 1vw;
+    color: antiquewhite;
+    line-height: 3;
+    margin: 0 0 0 3vw;
+}
+.navbar-nav>li>.menu-link {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    font-size: 0.8vw;
+    line-height: 1vw;
+    color: rgba(193, 158, 77, 0.9) !important;
+    text-shadow: none;
+    border: 1px dotted rgba(193, 158, 77, 0.9);
+    height: 3vw;
+    width:auto;
+    margin-left: 2px;
+    padding: 1vw;
+}
+.nav>li>a:focus {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(48, 167, 145, 0.9) !important;
+    font-style: italic;
+    background-color: rgba(118, 109, 135, 0.8);
+    border-color: rgba(48, 167, 145, 0.9);
+}
+.nav>li>a:hover {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(48, 167, 145, 0.9) !important;
+    background-color: rgba(118, 109, 135, 0.8);
+    border-color: rgba(48, 167, 145, 0.9);
+}
+.nav>li.disabled>.menu-link, .nav>li.disabled>.menu-link:focus,.nav>li.disabled>.menu-link:hover {
+    color: rgba(193, 158, 77, 0.5) !important;
+    background: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient( to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
+    border: none;
+}
+#link-chat {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    font-size: 0.8vw;
+    font-weight: bold;
+    line-height: 1vw;
+    color: antiquewhite;
+    background-color: black;
+    border: 1px dotted antiquewhite;
+    cursor: help;
+    height: 3vw;
+    width: auto;
+    margin-left: 2px;
+    padding: 1vw;
+}
+#link-chat:focus, #link-chat:hover {
+    -moz-transition: color 2s ease-in-out,border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px dashed;
 }
