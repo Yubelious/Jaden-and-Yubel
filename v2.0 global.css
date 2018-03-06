@@ -7,6 +7,15 @@ Potentially compatible with any resolution. For smaller resolutions, there are o
 For optimal viewing, press F11.
 */
 
+/*
+"Jaden and Yubel (featuring Chatbox and other scrolling fixes)" Userstyle © 2017 Yubelious! under MIT liecence.
+Inspired by O OO/The XAZ.
+Special thanks to Skeletonxf for finally coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
+Open for testing and feedback.
+Potentially compatible with any resolution. For smaller resolutions, there are options in notes if the current option doesn't do it for you.
+For optimal viewing, press F11.
+*/
+
 body {
     font-size: 0;
     font-family: "Geneva", Ariel, sans-serif;
@@ -51,10 +60,8 @@ html {
 }
 .profile-if-not-contributor {
     font-size: 1vw;
-    float: left;
     margin: 0;
-    padding: 0;
-    position: absolute;
+    padding: 1vw 0;
 }
 .table {
     font-size: 1.5vw;
@@ -86,28 +93,20 @@ html {
     right: 0; 
 }
 /*Here we have some general button rules.*/
-#tab-login .button, #tab-register .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
+#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: rgba(193, 158, 77, 0.9);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 2px solid rgba(193, 158, 77, 0.9);
+    font-weight: bold;
+    border: 2px solid;
     overflow: hidden;
-    width: 50.042%;
     margin: 0 -0.3vw -2px -2px;
-    padding: 1px;
 }
 #tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    color: antiquewhite;
-    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
-    background-color: rgba(200, 200, 200, 0.2);
     cursor: pointer;
     overflow: hidden;
 }
