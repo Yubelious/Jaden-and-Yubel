@@ -14,7 +14,10 @@ body {
     color: rgba(193, 158, 77, 0.9);
     background-color: rgba(0, 0, 0, 0.1);
 }
-/*Things, such as headers and the checkbox, that starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
+html {
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) 0 3vw/cover fixed; /*Image by the amazing Moribuden*/
+}
+/*Here are things that oddly starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
 .loadmore, hr {
     display: none;
 }
@@ -46,6 +49,43 @@ body {
 .container {
     width: 100%;
 }
+.profile-if-not-contributor {
+    font-size: 1vw;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.table {
+    font-size: 1.5vw;
+    color: #30a791;
+    text-align: justify;
+    background:  black;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    opacity: 1;
+    float: right;
+    width: 75%;
+    margin: 9vh 0.1vw 10vh -0.1vw;
+    z-index: 1;
+    position: relative;
+    right: 12.5%;
+}
+.table::before {
+    content: "Get Your Game On!";
+    color: antiquewhite;
+    text-align: center;
+    background: url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*I have a morbid Moribuden for this one.*/
+    background-size: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    top: -1.5vw;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+/*Here we have some general button rules.*/
 #tab-login .button, #tab-register .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
@@ -57,7 +97,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border: 2px solid rgba(193, 158, 77, 0.9);
     overflow: hidden;
-    width: 50.042% /*50.08%*/;
+    width: 50.042%;
     margin: 0 -0.3vw -2px -2px;
     padding: 1px;
 }
@@ -72,14 +112,11 @@ body {
     overflow: hidden;
 }
 /*This is the code for the navbar, which can be seen from any tab.*/
-html {
-    background: url(https://cdn.discordapp.com/attachments/256871791983591424/309534079999672320/57448360_p0_master1200.jpg) 0 3vw/cover fixed; /*Image by the amazing Moribuden*/
-}
 .container-fluid {
     background-color: #766D87;
     height: 3vw;
     min-height: 0;
-    max-height: 33vh;
+    max-height: 25vh;
     width: 100vw;
     padding-left: 20vw;
     margin-right: auto;
@@ -103,8 +140,10 @@ html {
     text-shadow: none;
     border: 1px dotted rgba(193, 158, 77, 0.9);
     height: 3vw;
+    min-height: 0;
+    max-height: 25vh;
     width:auto;
-    margin-left: 2px;
+    margin-left: 0.25vw;
     padding: 1vw;
 }
 .nav>li>a:focus {
@@ -142,7 +181,7 @@ html {
     cursor: help;
     height: 3vw;
     width: auto;
-    margin-left: 2px;
+    margin-left: 0.25vw;
     padding: 1vw;
 }
 #link-chat:focus, #link-chat:hover {
