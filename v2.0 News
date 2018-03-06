@@ -1,0 +1,34 @@
+@-moz-document url-prefix("https://duelingnexus.com/") {
+/*This affected the news tab*/
+#newsMain {
+    font-size: 1vw;
+    padding-bottom: 40px; /*increase this value if the taskbar blocks the interface on the news tab*/
+}
+#tab-news .button {
+    font-size: 1.25vw;
+    animation: fadein 2s;
+    color: rgba(250, 235, 215, 0.5);
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.5), 2px 2px 2px rgba(250, 235, 215, 0.25), 3px 3px 3px rgba(250, 235, 215, 0.125);
+    border-color: rgba(250, 235, 215, 0.5);
+    height: auto;
+    min-height: 0;
+    width: auto;
+    min-width: 0;
+    padding: 0.1vw 1vw 0.1vw 0.25vw;
+}
+#tab-news .button:hover {
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 1), 2px 2px 2px rgba(250, 235, 215, 0.5), 3px 3px 3px rgba(250, 235, 215, 0.25);
+    border-color: antiquewhite;
+}
+#tab-news .button:focus {
+    color: rgba(250, 235, 215, 0.25);
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.25), 2px 2px 2px rgba(250, 235, 215, 0.125), 3px 3px 3px rgba(250, 235, 215, 0.0625);
+    background-color: rgba(200, 200, 200, 0.25);
+    border-color: rgba(250, 235, 215, 0.25);
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 0.85;}
+}
+}
