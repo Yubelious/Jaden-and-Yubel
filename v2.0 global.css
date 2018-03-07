@@ -1,3 +1,4 @@
+@-moz-document url("https://duelingnexus.com/") {
 /*
 "Jaden and Yubel (featuring Chatbox and other scrolling fixes)" Userstyle © 2017 Yubelious! under MIT liecence.
 Inspired by O OO/The XAZ.
@@ -64,12 +65,8 @@ html {
     padding: 1vw 0;
 }
 .table {
-    font-size: 1.5vw;
-    color: #30a791;
     text-align: justify;
     background:  black;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-collapse: collapse;
     opacity: 1;
     float: right;
     width: 75%;
@@ -79,11 +76,6 @@ html {
     right: 12.5%;
 }
 .table::before {
-    content: "Get Your Game On!";
-    color: antiquewhite;
-    text-align: center;
-    background: url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg"); /*I have a morbid Moribuden for this one.*/
-    background-size: 100%;
     opacity: 0.5;
     z-index: -1;
     position: absolute;
@@ -188,4 +180,5 @@ html {
     transition: color 2s ease-in-out, border 2s ease-in-out;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px dashed;
+}
 }
