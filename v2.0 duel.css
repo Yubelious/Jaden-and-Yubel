@@ -51,6 +51,7 @@
 /*This affects the searching pages, such as bot duels*/
 #tab-duel-searching .button {
     color: rgba(48, 167, 145, 0.9);
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
     border-color: rgba(48, 167, 145, 0.9);
     opacity: 0.9;
     width: 100%;
@@ -68,6 +69,17 @@
     top: 0;
     left: 0;
 }
-
-/*    width: 50.042%;*/
+/*This affects the game list page.*/
+#tab-duel-gamelist .container {
+    width: 100%;
+}
+button#lobby-duels-hide-gamelist {    
+    width: 100%;
+    margin: 6vh 0 0 -2px;
+}
+#tab-duel-gamelist .button:not(#lobby-duels-hide-gamelist) {
+    width: 50.042%;
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
 }
