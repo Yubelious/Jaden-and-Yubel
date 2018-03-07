@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://duelingnexus.com/") {
+@-moz-document url("https://duelingnexus.com/") {
 /*This affected the news tab*/
 #newsMain {
     font-size: 1vw;
