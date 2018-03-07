@@ -1,17 +1,12 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*This affects the Duel tab*/
-.progress {
-    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
-    margin: 0;
-    padding: 0;    
-}
 #tab-duel {
     overflow: hidden;
 }
 #tab-duel .button {
     font-size: 1.5vw;
-    color: #c19e4d;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
     border-color: rgba(193, 158, 77, 0.75);
     padding: 1px;
 }
@@ -21,21 +16,20 @@
 #tab-duel .button:hover {
     color: antiquewhite;
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
-    background-color: rgba(200, 200, 200, 0.25);
-}
-#tab-duel p {
-    font-size: 1.5vw;
-    text-align: left !important;
-    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
-    width: 100%;
-    padding: 2vw !important;
+    background-color: rgba(192, 192, 192, 0.25);
 }
 #tab-duel .profile-if-not-contributor {
     background: radial-gradient(silver, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)) !important;
     border: none !important;
 }
+#tab-duel .progress {
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
 /*This more specifically affects the dueling menu of the duel tab.*/
 #tab-duel-home .button {
+    color: #c19e4d;
     width: 100%;
     margin-top: 2vw; /*reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
 }
@@ -48,10 +42,22 @@
     position: absolute;
     left: 0;
 }
+#tab-duel-home .mlabel {
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125, #766D87;
+}
+#tab-duel-home p {
+    color: antiquewhite;
+    font-size: 1.5vw;
+    text-align: left !important;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 2vw !important;
+}
 /*This affects the searching pages, such as bot duels*/
 #tab-duel-searching .button {
     color: rgba(48, 167, 145, 0.9);
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden*/
     border-color: rgba(48, 167, 145, 0.9);
     opacity: 0.9;
     width: 100%;
@@ -69,17 +75,43 @@
     top: 0;
     left: 0;
 }
+#tab-duel-searching .button:hover {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed; /*Image by either Dyunasumon or Moribuden*/
+}
 /*This affects the game list page.*/
+button#lobby-duels-hide-gamelist {
+    font-size: 2vw;
+    width: 100%;
+    margin: 6vh -30vw -2px -2px;
+}
+#tab-duel-gamelist .button {
+    color: #c19e4d;
+}
+#tab-duel-gamelist .button:not(#lobby-duels-hide-gamelist) {
+    font-size: 1.25vw;
+    width: 50.07%;
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
 #tab-duel-gamelist .container {
     width: 100%;
 }
-button#lobby-duels-hide-gamelist {    
-    width: 100%;
-    margin: 6vh 0 0 -2px;
+#tab-duel-gamelist label {
+    font-size: 1.1vw;
 }
-#tab-duel-gamelist .button:not(#lobby-duels-hide-gamelist) {
-    width: 50.042%;
-    margin: 0 -0.3vw -2px -2px;
-    padding: 1px;
+#tab-duel-gamelist p:not(.button) {
+    font-size: 1vw;
+    width: 100%;
+}
+#tab-duel-gamelist .table {
+    font-size: 1.5vw;
+    color: #30a791;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+#tab-duel-gamelist .table::before {
+    content: "Get Your Game On!";
+    color: antiquewhite;
+    text-align: center;
+    background: url("https://s-media-cache-ak0.pinimg.com/736x/0d/ab/e2/0dabe2a561047bd8716a204a6e93b522.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
 }
 }
