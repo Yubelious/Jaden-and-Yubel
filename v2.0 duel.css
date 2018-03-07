@@ -1,3 +1,4 @@
+@-moz-document url("https://duelingnexus.com/") {
 /*This affects the Duel tab*/
 .progress {
     background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
@@ -69,3 +70,4 @@
 }
 
 /*    width: 50.042%;*/
+}
