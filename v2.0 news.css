@@ -1,8 +1,11 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*This affected the news tab*/
 #newsMain {
-    font-size: 1vw;
     padding-bottom: 40px; /*increase this value if the taskbar blocks the interface on the news tab*/
+}
+div.news_list div:not(button) {
+    font-size: 0.9vw !important;
+    padding: 0;
 }
 #tab-news .button {
     font-size: 1.25vw;
