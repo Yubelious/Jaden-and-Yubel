@@ -1,0 +1,53 @@
+@-moz-document url("https://duelingnexus.com/") {
+/*This affects the Duel tab*/
+.progress {
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
+#tab-duel {
+    overflow: hidden;
+}
+#tab-duel .button {
+    font-size: 1.5vw;
+    color: rgba(193, 158, 77, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    border-color: rgba(193, 158, 77, 0.9);
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
+#tab-duel .button:focus {
+    font-style :italic;
+}
+#tab-duel .button:hover {
+    color: antiquewhite;
+    text-shadow: 0.3px 0.3px 0.3px rgba(10, 100, 10, 0.3), 0.7px 0.7px 0.7px rgba(193, 158, 77, 0.7);
+    background-color: rgba(200, 200, 200, 0.2);
+}
+#tab-duel p {
+    font-size: 1.5vw;
+    text-align: left !important;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 2vw !important;
+}
+#tab-duel .profile-if-not-contributor {
+    background: radial-gradient(silver, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)) !important;
+    border: none !important;
+}
+/*This more specifically affects the dueling menu of the duel tab.*/
+#tab-duel-home .button {
+    width: 100%;
+    margin-top: 2vw; /*reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#tab-duel-home .mlabel:after {
+    content: " ";
+    height: 2vw;
+    width: 100vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: -1;
+    position: absolute;
+    left: 0;
+}
+/*    width: 50.042%;*/
+}
