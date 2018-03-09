@@ -1,9 +1,11 @@
 @-moz-document url("https://duelingnexus.com/") {
+/*This affects the profile tab, but not the profile pages. Er... if there were profile pages.*/
 div#tab-profile {
     padding-bottom: 40px /*If your taskbar blocks the interface on the profile tab, increase this number*/
 }
-#tab-profile .row {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+#avatar-previous-button, #avatar-next-button {
+    width: 2vw !important;
+    padding: 0;
 }
 #tab-profile p {
     font-size: 1vw;
@@ -21,9 +23,11 @@ div#tab-profile {
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     background-color: rgba(192, 192, 192, 0.25);
 }
-#avatar-previous-button, #avatar-next-button {
-    width: 2vw !important;
-    padding: 0;
+#tab-profile .profile-if-not-contributor {
+    display: none
+}
+#tab-profile .row {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 #profile-upload-avatar, #profile-upload-sleeve {
     width: auto;
