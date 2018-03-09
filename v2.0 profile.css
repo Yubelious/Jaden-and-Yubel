@@ -1,7 +1,7 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*This affects the profile tab, but not the profile pages. Er... if there were profile pages.*/
 div#tab-profile {
-    padding-bottom: 40px /*If your taskbar blocks the interface on the profile tab, increase this number*/
+    padding-bottom: 40px /*If your taskbar blocks the interface on the profile tab, increase this number.*/
 }
 #avatar-previous-button, #avatar-next-button {
     width: 2vw !important;
