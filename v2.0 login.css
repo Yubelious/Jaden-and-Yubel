@@ -3,6 +3,12 @@
 .alert-success, .alert-danger {
     background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
 }
+.col-sm-6 {    
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
+    height: 37vw;
+    width: 75vw;
+    float: none;
+}
 .form-control {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
@@ -59,10 +65,6 @@
     margin:0;
     padding: 0;
 }
-#tab-login .container, #tab-register .container {
-    border: 0.2vw solid antiquewhite !important;
-    margin-top: 5vw;
-}
 #login-create-label, #login-recover-label, #register-login-label {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
@@ -71,7 +73,8 @@
     color: rgba(193, 158, 77, 0.9) !important;
     text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
     float: right;
-
+    margin: 0;
+    padding: 1.25vw 18.75vw 0 0;
 }
 #login-create-label:hover, #login-recover-label:hover, #register-login-label:hover, #login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
     -moz-transition-duration: all 500ms ease-in-out;
@@ -79,9 +82,6 @@
     transition-duration: all 500ms ease-in-out;
     color: rgba(48, 167, 145, 0.9) !important;
     text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
-}
-#login-create-label {
-    margin: 0 25vw 0.25vw 25vw;
 }
 #login-form label {
     cursor: default;
