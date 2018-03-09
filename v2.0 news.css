@@ -1,8 +1,8 @@
 @-moz-document url("https://duelingnexus.com/") {
-/*This affected the news tab*/
+/*This affected the news tab. You won't be able to see this or the other tabs (except Login and Register) until you log in.*/
 #newsMain {
     font-size: 1vw;
-    padding-bottom: 40px; /*increase this value if the taskbar blocks the interface on the news tab*/
+    padding-bottom: 40px; /*Increase this value if the taskbar blocks the interface on the news tab.*/
 }
 #tab-news .button {
     font-size: 1.25vw;
