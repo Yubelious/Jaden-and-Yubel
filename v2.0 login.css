@@ -88,7 +88,7 @@
 #login-remember {
     cursor: pointer;
 }
-#tab-login .container, #tab-register .container, .col-sm-6 {    
+#tab-login .container, #tab-register .container {    
     background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
     height: 37vw;
     width: 75vw;
