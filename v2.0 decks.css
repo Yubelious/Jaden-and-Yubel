@@ -55,6 +55,7 @@
 #tab-decks .table {
     font-size: 1.5vw;
     color: #30a791;
+    text-shadow: 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(0, 0, 0, 0.1);
     margin-top: 25vw;
 }
@@ -62,6 +63,6 @@
     content: "Now prepare to feel my wrath!";
     color: antiquewhite;
     text-align: center;
-    background: url("https://https://servimg.com/view/17893088/6][img]https://i62.servimg.com/u/f62/17/89/30/88/65591110.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
+    background: url("https://i.pximg.net/img-master/img/2017/10/25/19/41/43/65591156_p7_master1200.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
 }
 }
