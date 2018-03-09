@@ -1,0 +1,67 @@
+@-moz-document url-prefix("https://duelingnexus.com/") {
+#tab-decks a {
+    -moz-transition: color 1s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 1s ease-in-out, border 2s ease-in-out;
+    transition: color 1s ease-in-out, border 2s ease-in-out;
+    transition-property: all;
+    font-size: 1vw;
+    color: #C19E4D !important;
+    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    float: right;
+}
+#tab-decks a:focus, #tab-decks .button:focus {
+    font-style: italic;
+}
+ #tab-decks a:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    transition-property: all;
+    color: #30A791 !important;
+    text-decoration: underline;
+    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+#tab-decks .button {
+    font-size: 1.5vw;
+    color: #C19E4D;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: rgba(193, 158, 77, 0.75);
+    height: 2.5vw;
+    width: 36vw !important;
+    min-width: 0 !important;
+    transform: rotate(-10deg);
+    margin: 0;
+    padding: 0;
+    position: fixed !important;
+}
+#tab-decks .button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: rgba(192, 192, 192, 0.25);
+}
+#decks-create-button {
+    float: left;
+    top: 18vw;
+    right: 0;
+    bottom: 0;
+    left: 16vw;
+}
+#tab-decks p.button {
+    top: 15vw;
+    right: 15vw;
+}
+#tab-decks .table {
+    font-size: 1.5vw;
+    color: #30a791;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 25vw;
+}
+#tab-decks .table::before {
+    content: "Now prepare to feel my wrath!";
+    color: antiquewhite;
+    text-align: center;
+    background: url("https://i.pximg.net/img-master/img/2017/10/25/19/41/43/65591156_p7_master1200.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
+}
+}
