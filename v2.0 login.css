@@ -3,12 +3,6 @@
 .alert-success, .alert-danger {
     background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
 }
-#tab-login .container, #tab-register .container, .col-sm-6 {    
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
-    height: 37vw;
-    width: 75vw;
-    float: none;
-}
 .form-control {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
@@ -93,5 +87,11 @@
 }
 #login-remember {
     cursor: pointer;
+}
+#tab-login .container, #tab-register .container, .col-sm-6 {    
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
+    height: 37vw;
+    width: 75vw;
+    float: none;
 }
 }
