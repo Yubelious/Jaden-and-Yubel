@@ -76,7 +76,11 @@ html {
     right: 12.5%;
 }
 .table::before {
-    opacity: 0.5;
+    content: "Get Your Game On!";
+    color: antiquewhite;
+    text-align: center;
+    background-size: 100%;
+    opacity: 0.75;
     z-index: -1;
     position: absolute;
     top: -1.5vw;
