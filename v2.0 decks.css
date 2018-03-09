@@ -1,5 +1,5 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
-/*This affects the decks tab, but not the deck pages*/
+/*This affects the decks tab, but not the deck pages.*/
 #tab-decks a {
     -moz-transition: color 1s ease-in-out, border 2s ease-in-out;
     -o-transition: color 1s ease-in-out, border 2s ease-in-out;
