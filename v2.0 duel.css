@@ -1,5 +1,5 @@
 @-moz-document url("https://duelingnexus.com/") {
-/*This affects the Duel tab*/
+/*This affects the Duel tab, but not the duel pages.*/
 #tab-duel {
     overflow: hidden;
 }
