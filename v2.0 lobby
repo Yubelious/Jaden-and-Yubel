@@ -1,4 +1,5 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This affects the lobby, where you prepare for the duel.*/
 table {
     font-size: 1.125vw;
     color:	#c19e4d;
@@ -8,10 +9,7 @@ table {
 	cursor: pointer;
 	animation: 1s game-field-zone-flash infinite alternate linear;
 }
-#game-loading-container p {
-    margin-top: 20vw;
-}
-#game-room-container {/*This is the big black box you see when you click a duel and enter a game room to prepare for the upcoming battle. It's here to prevent visual errors.*/
+#game-room-container {
     background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
     border: 1px dashed antiquewhite;
     width: 50vw;
@@ -19,7 +17,7 @@ table {
     margin-top: 8vw;
     padding: 1vw;
 }
-#game-room-players {/*This is the left side of the big black box. It's here to make the selection pop-up about the same size as the player column.*/
+#game-room-players {
     width: 28vw;
     min-width: 280px;
     padding: 2vh 1vw 2vh 2vw;
@@ -32,7 +30,7 @@ table {
 #game-room-information-table td {
     width: 10vw;
 }
-#game-room-information {/*This is the right side of the big black box. It's here to prevent visual errors.*/
+#game-room-information {
     width: 16vw;
     min-width: 160px;
     padding: 2vh 2vw 2vh 1vw;
@@ -47,12 +45,12 @@ table {
     -o-animation: 2s ease-in-out 1s infinite spin;
     animation: 2s ease-in-out 1s infinite spin;
 }
-#game-deck-selection {/*This is the heart of this fix. It contains a scrollbar that prevents your decks from flooding off the bottom of the screen. The border is copied from #game-selection-window, and coloured to match the scrollbar.*/
+#game-deck-selection {
     border: solid #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
     overflow-y: scroll;
-    cursor: s-resize; /*As always, thinking about my mac users out there. If you don't want to see this cursor, delete this line. (cursor: s-resize;)*/
+    cursor: s-resize;
     height: 16vh;
     width: 28vw;
     min-width: 280px;
