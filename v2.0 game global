@@ -1,5 +1,5 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
-/*This affects the entire game section*/
+/*This affects the entire game section.*/
 body {
     font-size: 0;
     font-family: "Geneva", Ariel, sans-serif;
@@ -7,7 +7,7 @@ body {
     color: rgba(193, 158, 77, 0.9);
 }
 html {
-    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg); /*Image by either Dyunasumon or Moribuden*/
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) 0 0/cover fixed; /*Image by the amazing Moribuden*/ /*Image by either Dyunasumon or Moribuden*/
 }
 hr {
     display: none;
@@ -19,15 +19,15 @@ h4 {
 .engine-button {
     font-size: 1.25vw;
     font-weight: bold;
-    color: antiquewhite;
+    color: #c19e4d;
     text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
     background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.7));
     border: 0.5px solid antiquewhite;
     cursor: pointer;
     height: auto;
     min-height: 0;
-    margin: 0.1vw !important;
-    padding: 0.5vw !important;
+    margin: 0.25vw !important;
+    padding: 0.25vw 0.5vw!important;
 }
 .engine-button:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.7));
@@ -101,11 +101,12 @@ h4 {
     left: 16px;
 }
 #game-chat-area:after {
+    color: black;
+    content: "Yu-Gi-Oh! Dueling Nexus";
     font-size: 1.5em;
     font-weight: bold;
-    color: black;
     text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em white, 0 0 1em white;
-    content: "Yu-Gi-Oh! Dueling Nexus";
+    padding: 0.5vw;
     position: fixed;
     bottom: 40px;
     right: 5vw;
@@ -141,6 +142,10 @@ h4 {
 }
 #options-window:hover {
     background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
+}
+#options-window label {
+    color: antiquewhite;
+    font-size: 1vw;
 }
 #options-window p {
     text-align: center;
