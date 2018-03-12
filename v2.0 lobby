@@ -1,0 +1,88 @@
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+table {
+    font-size: 1.125vw;
+    color:	#c19e4d;
+    background-color: rgba(0, 0, 0, 0);
+}
+.game-field-zone.game-field-zone-selectable {
+	cursor: pointer;
+	animation: 1s game-field-zone-flash infinite alternate linear;
+}
+#game-loading-container p {
+    margin-top: 20vw;
+}
+#game-room-container {/*This is the big black box you see when you click a duel and enter a game room to prepare for the upcoming battle. It's here to prevent visual errors.*/
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
+    border: 1px dashed antiquewhite;
+    width: 50vw;
+    min-width: 500px;
+    margin-top: 8vw;
+    padding: 1vw;
+}
+#game-room-players {/*This is the left side of the big black box. It's here to make the selection pop-up about the same size as the player column.*/
+    width: 28vw;
+    min-width: 280px;
+    padding: 2vh 1vw 2vh 2vw;
+}
+#game-room-players-table tr, #game-room-information-table tr {
+    border-top: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+	height: 4vw;
+}
+#game-room-information-table td {
+    width: 10vw;
+}
+#game-room-information {/*This is the right side of the big black box. It's here to prevent visual errors.*/
+    width: 16vw;
+    min-width: 160px;
+    padding: 2vh 2vw 2vh 1vw;
+}
+
+#game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, .template-button, #game-rps-first, #game-rps-second, #game-end-button{/*This prevents the button at the end of the game from taking 2 lines.*/
+    width: auto;
+    max-width: 28vw;
+}
+#game-not-ready-button:active, #game-ready-button:active {
+    -moz-animation: 2s ease-in-out 1s infinite spin;
+    -o-animation: 2s ease-in-out 1s infinite spin;
+    animation: 2s ease-in-out 1s infinite spin;
+}
+#game-deck-selection {/*This is the heart of this fix. It contains a scrollbar that prevents your decks from flooding off the bottom of the screen. The border is copied from #game-selection-window, and coloured to match the scrollbar.*/
+    border: solid #f0f0f0;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    cursor: s-resize; /*As always, thinking about my mac users out there. If you don't want to see this cursor, delete this line. (cursor: s-resize;)*/
+    height: 16vh;
+    width: 28vw;
+    min-width: 280px;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+}
+#game-deck-selection:hover {
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
+}
+@-moz-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@-o-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@-moz-keyframes spin {
+    100% {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+    100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+}
