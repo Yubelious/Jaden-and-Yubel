@@ -2,7 +2,7 @@
 /*This affects the lobby, where you prepare for the duel.*/
 table {
     font-size: 1.125vw;
-    color:	#c19e4d;
+    color: #c19e4d;
     background-color: rgba(0, 0, 0, 0);
 }
 .game-field-zone.game-field-zone-selectable {
