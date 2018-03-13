@@ -1,3 +1,4 @@
+@-moz-document url("https://duelingnexus.com/") {
 /*
 "Jaden and Yubel (featuring Chatbox and other scrolling fixes)" Userstyle © 2017 Yubelious! under MIT liecence.
 Inspired by O OO/The XAZ.
@@ -184,4 +185,5 @@ html {
     transition: color 2s ease-in-out, border 2s ease-in-out;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px dashed;
+}
 }
