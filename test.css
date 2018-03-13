@@ -1,0 +1,497 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("duelingnexus.com") {
+/*h*/
+body:before {
+    font-size: 14px;
+    content:" Does this make my body look fat?";
+}
+h2:after {/*page title*/
+    font-size: 1em;
+    font-weight: bold;
+    color: red;
+    content:" This is h2!";
+}
+h4:after {/*profile header, deck headers, search headers, and a few things in duel*/
+    font-size: 1em;
+    font-weight: bold;
+    color: green;
+    content:" This is h4!";
+}
+h6:after {/*card id*/
+    font-size: 1em;
+    font-weight: bold;
+    color: blue;
+    content:" This is h6!";
+}
+hr:after {
+    font-size: 1em;
+    content:" This is hr!";
+}
+
+/*engines and buttons*/
+.loadmore:after {
+    font-size: 1em;
+    content:" Click here to load more.";
+}
+.a:after {
+    font-size: 1em;
+    content:" This is .a";
+}
+.button:after {
+    font-size: 1em;
+    content:" This is a button (obviously).";
+}
+.engine-button:after {
+    font-size: 1em;
+    content:" This is an .engine-button.";
+}
+.engine-button-small:after {
+    font-size: 0.5em;
+    content:" This is an .engine-button.";
+}
+.engine-button-large:after {
+    font-size: 1.5em;
+    content:" This is an .engine-button.";
+}
+.engine-button-disabled:after {
+    font-size: 1em;
+    content:" This engine button is disabled.";
+}
+.engine-button-primary:after {
+    font-size: 1em;
+    content:" This is a primary engine button.";
+}
+.engine-button-success:after {
+    font-size: 1em;
+    content:" This engine button is successful.";
+}
+.engine-button-danger:after {
+    font-size: 1em;
+    content:" Beware! This engine button is dangerous.";
+}
+.engine-dark-box:after {
+    font-size: 1em;
+    content:" This is an .engine-dark-box.";
+}
+.engine-text-box:hover {
+    border: 2px solid transparent;
+    border-image-source: url('https://sunpig.com/martin/code/2010/marchingants/ants-horizontal.gif');
+    border-image-slice: 1;
+    border-image-repeat: repeat repeat;
+}
+
+.engine-window:after {
+    font-size: 1em;
+    content:" This is an .engine-window.";
+}
+.engine-window p:after {
+    font-size: 1em;
+    content:" This is an .engine-window p.";
+}
+.engine-window-frame:after {
+    font-size: 1em;
+    content:" This is an .engine-window-frame.";
+}
+.engine-vertically-center:after {
+    font-size: 1em;
+    content:" This is an .engine-vertically-center.";
+}
+.game-phase-button:after {
+    font-size: 1em;
+    content:" A .game-phase-button is a button for #game-column." !important;
+}
+
+/*#*/
+#card-picture-container {
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    width: 25%;
+}
+#card-picture-container:hover {
+    width: 15%;
+}
+#card-description-box:after {
+    font-size: 1em;
+    content:" This is a #card-description-box.";
+}
+#game-room-container:after {
+    font-size: 1em;
+    content:" This is a Game Room container.";
+}
+#game-room-container h4:after {
+    font-size: 1em;
+    content:" This is an h4 of a Game Room container.";
+}
+#game-room-players:before {
+    font-size: 1em;
+    content:" This is the player column of the Game Room. It has a table.";
+}
+#game-room-left-buttons:after {
+    font-size: 1em;
+    content:" This is a Game Room left button.";
+}
+#game-room-right-buttons:after {
+    font-size: 1em;
+    content:" This is a Game Room right button.";
+}
+#game-room-deck-selection:after {
+    font-size: 1em;
+    content:" This is Game Room deck selection.";
+}
+#game-room-information:before {
+    font-size: 1em;
+    content:" This is the information column of the Game Room. It has a table.";
+}
+#game-rps-container:after {
+    font-size: 1em;
+    content:" This is #game-rps-container.";
+}
+#game-rps-rock {
+    cursor: crosshair;
+}
+#game-rps-paper {
+    cursor: help;
+}
+#game-rps-scissors {
+    cursor: copy;
+}
+#game-rps-move-opponent {
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
+}
+#game-rps-move-opponent:hover {
+    transform: rotate(90deg);
+    margin-bottom: 30px;
+}
+#card-column:before {
+    font-size: 1em;
+    content:" This is #card-column.";
+}
+#card-name:after {
+    font-size: 1em;
+    content:" This is #card-name.";
+}
+#card-id:after {
+    font-size: 1em;
+    content:" #card-id is h6!";
+}
+#game-column:before {
+    font-size: 1em;
+    content:" This is the #game-column.";
+}
+#game-container:before {
+    font-size: 1em;
+    content:" This is the #game-container.";
+}
+#game-column h4:after {
+    font-size: 1em;
+    content:" This is the h4 for #game-column.";
+}
+#game-column .engine-button:after {
+    font-size: 1em;
+    content:" This is also an .engine-button for #game-column.";
+}
+#game-field:before {
+    font-size: 1em;
+    content:" This is the #game-field.";    
+}
+#game-loading-container p:after {
+    transition-delay: 30s;
+    font-size: 1em;
+    content:" This is the #game-loading-container p. Get your game on!"; 
+}
+#game-tooltip:after {
+    font-size: 1em;
+    content:" Peek-a-boo! This is the #game-tooltip. It's usually not displayed.";
+}
+#game-action-menu:after {
+    font-size: 1em;
+    content:" This is the #game-action-menu. It has a button.";
+}
+#game-surrender-menu:after {
+    font-size: 1em;
+    content:" This is the #game-surrender-menu. It has a button.";
+}
+#game-waiting-window:after {
+    font-size: 1em;
+    content:" This is the #game-waiting-window.";
+}
+#game-message-window:after {
+    font-size: 1em;
+    content:" This is the #game-message-window.";
+}
+#game-end-window:after {
+    font-size: 1em;
+    content:" This is the #game-end-window. Mommy! It's over!";
+}
+#game-end-title:after {
+    font-size: 1em;
+    content:" This is the #game-end-title.";
+}
+#game-end-button:after {
+    font-size: 1em;
+    content:" This is the #game-end-button.";
+}
+#game-alert-darkener:after {
+    font-size: 1em;
+    content:" This is the #game-alert-darknener.";
+}
+#game-alert-window:after {
+    font-size: 1em;
+    content:" This is the #game-alert-darknener. It's z-index is over 9000!";
+}
+#game-alert-title:after {
+    font-size: 1em;
+    content:" This is the #game-alert-title.";
+}
+#game-alert-button:after {
+    font-size: 1em;
+    content:" This is a #game-alert-button.";
+}
+#game-yesno-window:after {
+    font-size: 1em;
+    content:" This is the #game-yesno-window.";
+}
+#game-position-window:after {
+    font-size: 1em;
+    content:" This is the #game-position-window. It has an image.";
+}
+#game-option-window:after {
+    font-size: 1em;
+    content:" This is the #game-option-window.";
+}
+#game-selection-window:after {
+    font-size: 1em;
+    content:" This is the #game-selection-window.";
+}
+#game-highlight-card:after {
+    font-size: 1em;
+    content:" This is the #game-highlight-card";
+}
+#game-announce-window:after {
+    font-size: 1em;
+    content:" Another window? Damn there's a lot of these. This one's called #game-announce-window";
+}
+#game-announce-card-window:after {
+    font-size: 1em;
+    content:" This is the #game-announce-card-window";
+}
+#game-next-turn:after {
+    font-size: 1em;
+    content:" This is the #game-next-turn. It has text.";
+}
+#game-life-change:after {
+    font-size: 1em;
+    content:" This is the #game-life-change. It has text, good, and bad.";
+}
+#game-chat-content:before {
+    font-size: 1em;
+    content:" This is the #game-chat-content. It has a p.";
+}
+#game-chat-area:before {
+    font-size: 1em;
+    content:" This is the #game-chat-area. Width: 30%. It takes up 30% of the entire screen!";
+}
+#game-result-container p:after {
+    font-size: 1em;
+    content:" This is the #game-result-container p.";
+}
+#game-siding-column:after {
+    font-size: 1em;
+    content:" This is the first #game-siding-column.";
+}
+#game-siding-column-2:after {
+    font-size: 1em;
+    content:" This is the second #game-siding-column.";
+}
+#siding-deck-main-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-main-title";
+}
+#siding-search-title:after {
+    font-size: 1em;
+    content:" This is the #siding-search-title.";
+}
+#siding-deck-extra-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-extra-title.";
+}
+#siding-deck-side-title:after {
+    font-size: 1em;
+    content:" This is the #siding-deck-side-title.";
+}
+#options-area:after {
+    font-size: 1em;
+    content:" This is the #options-area.";
+}
+#options-window:after {
+    font-size: 1em;
+    content:" This is the #options-window. It has a p.";
+}
+#editor-container:before {
+    font-size: 1em;
+    content:" This is the #editor-container.";
+}
+#editor-menu-container:before {
+    font-size: 1em;
+    content:" This is the #editor-menu-container.";
+}
+#editor-menu-content:before {
+    font-size: 1em;
+    content:" This is the #editor-menu-content.";
+}
+#editor-menu-title:before {
+    font-size: 1em;
+    content:" This is the #editor-menu-title.";
+}
+#editor-menu-spacer {
+    font-size: 1em;
+    content:" This is the #editor-menu-spacer."
+}
+#editor-deck-main-title:after {
+    font-size: 1em;
+    content:" This is #editor-deck-main-title.";
+}
+#editor-search-title:after {
+    font-size: 1em;
+    content:" This is #editor-search-title.";
+}
+
+#editor-deck-extra-title:after {
+    font-size: 1em;
+    content:" This is #editor-extra-title.";
+}
+#editor-deck-side-title:after {
+    font-size: 1em;
+    content:" This is #editor-deck-side-title.";
+}
+#editor-decks-column:before {
+    font-size: 1em;
+    content:" This is the #editor-decks-column";
+}
+#editor-search-column:before {
+    font-size: 1em;
+    content:" This is #editor-search-column.";
+}
+
+/*button#lobby-duels-hide-gamelist:after {
+    font-size: 1em;
+    content: " This is button#lobby-duels-hide-gamelist.";
+}
+#tab-duel p:after {
+    font-size: 1em;
+    content: " This is #tab-duel p.";
+}
+#tab-duel-home .button:after {
+    font-size: 1em;
+    content: " This is #tab-duel-home .button.";
+}
+#tab-duel-searching .button:after {
+    font-size: 1em;
+    content: " This is #tab-duel-searching .button.";
+}
+*/
+
+/*other*/
+.game-room-deck-element:after {
+    font-size: 1em;
+    content:" This is .game-room-deck-element";
+}
+.game-avatar-area:after {
+    font-size: 1em;
+    content:" This is the .game-avatar-area."; 
+}
+.game-avatar {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+.game-avatar:hover {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+}
+.game-life-bar:before {
+    font-size: 1em;
+    content:" This is a .game-life-bar.";
+}
+.game-field-zone-content:after {
+    font-size: 1em;
+    content:" This is .game-field-zone-content.";
+}
+.game-field-zone:before {
+    font-size: 1em;
+    content:" This is the .game-field-zone.";
+}
+.game-card-negated:after {
+    font-size: 1em;
+    content:" This card is negated. Get rekt m8.";
+}
+.game-field-hand:after {
+    font-size: 1em;
+    content:" This is your hand. Well, it's not your actual *hand*. That's on your wrist. But you know what I mean.";
+}
+.game-field-stats-text:after {
+    font-size: 1em;
+    content:" This is the .game-field-stats-text.";
+}
+.game-selectable-card:after {
+    font-size: 1em;
+    content:" This card is selectable. Click it. You know you want to.";
+}
+.game-selected-card:after {
+    font-size: 1em;
+    content:" You actually clicked it?! What were you thinking?!";
+}
+.game-selection-card:after {
+    font-size: 1em;
+    content:" This is .game-selection-card.";
+}
+.game-attack-animation:after {
+    font-size: 1em;
+    content:" ATTACK!!!";
+}
+.game-avatar:after {
+    font-size: 1em;
+    content:" This is .game-avatar.";
+}
+.editor-card-small:hover {
+    visibility: hidden;
+}
+.editor-search-card:after {
+    font-size: 1em;
+    content:" This is .editor-search-card.";
+}
+.editor-search-description:after {
+    font-size: 1em;
+    content:" This is .editor-search-description.";
+}
+.editor-search-result:before {
+    font-size: 1em;
+    content:" This is .editor-search-result.";
+}
+
+.editor-deck-container:before {
+    font-size: 1em;
+    content:" This is .editor-deck-container.";
+}
+
+}
