@@ -35,7 +35,10 @@
 }
 #game-rps-container {
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 10vh;
+}
+#game-rps-first, #game-rps-second {
+    margin-top: 10vw;
 }
 #game-rps-container img{
     height: 19.2vw;
