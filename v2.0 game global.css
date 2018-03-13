@@ -1,13 +1,13 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
-/*This affects the entire game section*/
+/*This affects the entire game section.*/
 body {
-    font-size: 0;
-    font-family: "Geneva", Ariel, sans-serif;
+    font-size: 1vw;
+    font-family: Geneva, Ariel, sans-serif;
     line-height: 1;
     color: rgba(193, 158, 77, 0.9);
 }
 html {
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) skyblue 0 0/cover fixed; /*Image by either Dyunasumon or Moribuden*/
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) skyblue 0 0/cover fixed; /*Image by either Dyunasumon or Moribuden.*/
 }
 hr {
     display: none;
@@ -26,8 +26,8 @@ h4 {
     cursor: pointer;
     height: auto;
     min-height: 0;
-    margin: 0.1vw !important;
-    padding: 0.25vw 0.5vw !important;
+    min-width: 5vw;
+    padding: 0.25vw 0.5vw;
 }
 .engine-button:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.7));
@@ -84,7 +84,6 @@ h4 {
 /*This is the box that contains the chat to a confined space so it can't resize the duel or block the card description.*/
 #game-chat-area {
     font-size: 0.9vw;
-    font-family: inherit;
     color: antiquewhite;
     background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
@@ -101,12 +100,18 @@ h4 {
     left: 16px;
 }
 #game-chat-area:after {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfhGVrcb3QoOe-KwVvtPpuQMLpZvU97Z5nt4mPfXOALtqH1V7G);
-    font-size: 1.5em;
-    font-weight: bold;
+    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
+    font-family: Balthazar;
+    font-size: 2vw;
     color: black;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.4vw;
+    line-height: 5;
+    text-align: center;
     text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em white, 0 0 1em white;
-    content: "Yu-Gi-Oh! Dueling Nexus";
+    content: "Dueling Nexus";
+    height: 7vw;
+    width: 14vw;
     position: fixed;
     bottom: 40px;
     right: 5vw;
@@ -123,7 +128,7 @@ h4 {
     bottom: 45px;
     left: 20px;
 }
-/*This affects the options button*/
+/*This affects the options button.*/
 #options-area {/*This should move the button that opens the option window above the taskbar of your computer.*/
     position: fixed;
     right: 25vw;
