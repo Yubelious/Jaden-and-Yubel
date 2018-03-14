@@ -1,6 +1,6 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*This affects the Duel tab, but not the duel pages.*/
-#tab-duel {
+div#tab-duel-home {
     overflow: hidden;
 }
 #tab-duel .button {
@@ -37,7 +37,7 @@
 #tab-duel-home .mlabel:before {
     content: " ";
     height: 2vw;
-    width: 102.5vw;
+    width: 100vw;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     z-index: -1;
     position: absolute;
