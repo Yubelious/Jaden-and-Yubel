@@ -34,10 +34,10 @@
     width: 100%;
     margin-top: 2vw; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
 }
-#tab-duel-home .mlabel:after {
+#tab-duel-home .mlabel:before {
     content: " ";
     height: 2vw;
-    width: 100vw;
+    width: 102.5vw;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     z-index: -1;
     position: absolute;
