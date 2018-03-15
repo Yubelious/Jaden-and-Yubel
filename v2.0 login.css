@@ -1,4 +1,3 @@
-@-moz-document url("https://duelingnexus.com/") {
 /*If it shows up on the Login or Register tab, it's in here.*/
 .alert-success, .alert-danger {
     background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
@@ -93,5 +92,4 @@
     height: 37vw;
     width: 75vw;
     float: none;
-}
 }
