@@ -95,9 +95,9 @@ h4 {
     min-width: 0;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
+    left: 1vw;
     bottom: 40px;
-    left: 16px;
 }
 #game-chat-area:after {
     background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
