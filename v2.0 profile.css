@@ -7,7 +7,7 @@ div#tab-profile {
     width: 2vw !important;
     padding: 0;
 }
-#tab-profile p {
+#tab-profile p:not(.profile-if-not-contributor) {
     font-size: 1vw;
     color: antiquewhite;
 }
@@ -23,8 +23,11 @@ div#tab-profile {
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     background-color: rgba(192, 192, 192, 0.25);
 }
-#tab-profile .profile-if-not-contributor {
-    display: none
+#tab-profile p.profile-if-not-contributor {
+    font-size: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
 }
 #tab-profile .row {
     background-color: rgba(0, 0, 0, 0.5) !important;
