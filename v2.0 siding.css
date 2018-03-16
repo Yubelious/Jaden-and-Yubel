@@ -11,10 +11,10 @@ button#game-siding-done {
 .editor-search-result {
     color: antiquewhite;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
-    border: 0.2vw solid #f0f0f0;
+    border: 0.15vw solid #f0f0f0;
     cursor: pointer;
-    width: 50.19% /*Pain in the butt!*/;
-    margin: -0.1vw 0.1vw 0 -0.2vw;
+    width: 50.3%;
+    margin: -0.11vw 0 0 -0.11vw;
 }
 .editor-search-card {
     width: 33%;
@@ -41,25 +41,17 @@ button#game-siding-done {
     font-size: 1vw;
     font-family: 'Times New Roman';
     background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
-    border: 0.6vw double #f0f0f0;
+    border: 0.375vw double #f0f0f0;
     box-sizing: border-box;
     height: 2vw;
-    margin: 0 0 -0.1vw 0;
-    padding: 0;
 }
 #game-container, #editor-container {
     margin: 1vw
 }
-#game-chat-area .engine-text-box {
-    width: 22vw;
-    position: fixed;
-    bottom: 45px;
-    left: 20px;
-}
 #card-column {
     box-sizing: border-box;
     height: 100vh;
-    width: 25vw;
+    width: 24vw;
     float: left;
 }
 #card-name {
@@ -113,6 +105,7 @@ button#game-siding-done {
     height: 5.1vw !important
 }
 #editor-search-column, #game-siding-column-2 {
+    border-bottom: 0.15vw solid #f0f0f0;
     height: 28.7vw;
     width: 35.5vw;
     overflow: hidden;
@@ -123,8 +116,8 @@ button#game-siding-done {
     width: 35.5vw
 }
 #editor-search-results {
-    border-left: 0.6vw double #f0f0f0;
-    height: 24.7vw;
+    border-left: 0.15vw solid #f0f0f0;
+    height: 24.4vw;
     overflow-x: hidden;
     overflow-y: scroll;
 }
