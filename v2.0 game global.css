@@ -1,5 +1,30 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
 /*This affects the entire game section.*/
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin-ext');
+@-moz-keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
+@-o-keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
+@keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
 body {
     font-size: 1vw;
     font-family: Geneva, Ariel, sans-serif;
@@ -101,13 +126,12 @@ h4 {
 }
 #game-chat-area:after {
     background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
-    font-family: Brandish, "Comic Sans MS", Sans-Serif;
-    font-size: 1.25vw;
-    font-weight: bold;
+    font-family: 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
+    font-size: 1.75vw;
     color: black;
-    letter-spacing: 0.2vw;
-    word-spacing: 0.3vw;
-    line-height: 8.25;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    line-height: 6.25;
     text-align: center;
     text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em white, 0 0 1em white;
     content: "Dueling Nexus";
@@ -155,29 +179,5 @@ h4 {
 }
 #options-window input:active {
     cursor: grabbing;
-}
-@-moz-keyframes GrowFromBottom {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 6.1vw;
-    }
-}
-@-o-keyframes GrowFromBottom {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 6.1vw;
-    }
-}
-@keyframes GrowFromBottom {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 6.1vw;
-    }
 }
 }
