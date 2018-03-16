@@ -1,6 +1,6 @@
-@-moz-document url-prefix("https://duelingnexus.com/game/") {
 /*This affects the entire game section.*/
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin-ext');
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
 @-moz-keyframes GrowFromBottom {
     0% {
         height: 0;
