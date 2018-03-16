@@ -2,7 +2,7 @@ Hourglass sand gif
 
 Timeout on connecting to a duel
 
-Background color or gradient while the image loads
+Background color or gradient while the image loads ✓
 
 Flipping avatars
 
@@ -23,6 +23,6 @@ Transition effect to joining bot duel
     left: -15vh;
 }
 
-Style the new banners
+Style the new banners ✓
 
-Update to MR4
+Update to MR4 ✓
