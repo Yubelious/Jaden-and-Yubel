@@ -91,7 +91,7 @@ h4 {
     overflow-x: hidden;
     overflow-y: scroll;
     height: 8vw;
-    width: 25vw;
+    width: 24vw;
     min-width: 0;
     margin: 0;
     padding: 0;
@@ -101,12 +101,13 @@ h4 {
 }
 #game-chat-area:after {
     background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
-    font-family: Balthazar;
-    font-size: 2vw;
+    font-family: Brandish, "Comic Sans MS", Sans-Serif;
+    font-size: 1.25vw;
+    font-weight: bold;
     color: black;
     letter-spacing: 0.2vw;
-    word-spacing: 0.4vw;
-    line-height: 5;
+    word-spacing: 0.3vw;
+    line-height: 8.25;
     text-align: center;
     text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em white, 0 0 1em white;
     content: "Dueling Nexus";
@@ -117,16 +118,13 @@ h4 {
     right: 5vw;
 }
 #game-chat-area .engine-text-box {
-    font-size: 0.9vw;
-    border: 3px double #f0f0f0;
-    box-sizing: border-box;
-    height: 4vh;
-    width: 22.2vw;
+    height: 2vw;
+    width: 21.4vw;
     margin: 0;
     padding: 0;
-    position: fixed;
-    bottom: 45px;
-    left: 20px;
+    position: absolute;
+    bottom: 0.25vw;
+    left: 0.25vw;
 }
 /*This affects the options button.*/
 #options-area {/*This should move the button that opens the option window above the taskbar of your computer.*/
