@@ -5,10 +5,6 @@ table {
     color: #c19e4d;
     background-color: rgba(0, 0, 0, 0);
 }
-.game-field-zone.game-field-zone-selectable {
-	cursor: pointer;
-	animation: 1s game-field-zone-flash infinite alternate linear;
-}
 #game-room-container {
     background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
     border: 1px dashed antiquewhite;
