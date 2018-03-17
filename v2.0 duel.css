@@ -110,7 +110,9 @@ button#lobby-duels-hide-gamelist {
     border: 2px solid rgba(0, 0, 0, 0.1);
 }
 #tab-duel-gamelist .table::before {
-    content: "Get Your Game On!";
+    font-family: Arial;
+    font-size: 1.25vw;
+    content: "֎ Get Your Game On! ֍";
     color: antiquewhite;
     text-align: center;
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
