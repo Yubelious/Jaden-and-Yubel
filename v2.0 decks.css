@@ -61,7 +61,9 @@
     margin-top: 25vw;
 }
 #tab-decks .table::before {
-    content: "Now prepare to feel my wrath!";
+    font-family: Arial;
+    font-size: 1.25vw;
+    content: "֎ Now prepare to feel my wrath! ֍";
     color: antiquewhite;
     text-align: center;
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/65591110.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
