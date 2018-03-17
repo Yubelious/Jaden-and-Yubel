@@ -1,0 +1,61 @@
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This affects the actual duel.*/
+.game-avatar {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    border: 0.5vw solid rgba(193, 158, 77, 0.7);
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+    position: relative;
+    right: 0.5vw;
+}
+.game-avatar:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.game-avatar-area {
+    font-size: 1.125vw;
+    text-indent: -0.5vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.7), 0.9px 0.9px 0.9px rgba(193, 158, 77, 0.9), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+}
+.game-field-zone.game-field-zone-selectable {
+	cursor: pointer;
+	animation: 1s game-field-zone-flash infinite alternate linear;
+}
+.game-field-zone {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    border: 1px solid antiquewhite;
+    height: 300%;
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+}
+.game-field-card {
+    z-index: 2;
+}
+.game-field-stats-text {
+    color: antiquewhite !important;
+    z-index: 3;
+}
+.game-field-zone-content p {
+    color: antiquewhite !important;
+    z-index: 4 !important;
+}
+.game-card-negated {
+    z-index: 5;
+}
+#game-tooltip {
+    font-size: 1.25em;
+    color: antiquewhite !important;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    padding: 1vh;
+    z-index: 7;
+    position: fixed;
+}
+}
