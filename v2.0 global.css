@@ -27,6 +27,17 @@ html {
     margin: 15px 0 15px 0;
     padding-top: 3.5vw;
 }
+.h3, h3 {
+    color: antiquewhite;
+    font-size: 1.5vw;
+    font-style: italic;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 2vw;
+    width: 100%;
+    margin: 0;
+    padding: 0.5vw 0 0 0.5vw;
+}
 .h4, h4 {
     font-size: 2vw;
     color: #30a791;
