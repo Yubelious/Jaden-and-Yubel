@@ -1,5 +1,23 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
 /*This adds a bouncing ball to look at while waiting for a duel to connect. I also stuck Rock Paper Scissors in here.*/
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
 #game-loading-container p {
     margin-top: 20vw;
 }
@@ -44,23 +62,5 @@
     height: 19.2vw;
     width: 13.3vw;
     padding: 1vw;
-}
-@-moz-keyframes moveX {
-  from { left: 0; } to { left: 95vw; }
-}
-@-o-keyframes moveX {
-  from { left: 0; } to { left: 95vw; }
-}
-@keyframes moveX {
-  from { left: 0; } to { left: 95vw; }
-}
-@-moz-keyframes moveY {
-  from { top: 0; } to { top: 90vh; }
-}
-@-o-keyframes moveY {
-  from { top: 0; } to { top: 90vh; }
-}
-@keyframes moveY {
-  from { top: 0; } to { top: 90vh; }
 }
 }
