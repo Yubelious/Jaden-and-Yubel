@@ -39,7 +39,7 @@
 }
 #game-loading-container p::after {
     content: " ";
-    -moz-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate ease;
+    -moz-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     -o-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
     background-color: rgba(118, 109, 135, 0.5);
