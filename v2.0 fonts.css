@@ -1,10 +1,13 @@
-/*
-"Jaden and Yubel (featuring Chatbox and other scrolling fixes)" Userstyle © 2017 Yubelious! under MIT liecence.
+/* ==UserStyle==
+@name           Jaden and Yubel (featuring Chatbox and other scrolling fixes)
+@version        2.0.0
+@namespace      url(https://www.w3.org/1999/xhtml/)
+@description
 Inspired by O OO/The XAZ.
 Special thanks to Skeletonxf for finally coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
-Open for testing and feedback.
-Potentially compatible with any resolution. For smaller resolutions, there are options in notes if the current option doesn't do it for you.
+Open for testing and feedback. Potentially compatible with any resolution on almost any device.
 For optimal viewing, press F11.
-*/
+@author         Userstyle © 2017 Yubelious! under MIT liecence.
+==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Noto+Sans|Oxygen');
