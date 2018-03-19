@@ -161,7 +161,7 @@ html {
 }
 .nav>li.disabled>.menu-link, .nav>li.disabled>.menu-link:focus,.nav>li.disabled>.menu-link:hover {
     color: rgba(193, 158, 77, 0.5) !important;
-    background: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient( to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient( to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
     border: none;
 }
 #cf_alert_div {
