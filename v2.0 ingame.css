@@ -49,6 +49,30 @@
 .game-card-negated {
     z-index: 5;
 }
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+    z-index: 7;
+}
+.game-field-zone-activate {
+    z-index: 9;
+    position: absolute;
+}
+#game-announce-window {
+    overflow-y: scroll;
+    cursor: s-resize;
+    height: 10vw;
+    width: 10vw;
+    z-index: 6;
+}
+#game-selection-window {
+    overflow-y: scroll;
+    cursor: s-resize; /*For our Mac users.*/
+    height: 20vw;
+    width: 40vw;
+    margin-top: 3vw;
+    margin-left: 33vw;
+    z-index: 6;
+}
 #game-tooltip {
     font-size: 1.25em;
     color: antiquewhite !important;
