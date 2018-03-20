@@ -52,7 +52,7 @@ h4 {
     border: 0.5px solid antiquewhite;
     cursor: pointer;
     height: auto;
-    min-height: 0;
+    min-height: 1.125vw;
     min-width: 5vw;
     padding: 0.25vw 0.5vw;
 }
@@ -83,7 +83,12 @@ h4 {
     border-color: #f0f0f0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
+    max-height: 25vw;
+    max-width: 50vw;
     z-index: 6;
+}
+#game-to-spectator-button, #game-to-duelist-button, #game-deck-dropdown, .template-button, #game-rps-first, #game-rps-second, #game-end-button{
+    width: auto;
 }
 #game-end-window {
     -webkit-transform: rotate(42deg);
