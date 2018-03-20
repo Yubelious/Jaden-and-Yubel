@@ -28,7 +28,7 @@
 	animation: 1s game-field-zone-flash infinite alternate linear;
 }
 .game-field-zone {
-    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(75, 75, 75, 0.5) 2px, rgba(0, 0, 0, 0.5) 4px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    background: repeating-linear-gradient(-45deg, transparent, transparent 0.25vw, rgba(75, 75, 75, 0.5) 0.25vw, rgba(0, 0, 0, 0.5) 0.5vw), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
     border: 1px solid antiquewhite;
     height: 300%;
 }
