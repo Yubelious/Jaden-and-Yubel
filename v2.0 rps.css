@@ -51,16 +51,13 @@
     z-index: 2;
     position: fixed;
 }
-#game-rps-container {
+#game-rps-container, #game-rps-first, #game-rps-second, #game-rps-result {
     text-align: center;
-    margin-top: 10vh;
-}
-#game-rps-first, #game-rps-second {
-    margin-top: 10vw;
+    margin-top: 15vh;
 }
 #game-rps-container img{
-    height: 19.2vw;
-    width: 13.3vw;
+    height: 14.4vw;
+    width: 9.975vw;
     padding: 1vw;
 }
 }
