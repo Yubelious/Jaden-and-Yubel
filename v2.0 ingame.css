@@ -64,6 +64,19 @@
     width: 10vw;
     z-index: 6;
 }
+#game-option-list {
+    padding: 0.5vw;
+}
+#game-option-list .engine-button {
+    padding: 0;
+    margin: 0.25vw;
+    position: relative;
+    bottom: 0;
+}
+#game-option-list .engine-button:before, #game-option-list .engine-button:after {
+    content: "~";
+    font-size: 0;
+}
 #game-selection-window, #game-announce-card-window {
     overflow-y: scroll;
     cursor: s-resize; /*For our Mac users.*/
