@@ -1,7 +1,8 @@
 @-moz-document url("https://duelingnexus.com/") {
+
 body {
+    font-family: 'noto sans', arial, sans-serif;
     font-size: 0;
-    font-family: "Geneva", Ariel, sans-serif;
     line-height: 1;
     color: rgba(193, 158, 77, 0.9);
     background-color: rgba(0, 0, 0, 0.1);
@@ -69,14 +70,14 @@ html {
     right: 12.5%;
 }
 .table::before {
-    content: "Get Your Game On!";
     color: antiquewhite;
     text-align: center;
     background-size: 100%;
     opacity: 0.75;
+    padding: 0.5vw;
     z-index: -1;
     position: absolute;
-    top: -1.5vw;
+    top: -2vw;
     left: 0;
     bottom: 0;
     right: 0; 
@@ -86,6 +87,7 @@ html {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
+    font-family: 'oxygen', arial, sans-serif;
     text-align: center;
     font-weight: bold;
     border: 2px solid;
