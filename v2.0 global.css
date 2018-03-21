@@ -70,6 +70,7 @@ html {
     right: 12.5%;
 }
 .table::before {
+    font-family: arial, san-serif;
     color: antiquewhite;
     text-align: center;
     background-size: 100%;
