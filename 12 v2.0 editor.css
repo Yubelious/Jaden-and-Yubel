@@ -78,7 +78,7 @@ html {
     word-spacing: 0.2vw;
     line-height: 6.25;
     text-align: center;
-    text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em white, 0 0 1em white;
+    text-shadow: 0 0 7vw #666666, 0 0 7vw #666666, 0 0 14vw white, 0 0 14vw white, 0 0 7vw #666666, 0 0 7vw #666666, 0 0 14vw white, 0 0 14vw white, 0 0 7vw #666666, 0 0 7vw #666666, 0 0 14vw white, 0 0 14vw white, 0 0 7vw #666666, 0 0 7vw #666666, 0 0 14vw white, 0 0 14vw white, 0 0 7vw #666666, 0 0 7vw #666666, 0 0 14vw white, 0 0 14vw white;
     height: 7vw;
     width: 14vw;
     position: fixed;
