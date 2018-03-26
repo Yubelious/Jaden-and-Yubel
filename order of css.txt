@@ -12,7 +12,10 @@ transition
     transition-duration
     transition-timing-function
     transition-delay
+caret-color
+color
 content
+cursor
 font
     font-style
     font-variant
@@ -20,14 +23,12 @@ font
     font-size
     line-height
     font-family
-color
-caret-color
-text-decoration
-text-shadow
 text-align
 text-align-last
+text-decoration
 text-indent
 text-overflow
+text-shadow
 text-transform
 user-select
 word-break
@@ -68,21 +69,17 @@ column-rule
     column-rule-style
     column-rule-color
 display
-visibility
 opacity
-overflow
-    overflow-x
-    overflow-y
-cursor
+visibility
 height
 min-height
 max-height
 width
 min-width
 max-width
-transform
-    transform-origin
-    transform-style
+overflow
+    overflow-x
+    overflow-y
 margin
     margin-top
     margin-right
@@ -95,6 +92,9 @@ padding
     padding-left
 float
 clear
+transform
+    transform-origin
+    transform-style
 perspective
 perspective-origin
 z-index
