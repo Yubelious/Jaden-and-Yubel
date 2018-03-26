@@ -5,11 +5,11 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 html {
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 3vw/cover fixed; /*Image by the amazing Moribuden*/
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 3vw/cover fixed /*Image by the amazing Moribuden*/
 }
 /*Here are things that oddly starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
 .loadmore, hr {
-    display: none;
+    display: none
 }
 .h2, h2 {
     font: italic 2.5vw;
@@ -27,7 +27,7 @@ html {
     padding: 0.5vw 0 0 0.5vw;
 }
 .h4, h4 {
-    color: #30a791;
+    color: #30A791;
     font-size: 2vw;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
 }
@@ -36,7 +36,7 @@ html {
     font-size: 1vw;
 }
 .btn {
-    font-weight: bold;
+    font-weight: bold
 }
 .checkbox label {
     color: rgba(193, 158, 77, 0.75);
@@ -46,7 +46,7 @@ html {
     color: #C19E4D
 }
 .container {
-    width: 100%;
+    width: 100%
 }
 .profile-if-not-contributor {
     font-size: 1vw;
