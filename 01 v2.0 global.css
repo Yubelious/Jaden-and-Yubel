@@ -1,10 +1,7 @@
 @-moz-document url("https://duelingnexus.com/") {
-
 body {
-    font-family: 'noto sans', arial, sans-serif;
-    font-size: 0;
-    line-height: 1;
-    color: rgba(193, 158, 77, 0.9);
+    color: #C19E4D;
+    font: 0/1 'noto sans', arial, sans-serif;
     background-color: rgba(0, 0, 0, 0.1);
 }
 html {
@@ -15,15 +12,13 @@ html {
     display: none;
 }
 .h2, h2 {
-    font-size: 2.5vw;
-    font-style: italic;
+    font: italic 2.5vw;
     margin: 15px 0 15px 0;
     padding-top: 3.5vw;
 }
 .h3, h3 {
     color: antiquewhite;
-    font-size: 1.5vw;
-    font-style: italic;
+    font: italic 1.5vw;
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     height: 2vw;
@@ -32,20 +27,20 @@ html {
     padding: 0.5vw 0 0 0.5vw;
 }
 .h4, h4 {
-    font-size: 2vw;
     color: #30a791;
+    font-size: 2vw;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
 }
 .h6, h6 {
-    font-size: 1vw;
     color: antiquewhite;
+    font-size: 1vw;
 }
 .btn {
     font-weight: bold;
 }
 .checkbox label {
-    font-size: 1.1vw;
-    line-height: 22px;
+    color: rgba(193, 158, 77, 0.75);
+    font: 1.1vw/22px 'noto sans';
 }
 .checkbox label:hover {
     color: #C19E4D
@@ -62,16 +57,16 @@ html {
     text-align: justify;
     background:  black;
     opacity: 1;
-    float: right;
     width: 75%;
     margin: 9vh 0.1vw 10vh -0.1vw;
+    float: right;
     z-index: 1;
     position: relative;
     right: 12.5%;
 }
 .table::before {
-    font-family: arial, san-serif;
     color: antiquewhite;
+    font-family: arial, san-serif;
     text-align: center;
     background-size: 100%;
     opacity: 0.75;
@@ -88,18 +83,22 @@ html {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
+    cursor: pointer;
+    font-weight: bold;
     font-family: 'oxygen', arial, sans-serif;
     text-align: center;
-    font-weight: bold;
     border: 2px solid;
-    overflow: hidden;
+}
+#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-style: italic;
 }
 #tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
-    cursor: pointer;
-    overflow: hidden;
 }
 /*This is the code for the navbar, which can be seen from any tab.*/
 .container-fluid {
@@ -116,8 +115,8 @@ html {
     top: 0;
 }
 .navbar-text {
-    font-size: 1vw;
     color: antiquewhite;
+    font-size: 1vw;
     line-height: 3;
     margin: 0 0 0 3vw;
 }
@@ -125,9 +124,9 @@ html {
     -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(193, 158, 77, 0.9) !important;
     font-size: 0.8vw;
     line-height: 1vw;
-    color: rgba(193, 158, 77, 0.9) !important;
     text-shadow: none;
     border: 1px dotted rgba(193, 158, 77, 0.9);
     height: 3vw;
@@ -170,25 +169,25 @@ html {
     font-size: 1vw !important;
 }
 #link-chat {
-    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
-    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
-    transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    color: antiquewhite;
+    cursor: help;
     font-size: 0.8vw;
     font-weight: bold;
     line-height: 1vw;
-    color: antiquewhite;
     background-color: black;
     border: 1px dotted antiquewhite;
-    cursor: help;
     height: 3vw;
     width: auto;
     margin-left: 0.25vw;
     padding: 1vw;
 }
 #link-chat:focus, #link-chat:hover {
-    -moz-transition: color 2s ease-in-out,border 2s ease-in-out;
-    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
-    transition: color 2s ease-in-out, border 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px dashed;
 }
