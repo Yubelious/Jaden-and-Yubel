@@ -12,7 +12,10 @@ html {
     display: none
 }
 .h2, h2 {
-    font: italic 2.5vw;
+    font: italic 2.5vw 'noto sans';
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     margin: 15px 0 15px 0;
     padding-top: 3.5vw;
 }
@@ -20,6 +23,9 @@ html {
     color: antiquewhite;
     font: italic 1.5vw;
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     height: 2vw;
     width: 100%;
@@ -30,10 +36,16 @@ html {
     color: #30A791;
     font-size: 2vw;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .h6, h6 {
     color: antiquewhite;
     font-size: 1vw;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .btn {
     font-weight: bold
