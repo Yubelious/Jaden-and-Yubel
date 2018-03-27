@@ -31,6 +31,7 @@ text-overflow
 text-shadow
 text-transform
 user-select
+letter-spacing
 word-break
 word-spacing
 word-wrap
