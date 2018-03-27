@@ -2,7 +2,9 @@
 /*If it shows up on the Login or Register tab, it's in here.*/
 .alert-success, .alert-danger {
     font-size: 1vw;
-    background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important
+    background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
+    margin: 0 !important;
+    padding: 0.5vw;
 }
 .form-control {
     -moz-transition-duration: 1s;
@@ -49,9 +51,11 @@
     margin-bottom: 5vh;
 }
 #alerts {
-    padding-top: 2.5vw;
+    margin: 1vw;
+    padding: 0;
     z-index: 2;
     position: fixed;
+    top: 3vw;
     right: 2vw;
 }
 #alerts .close {
