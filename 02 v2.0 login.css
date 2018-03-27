@@ -1,7 +1,7 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*If it shows up on the Login or Register tab, it's in here.*/
 .alert-success, .alert-danger {
-    background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
+    background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important
 }
 .form-control {
     -moz-transition-duration: 1s;
@@ -10,8 +10,8 @@
     -moz-transition-property: all;
     -o-transition-property: all;
     transition-property: all;
-    font-size: 1.25vw;
     color: rgba(118, 109, 135, 0.7);
+    font-size: 1.25vw;
     text-indent: 0.5vw;
     background-color: rgba(250, 235, 215, 0.7);
     border: 4px solid #C19E4D;
@@ -63,17 +63,20 @@
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    font-size: 1vw;
     color: rgba(193, 158, 77, 0.9) !important;
+    font-size: 1vw;
     text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
-    float: right;
     padding: 1vw;
+    float: right;
 }
 #login-create-label, #login-recover-label {
-    margin: 1.25vw 18.75vw 0 0;
+    margin: 1.25vw 18.75vw 0 0
 }
 #register-login-label {
-    margin: -2vw 4vw 0 0;
+    margin: -2vw 4vw 0 0
+}
+#login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
+    font-style: italic
 }
 #login-create-label:hover, #login-recover-label:hover, #register-login-label:hover, #login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
     -moz-transition: all 500ms ease-in-out;
@@ -83,10 +86,10 @@
     text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
 }
 #login-form label {
-    cursor: default;
+    cursor: default
 }
 #login-remember {
-    cursor: pointer;
+    cursor: pointer
 }
 #tab-login .container, #tab-register .container {    
     background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
