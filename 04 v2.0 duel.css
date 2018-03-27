@@ -1,7 +1,7 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*This affects the Duel tab, but not the duel pages.*/
 div#tab-duel-home {
-    overflow: hidden;
+    overflow: hidden
 }
 #tab-duel .button {
     font-size: 1.75vw;
@@ -11,7 +11,7 @@ div#tab-duel-home {
     padding: 1px;
 }
 #tab-duel .button:focus {
-    font-style :italic;
+    font-style :italic
 }
 #tab-duel .button:hover {
     color: antiquewhite;
@@ -30,23 +30,23 @@ div#tab-duel-home {
 }
 /*This more specifically affects the dueling menu of the duel tab.*/
 #tab-duel-home .button {
-    color: #c19e4d;
+    color: #C19E4D;
     width: 100%;
     margin-top: 2vw; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
-}
-#tab-duel-home .mlabel:before {
-    content: " ";
-    height: 2vw;
-    width: 100vw;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    z-index: -1;
-    position: absolute;
-    left: 0;
 }
 #tab-duel-home .mlabel {
     font-size: 1.5vw;
     font-weight: bold;
     text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125, #766D87;
+}
+#tab-duel-home .mlabel:before {
+    content: " ";
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 2vw;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    left: 0;
 }
 #tab-duel-home p {
     color: antiquewhite;
@@ -58,6 +58,7 @@ div#tab-duel-home {
 }
 /*This affects the searching pages, such as bot duels.*/
 #tab-duel-searching .button {
+    transition-duration: 100ms;
     color: rgba(48, 167, 145, 0.9);
     border-color: rgba(48, 167, 145, 0.9);
     opacity: 0.9;
@@ -70,14 +71,14 @@ div#tab-duel-home {
     opacity: 1;
     height: 105vh;
     width: 110%;
+    margin-top: 0;
     z-index: 5;
-    margin-top: 0vh;
     position: fixed;
     top: 0;
     left: 0;
 }
 #tab-duel-searching .button:hover {
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed; /*Image by either Dyunasumon or Moribuden.*/
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed /*Image by either Dyunasumon or Moribuden.*/
 }
 /*This affects the game list page.*/
 button#lobby-duels-hide-gamelist {
@@ -86,7 +87,7 @@ button#lobby-duels-hide-gamelist {
     margin: 6vh -30vw -2px -2px;
 }
 #tab-duel-gamelist .button {
-    color: #c19e4d;
+    color: #C19E4D
 }
 #tab-duel-gamelist .button:not(#lobby-duels-hide-gamelist) {
     font-size: 1.25vw;
@@ -95,10 +96,10 @@ button#lobby-duels-hide-gamelist {
     padding: 1px;
 }
 #tab-duel-gamelist .container {
-    width: 100%;
+    width: 100%
 }
 #tab-duel-gamelist label {
-    font-size: 1.1vw;
+    font-size: 1.1vw
 }
 #tab-duel-gamelist p:not(.button) {
     font-size: 1vw;
@@ -111,7 +112,7 @@ button#lobby-duels-hide-gamelist {
 }
 #tab-duel-gamelist .table::before {
     font-size: 1.25vw;
-    content: "֎ Get Your Game On! ֍";
+    content: "Get Your Game On!";
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
 }
 }
