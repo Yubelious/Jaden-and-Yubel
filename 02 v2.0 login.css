@@ -1,6 +1,7 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*If it shows up on the Login or Register tab, it's in here.*/
 .alert-success, .alert-danger {
+    font-size: 1vw;
     background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important
 }
 .form-control {
@@ -48,7 +49,6 @@
     margin-bottom: 5vh;
 }
 #alerts {
-    font-size: 1vw !important;
     padding-top: 2.5vw;
     z-index: 2;
     position: fixed;
