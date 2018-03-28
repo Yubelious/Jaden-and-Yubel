@@ -1,0 +1,63 @@
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This adds a bouncing ball to look at while waiting for a duel to connect. I also stuck Rock Paper Scissors in here.*/
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+#game-loading-container p {
+    margin-top: 20vw
+}
+#game-loading-container p::before {
+    -moz-animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    -o-animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    content: " ";
+    background-color: #C19E4D;
+    background-image: linear-gradient(135deg, rgba(192, 192, 192,0.25) -25%, rgba(192, 192, 192, 0.1) 75%);
+    border-radius: 50%;
+    box-shadow: inset -0.5vw -0.5vw 20px rgba(0, 0, 0, 0.75);
+    display: block;
+    height: 5vw;
+    width: 5vw;
+    margin: 0;
+    z-index: 3;
+    position: fixed;
+}
+#game-loading-container p::after {
+    -moz-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    -o-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    content: " ";
+    background-color: rgba(118, 109, 135, 0.5);
+    border-radius: 50%;
+    display: block;
+    height: 4.5vw;
+    width: 4.5vw;
+    margin: 0;
+    z-index: 2;
+    position: fixed;
+}
+#game-rps-container, #game-rps-first, #game-rps-second, #game-rps-result {
+    text-align: center;
+    margin-top: 15vh;
+}
+#game-rps-container img{
+    height: 14.4vw;
+    width: 9.975vw;
+    padding: 1vw;
+}
+}

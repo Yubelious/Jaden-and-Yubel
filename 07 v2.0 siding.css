@@ -1,0 +1,84 @@
+@-moz-document url-prefix("https://duelingnexus.com/game"), url-prefix("https://duelingnexus.com/editor") {
+/*This affects the siding screen, and the related elements of the deck pages.*/
+body {
+    font: 0/1 'noto sans', arial, sans-serif
+}
+button#game-siding-done {
+    position: absolute;
+    bottom: 0;
+}
+.engine-text-box {
+    font: 1vw/1 'Times New Roman', serif;
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
+    border: 0.375vw double #f0f0f0;
+    height: 2vw;
+}
+#game-container, #editor-container {
+    margin: 1vw
+}
+#card-column {
+    height: 100vh;
+    width: 24vw;
+    float: left;
+}
+#card-name {
+    color: black;
+    font-size: 2.125vw;
+    text-align: center;
+    text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em antiquewhite, 0 0 1em antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    margin: 0;
+}
+#card-picture-container {
+    margin: 0.5vw
+}
+#card-picture {
+    width: 50%
+}
+#card-description-box {
+    color: antiquewhite;
+    font-size: 1.5vw;
+    text-align: justify;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    height: 25vh;
+    overflow-y: scroll;
+    padding: 0.25vw;
+}
+#editor-decks-column, #game-siding-column {
+    height: 40vw;
+    width: 35.5vw;
+    padding: 0 0.25vw;
+}
+#editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
+    color: #30a791;
+    font-size: 1.75vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+    background-color: rgba(118, 109, 135, 0.7);
+    height: 1.75vw;
+    margin-bottom: 0.5vw;
+}
+#editor-deck-main-title, #editor-search-title, #siding-deck-main-title {
+	margin: 0 0 1vw 0
+}
+#editor-deck-extra-title, #editor-deck-side-title, #siding-deck-extra-title, #siding-deck-side-title {
+	margin: 0.5vw 0
+}
+#editor-main-deck, #siding-main-deck {
+    height: 20.1vw !important
+}
+#editor-extra-deck, #editor-side-deck, #siding-extra-deck, #siding-side-deck {
+    height: 5.1vw !important
+}
+#editor-search-column, #game-siding-column-2 {
+    height: 28.7vw;
+    width: 35.5vw;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+#editor-search-column, #game-siding-column-2 .engine-text-box {
+    width: 35.5vw
+}
+}
