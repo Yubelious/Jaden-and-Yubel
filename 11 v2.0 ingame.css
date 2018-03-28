@@ -1,5 +1,17 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
 /*This affects the actual duel.*/
+@-moz-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@-o-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
 .game-avatar {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
@@ -58,18 +70,18 @@
     position: absolute;
 }
 #game-announce-window {
-    overflow-y: scroll;
     cursor: s-resize;
     height: 10vw;
     width: 10vw;
+    overflow-y: scroll;
     z-index: 6;
 }
 #game-option-list {
-    padding: 0.5vw;
+    padding: 0.5vw
 }
 #game-option-list .engine-button {
-    padding: 0;
     margin: 0.25vw;
+    padding: 0;
     position: relative;
     bottom: 0;
 }
@@ -78,20 +90,17 @@
     font-size: 0;
 }
 #game-selection-window, #game-announce-card-window {
+    transform: translateY(-10vw) translateX(35vw);
+    cursor: s-resize;
     overflow-y: scroll;
-    cursor: s-resize; /*For our Mac users.*/
     height: 20vw;
     width: 40vw;
     margin: 0;
     padding-top: 0;
-    z-index: 6;
-    position: absolute;
-    top: 25vh;
-    left: 30vw;
 }
 #game-tooltip {
-    font-size: 1.25em;
     color: antiquewhite !important;
+    font-size: 1.25vw;
     background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
     border: 1px dashed antiquewhite;
     padding: 1vh;
