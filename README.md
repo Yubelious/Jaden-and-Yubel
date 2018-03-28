@@ -1,4 +1,4 @@
-# JxY
+# J×Y
 
 **Description:**
 Jaden and Yubel v2.0 (featuring chat box and other scrolling fixes)
@@ -7,7 +7,7 @@ So this is a Yu-Gi-Oh! GX themed style affecting the upcoming online Yu-Gi-Oh! T
 
 duelingnexus.com
 
-I'd like to give special thanks to Skeleton for helping me get back into this. If you don't want a background or themed colours, check out his fixes at https://userstyles.org/styles/144946/duelingnexus-chat-monster-info-split-view. JxY is mainly a theme for a game we like to play, but also includes some much-needed fixes. Expect to see new background images, larger more visible text, scrollbars where there were once no scrollbars, and the use of most of your display. It should now work on most displays, including mobile.
+I'd like to give special thanks to Skeleton for helping me get back into this. If you don't want a background or themed colours, check out his fixes at https://userstyles.org/styles/144946/duelingnexus-chat-monster-info-split-view. J×Y is mainly a theme for a game we like to play, but also includes some much-needed fixes. Expect to see new background images, larger more visible text, scrollbars where there were once no scrollbars, and the use of most of your display. It should now work on most displays, including mobile.
 
 MIT License
 
