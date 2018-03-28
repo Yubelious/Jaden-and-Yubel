@@ -1,9 +1,22 @@
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
 /*This affects the lobby, where you prepare for the duel.*/
+@-moz-keyframes spin {
+    100% {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+    100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
 table {
+    color: #C19E4D;
     font-size: 1.125vw;
-    color: #c19e4d;
     background-color: rgba(0, 0, 0, 0);
+}
+.template-button, #game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, #game-rps-first, #game-rps-second, #game-end-button {
+    width: auto;
+    max-width: 28vw;
 }
 #game-room-container {
     background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
@@ -23,18 +36,13 @@ table {
     border-bottom: 2px solid antiquewhite;
 	height: 4vw;
 }
-#game-room-information-table td {
-    width: 10vw;
-}
 #game-room-information {
     width: 16vw;
     min-width: 160px;
     padding: 2vh 2vw 2vh 1vw;
 }
-
-#game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, .template-button, #game-rps-first, #game-rps-second, #game-end-button{/*This prevents the button at the end of the game from taking 2 lines.*/
-    width: auto;
-    max-width: 28vw;
+#game-room-information-table td {
+    width: 10vw
 }
 #game-not-ready-button:active, #game-ready-button:active {
     -moz-animation: 2s ease-in-out 1s infinite spin;
@@ -42,41 +50,20 @@ table {
     animation: 2s ease-in-out 1s infinite spin;
 }
 #game-deck-selection {
-    border: solid #f0f0f0;
+    cursor: s-resize;
+    border: solid #F0F0F0;
     border-width: 15px 1px 1px 3px;
     border-radius: 10px;
-    overflow-y: scroll;
-    cursor: s-resize;
     height: 16vh;
     width: 28vw;
     min-width: 280px;
+    overflow-y: scroll;
     margin-top: 5px;
     padding: 5px;
     z-index: 2;
     position: absolute;
 }
 #game-deck-selection:hover {
-    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8));
-}
-@-moz-keyframes game-field-zone-flash {
-	from { background-color: rgba(86,206,184, 0.1); }
-	to { background-color: rgba(86,206,184, 0.9); }
-}
-@-o-keyframes game-field-zone-flash {
-	from { background-color: rgba(86,206,184, 0.1); }
-	to { background-color: rgba(86,206,184, 0.9); }
-}
-@keyframes game-field-zone-flash {
-	from { background-color: rgba(86,206,184, 0.1); }
-	to { background-color: rgba(86,206,184, 0.9); }
-}
-@-moz-keyframes spin {
-    100% {-moz-transform: rotate(360deg);}
-}
-@-o-keyframes spin {
-    100% {-o-transform: rotate(360deg);}
-}
-@keyframes spin {
-    100% {transform: rotate(360deg);}
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8))
 }
 }
