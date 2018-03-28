@@ -58,8 +58,8 @@ border-image
 border-radius
 border-collapse
 border-spacing
-box-sizing
 box-shadow
+box-sizing
 column-span
 columns
     column-width
