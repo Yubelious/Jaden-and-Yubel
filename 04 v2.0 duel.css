@@ -112,7 +112,7 @@ button#lobby-duels-hide-gamelist {
 }
 #tab-duel-gamelist .table::before {
     font-size: 1.25vw;
-    content: "Get Your Game On!";
+    content: "Get Your Game On!";
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
 }
 }
