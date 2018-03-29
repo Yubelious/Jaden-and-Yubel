@@ -4,7 +4,7 @@ body {
     font: 1vw/1 'noto sans', arial, sans-serif
 }
 html {
-    background-image: repeating-linear-gradient( -45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg) 0 0/cover fixed; /*Image by Moribuden.*/;
 }
 .editor-search-result {
