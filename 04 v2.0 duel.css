@@ -37,7 +37,7 @@ div#tab-duel-home {
 #tab-duel-home .mlabel {
     font-size: 1.5vw;
     font-weight: bold;
-    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125, #766D87;
+    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125 #766D87;
 }
 #tab-duel-home .mlabel:before {
     content: " ";
