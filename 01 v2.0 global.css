@@ -21,7 +21,7 @@ html {
 }
 .h3, h3 {
     color: antiquewhite;
-    font: italic 1.5vw;
+    font: italic 1.5vw 'noto sans';
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     -moz-user-select: none;
     -o-user-select: none;
@@ -167,7 +167,7 @@ html {
 }
 .nav>li.disabled>.menu-link, .nav>li.disabled>.menu-link:focus,.nav>li.disabled>.menu-link:hover {
     color: rgba(193, 158, 77, 0.5) !important;
-    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient( to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient(to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
     border: none;
 }
 #cf_alert_div {
