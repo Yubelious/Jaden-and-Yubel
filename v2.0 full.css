@@ -1,0 +1,1239 @@
+/* ==UserStyle==
+@name           J×Y - 3/28/2018, 10:15:07 PM
+@version        0.2.0
+@namespace      url(https://www.w3.org/1999/xhtml/)
+@description
+J×Y (Jaden and Yubel v2.0 featuring Chatbox and other scrolling fixes)
+Inspired by O OO/The XAZ.
+Special thanks to Skeletonxf for finally coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
+Open for testing and feedback. Potentially compatible with any standard resolution on almost any device. For optimal viewing, press F11.
+Now compatible with the mod made by stealthAngel
+@author         Userstyle © 2017 Yubelious! under MIT liecence.
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Noto+Sans|Oxygen');
+@-moz-document url("https://duelingnexus.com/") {
+body {
+    color: #C19E4D;
+    font: 0/1 'noto sans', arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+html {
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 3vw/cover fixed /*Image by the amazing Moribuden*/
+}
+/*Here are things that oddly starts with a period. I spent all my life thinking that full stops go at the end. And here I am starting with them.*/
+.loadmore, hr {
+    display: none
+}
+.h2, h2 {
+    font: italic 2.5vw 'noto sans';
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin: 15px 0 15px 0;
+    padding-top: 3.5vw;
+}
+.h3, h3 {
+    color: antiquewhite;
+    font: italic 1.5vw 'noto sans';
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 2vw;
+    width: 100%;
+    margin: 0;
+    padding: 0.5vw 0 0 0.5vw;
+}
+.h4, h4 {
+    color: #30A791;
+    font-size: 2vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.h6, h6 {
+    color: antiquewhite;
+    font-size: 1vw;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn {
+    font-weight: bold
+}
+.checkbox label {
+    color: rgba(193, 158, 77, 0.75);
+    font: 1.1vw/22px 'noto sans';
+}
+.checkbox label:hover {
+    color: #C19E4D
+}
+.container {
+    width: 100%
+}
+.profile-if-not-contributor {
+    font-size: 1vw;
+    margin: 0;
+    padding: 1vw;
+}
+.table {
+    text-align: justify;
+    background:  black;
+    opacity: 1;
+    width: 75%;
+    margin: 9vh 0.1vw 10vh -0.1vw;
+    float: right;
+    z-index: 1;
+    position: relative;
+    right: 12.5%;
+}
+.table::before {
+    color: antiquewhite;
+    font-family: arial, san-serif;
+    text-align: center;
+    background-size: 100%;
+    opacity: 0.75;
+    padding: 0.5vw;
+    z-index: -1;
+    position: absolute;
+    top: -2vw;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+/*Here we have some general button rules.*/
+#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'oxygen', arial, sans-serif;
+    text-align: center;
+    border: 2px solid;
+}
+#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-style: italic;
+}
+#tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/*This is the code for the navbar, which can be seen from any tab.*/
+.container-fluid {
+    background-color: #766D87;
+    height: 3vw;
+    min-height: 0;
+    max-height: 25vh;
+    width: 100vw;
+    padding-left: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+.navbar-text {
+    color: antiquewhite;
+    font-size: 1vw;
+    line-height: 3;
+    margin: 0 0 0 3vw;
+}
+.navbar-nav>li>.menu-link {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(193, 158, 77, 0.9) !important;
+    font-size: 0.8vw;
+    line-height: 1vw;
+    text-shadow: none;
+    border: 1px dotted rgba(193, 158, 77, 0.9);
+    height: 3vw;
+    min-height: 0;
+    max-height: 25vh;
+    width:auto;
+    margin-left: 0.25vw;
+    padding: 1vw;
+}
+.nav>li>a:focus {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(48, 167, 145, 0.9) !important;
+    font-style: italic;
+    background-color: rgba(118, 109, 135, 0.8);
+    border-color: rgba(48, 167, 145, 0.9);
+}
+.nav>li>a:hover {
+    -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
+    -o-transition: color 2s ease-in-out, border 2s ease-in-out;
+    transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: rgba(48, 167, 145, 0.9) !important;
+    background-color: rgba(118, 109, 135, 0.8);
+    border-color: rgba(48, 167, 145, 0.9);
+}
+.nav>li.disabled>.menu-link, .nav>li.disabled>.menu-link:focus,.nav>li.disabled>.menu-link:hover {
+    color: rgba(193, 158, 77, 0.5) !important;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.9vw, rgba(150, 150, 150, 0.8) 2vw, rgba(160, 160, 160, 0.4) 0.5vw, transparent 1vw), linear-gradient(to bottom, rgba(78, 78, 78, 0.6), rgba(0, 0, 0, 0.6));
+    border: none;
+}
+#cf_alert_div {
+    height: 6vw;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    top: 3vw !important;
+}
+#cf_alert_div a, #cf_alert_div p{
+    font-size: 1vw !important;
+}
+#link-chat {
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    color: antiquewhite;
+    cursor: help;
+    font-size: 0.8vw;
+    font-weight: bold;
+    line-height: 1vw;
+    background-color: black;
+    border: 1px dotted antiquewhite;
+    height: 3vw;
+    width: auto;
+    margin-left: 0.25vw;
+    padding: 1vw;
+}
+#link-chat:focus, #link-chat:hover {
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px dashed;
+}
+}
+@-moz-document url("https://duelingnexus.com/") {
+/*If it shows up on the Login or Register tab, it's in here.*/
+.alert-success, .alert-danger {
+    font-size: 1vw;
+    background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
+    margin: 0 !important;
+    padding: 0.5vw;
+}
+.form-control {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    color: rgba(118, 109, 135, 0.7);
+    font-size: 1.25vw;
+    text-indent: 0.5vw;
+    background-color: rgba(250, 235, 215, 0.7);
+    border: 4px solid #C19E4D;
+    box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.4), 0px 0px 8px rgba(193, 158, 77, 0.8), 0px 1px 8px rgba(0, 0, 0, 0.6);
+    height: 2.75vw;
+    padding: 0;
+}
+.form-control:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    color: #766D87;
+    background-color: antiquewhite;
+    border: 4px solid #C19E4D;
+    box-shadow: 0px 1px 1px rgba(48, 167, 145, 0.6), 0px 0px 8px rgba(193, 158, 77, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
+}
+.form-control:focus {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    color: rgba(118, 109, 135, 0.9);
+    background-color: rgba(250, 235, 215, 0.3);
+    border: 4px solid #30A791;
+    box-shadow: 0px 1px 1px rgba(193, 158, 77, 0.6), 0px 0px 8px rgba(48, 167, 145, 1), 0px 1px 8px rgba(0, 0, 0, 0.8);
+}
+.form-group {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+#alerts {
+    margin: 1vw;
+    padding: 0;
+    z-index: 2;
+    position: fixed;
+    top: 3vw;
+    right: 2vw;
+}
+#alerts .close {
+    font-size: 1vw;
+    margin:0;
+    padding: 0;
+}
+#login-create-label, #login-recover-label, #register-login-label {
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    color: rgba(193, 158, 77, 0.9) !important;
+    font-size: 1vw;
+    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 1vw;
+    float: right;
+}
+#login-create-label, #login-recover-label {
+    margin: 1.25vw 18.75vw 0 0
+}
+#register-login-label {
+    margin: -2vw 4vw 0 0
+}
+#login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
+    font-style: italic
+}
+#login-create-label:hover, #login-recover-label:hover, #register-login-label:hover, #login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    color: rgba(48, 167, 145, 0.9) !important;
+    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+#login-form label {
+    cursor: default
+}
+#login-remember {
+    cursor: pointer
+}
+#tab-login .container, #tab-register .container {    
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
+    height: 37vw;
+    width: 75vw;
+    float: none;
+}
+}
+@-moz-document url("https://duelingnexus.com/") {
+/*This affected the news tab. You won't be able to see this or the other tabs (except Login and Register) until you log in.*/
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 0.85;}
+}
+#newsMain {
+    font-size: 1vw;
+    padding-bottom: 40px; /*Increase this value if the taskbar blocks the interface on the news tab.*/
+}
+#tab-news .button {
+    animation: fadein 2s;
+    color: rgba(250, 235, 215, 0.5);
+    font-size: 1.25vw;
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.5), 2px 2px 2px rgba(250, 235, 215, 0.25), 3px 3px 3px rgba(250, 235, 215, 0.125);
+    border-color: rgba(250, 235, 215, 0.5);
+    height: auto;
+    min-height: 0;
+    width: auto;
+    min-width: 0;
+    padding: 0.1vw 1vw 0.1vw 0.25vw;
+}
+#tab-news .button:focus {
+    color: rgba(250, 235, 215, 0.25);
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.25), 2px 2px 2px rgba(250, 235, 215, 0.125), 3px 3px 3px rgba(250, 235, 215, 0.0625);
+    background-color: rgba(200, 200, 200, 0.25);
+    border-color: rgba(250, 235, 215, 0.25);
+}
+#tab-news .button:hover {
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 1), 2px 2px 2px rgba(250, 235, 215, 0.5), 3px 3px 3px rgba(250, 235, 215, 0.25);
+    border-color: antiquewhite;
+}
+}
+@-moz-document url("https://duelingnexus.com/") {
+/*This affects the Duel tab, but not the duel pages.*/
+div#tab-duel-home {
+    overflow: hidden
+}
+#tab-duel .button {
+    font-size: 1.75vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: rgba(193, 158, 77, 0.75);
+    padding: 1px;
+}
+#tab-duel .button:focus {
+    font-style :italic
+}
+#tab-duel .button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: rgba(192, 192, 192, 0.25);
+}
+#tab-duel div.profile-if-not-contributor {
+    background: radial-gradient(silver, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)) !important;
+    border: none !important;
+    margin: 0 !important;
+}
+#tab-duel .progress {
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
+/*This more specifically affects the dueling menu of the duel tab.*/
+#tab-duel-home .button {
+    color: #C19E4D;
+    width: 100%;
+    margin-top: 2vw; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#tab-duel-home .mlabel {
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: 0 0 0.125vw rgba(0, 0, 0, 0.9), 0 0 0.125 #766D87;
+}
+#tab-duel-home .mlabel:before {
+    content: " ";
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 2vw;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+}
+#tab-duel-home p {
+    color: antiquewhite;
+    font-size: 1.5vw;
+    text-align: left !important;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9), 0 0 0.5vw rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 1vw;
+}
+/*This affects the searching pages, such as bot duels.*/
+#tab-duel-searching .button {
+    transition-duration: 100ms;
+    color: rgba(48, 167, 145, 0.9);
+    border-color: rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 20vh;
+}
+#tab-duel-searching .button:focus {
+    transition-duration: 100ms;
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed !important; /*Image by either Dyunasumon or Moribuden.*/
+    opacity: 1;
+    height: 105vh;
+    width: 110%;
+    margin-top: 0;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#tab-duel-searching .button:hover {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed /*Image by either Dyunasumon or Moribuden.*/
+}
+/*This affects the game list page.*/
+button#lobby-duels-hide-gamelist {
+    font-size: 2vw;
+    width: 100%;
+    margin: 6vh -30vw -2px -2px;
+}
+#tab-duel-gamelist .button {
+    color: #C19E4D
+}
+#tab-duel-gamelist .button:not(#lobby-duels-hide-gamelist) {
+    font-size: 1.25vw;
+    width: 50.07%;
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
+#tab-duel-gamelist .container {
+    width: 100%
+}
+#tab-duel-gamelist label {
+    font-size: 1.1vw
+}
+#tab-duel-gamelist p:not(.button) {
+    font-size: 1vw;
+    width: 100%;
+}
+#tab-duel-gamelist .table {
+    font-size: 1.5vw;
+    color: #30a791;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+#tab-duel-gamelist .table::before {
+    font-size: 1.25vw;
+    content: "Get Your Game On!";
+    background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
+}
+}
+@-moz-document url("https://duelingnexus.com/") {
+/*This affects the decks tab, but not the deck pages.*/
+#tab-decks a {
+    -moz-transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    -o-transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    color: #C19E4D !important;
+    font-size: 1vw;
+    text-shadow: 0px 1px 0.5px rgba(193, 158, 77, 0.6), 0px 0px 2px rgba(48, 167, 145, 1), 0px 1px 2px rgba(0, 0, 0, 0.8);
+    background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    float: right;
+}
+#tab-decks a:focus, #tab-decks .button:focus {
+    font-style: italic;
+}
+ #tab-decks a:hover {
+    -moz-transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    -o-transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    transition: color 1s ease-in-out, border-color 2s ease-in-out;
+    color: #30A791 !important;
+    text-decoration: underline;
+    text-shadow: 0px 0.5px 0.5px rgba(48, 167, 145, 0.4), 0px 0px 2px rgba(193, 158, 77, 0.8), 0px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+#tab-decks .button {
+    color: #C19E4D;
+    font-size: 1.5vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: rgba(193, 158, 77, 0.75);
+    height: 2.5vw;
+    width: 36vw !important;
+    min-width: 0 !important;
+    transform: rotate(-10deg);
+    margin: 0;
+    padding: 0;
+    position: fixed !important;
+}
+#tab-decks .button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: rgba(192, 192, 192, 0.25);
+}
+#decks-create-button {
+    float: left;
+    top: 18vw;
+    right: 0;
+    bottom: 0;
+    left: 16vw;
+}
+#tab-decks p.button {
+    top: 15vw;
+    right: 15vw;
+}
+#tab-decks .table {
+    color: #30A791;
+    font-size: 1.5vw;
+    text-shadow: 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5), 0 0 0.25vw rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 25vw;
+}
+#tab-decks .table::before {
+    font-size: 1.25vw;
+    content: "Now prepare to feel my wrath!";
+    background: url("https://i62.servimg.com/u/f62/17/89/30/88/65591110.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
+}
+}
+@-moz-document url("https://duelingnexus.com/") {
+/*This affects the profile tab, but not the profile pages. Er... if there were profile pages.*/
+div#tab-profile {
+    padding-bottom: 40px /*If your taskbar blocks the interface on the profile tab, increase this number.*/
+}
+#tab-profile p:not(.profile-if-not-contributor) {
+    color: antiquewhite;
+    font-size: 1vw;
+}
+#tab-profile p.profile-if-not-contributor {
+    font-size: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+#tab-profile .button { 
+    color: #C19E4D;
+    font-size: 1.25vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: rgba(193, 158, 77, 0.75);
+    position: relative;
+    right: 0.6vw;
+}
+#tab-profile .button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: rgba(192, 192, 192, 0.25);
+}
+#tab-profile .row {
+    background-color: rgba(0, 0, 0, 0.5) !important
+}
+#avatar_image {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    border: 0.5vw solid rgba(193, 158, 77, 0.7);
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+    position: relative;
+    right: 0.5vw;
+}
+#avatar_image:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+#avatar-previous-button, #avatar-next-button {
+    width: 2vw !important;
+    padding: 0;
+    position: relative;
+    right: 0.6vw;
+}
+#profile-upload-avatar, #profile-upload-sleeve {
+    width: auto;
+    padding: 0.25vw 0.5vw;
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/game"), url-prefix("https://duelingnexus.com/editor") {
+/*This affects the siding screen, and the related elements of the deck pages.*/
+body {
+    font: 0/1 'noto sans', arial, sans-serif
+}
+button#game-siding-done {
+    position: absolute;
+    bottom: 0;
+}
+.engine-text-box {
+    font: 1vw/1 'Times New Roman', serif;
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
+    border: 0.375vw double #f0f0f0;
+    height: 2vw;
+}
+#game-container, #editor-container {
+    margin: 1vw
+}
+#card-column {
+    height: 100vh;
+    width: 24vw;
+    float: left;
+}
+#card-name {
+    color: black;
+    font-size: 2.125vw;
+    text-align: center;
+    text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em antiquewhite, 0 0 1em antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    margin: 0;
+}
+#card-picture-container {
+    margin: 0.5vw
+}
+#card-picture {
+    width: 50%
+}
+#card-description-box {
+    color: antiquewhite;
+    font-size: 1.5vw;
+    text-align: justify;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    height: 25vh;
+    overflow-y: scroll;
+    padding: 0.25vw;
+}
+#editor-decks-column, #game-siding-column {
+    height: 40vw;
+    width: 35.5vw;
+    padding: 0 0.25vw;
+}
+#editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
+    color: #30a791;
+    font-size: 1.75vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+    background-color: rgba(118, 109, 135, 0.7);
+    height: 1.75vw;
+    margin-bottom: 0.5vw;
+}
+#editor-deck-main-title, #editor-search-title, #siding-deck-main-title {
+	margin: 0 0 1vw 0
+}
+#editor-deck-extra-title, #editor-deck-side-title, #siding-deck-extra-title, #siding-deck-side-title {
+	margin: 0.5vw 0
+}
+#editor-main-deck, #siding-main-deck {
+    height: 20.1vw !important
+}
+#editor-extra-deck, #editor-side-deck, #siding-extra-deck, #siding-side-deck {
+    height: 5.1vw !important
+}
+#editor-search-column, #game-siding-column-2 {
+    height: 28.7vw;
+    width: 35.5vw;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+#editor-search-column, #game-siding-column-2 .engine-text-box {
+    width: 35.5vw
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This affects the entire game section.*/
+@-moz-keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
+@-o-keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
+@keyframes GrowFromBottom {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 6.1vw;
+    }
+}
+body {
+    color: #C19E4D;
+    font: 1vw/1 'noto sans', arial, sans-serif;
+}
+html {
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) skyblue 0 0/cover fixed /*Image by either Dyunasumon or Moribuden.*/
+}
+hr {
+    display: none
+}
+h4 {
+    color: #30A791;
+    font-size: 1.5vw;
+}
+.engine-button {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font: bold 1.125vw 'oxygen', arial, sans-serif;
+    color: #C19E4D;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px gold, 1px 1px 1px silver, 1px 1px 1px antiquewhite;
+    background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.7));
+    border: 0.5px solid antiquewhite;
+    min-height: 1.75vw;
+    min-width: 4.5vw;
+    padding: 0.25vw 0.5vw;
+}
+.engine-button:hover {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.7));
+}
+.engine-button-success {
+    background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5));
+}
+.engine-button-success:hover {
+    color: #30A791;
+    background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(150, 150, 150, 0.7));
+}
+.engine-button-danger {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+}
+.engine-button-danger:hover {
+    color: #ED4337;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
+}
+.engine-window p, #game-chat-area, #game-chat-area .engine-text-box, #game-end-text, #game-end-title {
+    margin: 0;
+    padding: 0;
+}
+#game-alert-window, #options-window, #game-results-container, #game-message-window, #game-selection-window, #game-yesno-window, #game-position-window, #game-option-window, #game-announce-window, #game-announce-card-window {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #F0F0F0;
+    border-radius: 10px;
+    border-width: 15px 1px 1px 3px;
+    max-height: 25vw;
+    max-width: 50vw;
+    z-index: 6;
+}
+#game-to-spectator-button, #game-to-duelist-button, #game-deck-dropdown, .template-button, #game-rps-first, #game-rps-second, #game-end-button {
+    width: auto
+}
+/*This is the giant do not cross tape that stretches across the field when the game is over.*/
+#game-end-window {
+    -moz-transform: rotate(42deg);
+    -o-transform: rotate(42deg);
+    transform: rotate(42deg);
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(193, 158, 77, 0.9) 10px, rgba(78, 78, 78, 0.9) 20px), linear-gradient(45deg, #000, #323232, #646464);
+    border: solid #323232;
+    border-width: 0.5vh 0;
+    width: 3000px;
+    max-width: 163vw;
+    margin: -5vh 0 0 -22vw;
+    padding: 0.5vh;
+    z-index: 8;
+    position: fixed;
+}
+#game-end-text {
+    color: antiquewhite;
+    font-size: 1.25vw;
+}
+/*This is the box that contains the chat to a confined space so it can't resize the duel or block the card description.*/
+#game-chat-area {
+    color: antiquewhite;
+    font-size: 0.9vw;
+    background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    height: 8vw;
+    width: 24vw;
+    min-width: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    left: 1vw;
+    bottom: 40px;
+}
+#game-chat-area:after {
+    color: black;
+    content: "Dueling Nexus";
+    font: 1.75vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 0 0 0.5em #666, 0 0 0.5em #666, 0 0 1em white, 0 0 1em white;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
+    height: 7vw;
+    width: 14vw;
+    position: fixed;
+    bottom: 40px;
+    right: 5vw;
+}
+#game-chat-area .engine-text-box {
+    height: 2vw;
+    width: 21.4vw;
+    position: absolute;
+    bottom: 0.25vw;
+    left: 0.25vw;
+}
+/*This affects the options button.*/
+#options-area {
+    position: fixed;
+    right: 25vw;
+    bottom: 40px;/*This should move the button that opens the option window above the taskbar of your computer.*/
+}
+#options-window {
+    animation: 1s ease-in-out 0s 1 GrowFromBottom;
+    cursor: s-resize;
+    height: 6.1vw;
+    width: auto;
+    overflow-y: scroll;
+    padding: 0.6vw;
+    z-index: 10;
+    position: fixed;
+    right: 25vw;
+    bottom: 40px;
+}
+#options-window:hover {
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8))
+}
+#options-window p {
+    text-align: center;
+    margin: 0.6vw 0;
+}
+#options-window input {
+    cursor: grab
+}
+#options-window input:active {
+    cursor: grabbing
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This affects the lobby, where you prepare for the duel.*/
+@-moz-keyframes spin {
+    100% {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+    100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+table {
+    color: #C19E4D;
+    font-size: 1.125vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+.template-button, #game-to-spectator-button, #game-to-duelist-button, #game-not-ready-button, #game-ready-button, #game-deck-dropdown, #game-rps-first, #game-rps-second, #game-end-button {
+    width: auto;
+    max-width: 28vw;
+}
+#game-room-container {
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8), rgba(100, 100, 100, 0.8));
+    border: 1px dashed antiquewhite;
+    width: 50vw;
+    min-width: 500px;
+    margin-top: 8vw;
+    padding: 1vw;
+}
+#game-room-players {
+    width: 28vw;
+    min-width: 280px;
+    padding: 2vh 1vw 2vh 2vw;
+}
+#game-room-players-table tr, #game-room-information-table tr {
+    border-top: 2px solid antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+	height: 4vw;
+}
+#game-room-information {
+    width: 16vw;
+    min-width: 160px;
+    padding: 2vh 2vw 2vh 1vw;
+}
+#game-room-information-table td {
+    width: 10vw
+}
+#game-not-ready-button:active, #game-ready-button:active {
+    -moz-animation: 2s ease-in-out 1s infinite spin;
+    -o-animation: 2s ease-in-out 1s infinite spin;
+    animation: 2s ease-in-out 1s infinite spin;
+}
+#game-deck-selection {
+    cursor: s-resize;
+    border: solid #F0F0F0;
+    border-width: 15px 1px 1px 3px;
+    border-radius: 10px;
+    height: 16vh;
+    width: 28vw;
+    min-width: 280px;
+    overflow-y: scroll;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+}
+#game-deck-selection:hover {
+    background: radial-gradient(rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.8), rgba(0, 0, 0, 0.8))
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This adds a bouncing ball to look at while waiting for a duel to connect. I also stuck Rock Paper Scissors in here.*/
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 95vw; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+#game-loading-container p {
+    margin-top: 20vw
+}
+#game-loading-container p::before {
+    -moz-animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    -o-animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    animation: moveX 3.2s cubic-bezier(0.1 ,0, 0.9, 1) 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    content: " ";
+    background-color: #C19E4D;
+    background-image: linear-gradient(135deg, rgba(192, 192, 192,0.25) -25%, rgba(192, 192, 192, 0.1) 75%);
+    border-radius: 50%;
+    box-shadow: inset -0.5vw -0.5vw 20px rgba(0, 0, 0, 0.75);
+    display: block;
+    height: 5vw;
+    width: 5vw;
+    margin: 0;
+    z-index: 3;
+    position: fixed;
+}
+#game-loading-container p::after {
+    -moz-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    -o-animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    animation: moveX 3.2s linear 0s infinite alternate, moveY 2.3s linear 0s infinite alternate;
+    content: " ";
+    background-color: rgba(118, 109, 135, 0.5);
+    border-radius: 50%;
+    display: block;
+    height: 4.5vw;
+    width: 4.5vw;
+    margin: 0;
+    z-index: 2;
+    position: fixed;
+}
+#game-rps-container, #game-rps-first, #game-rps-second, #game-rps-result {
+    text-align: center;
+    margin-top: 15vh;
+}
+#game-rps-container img{
+    height: 14.4vw;
+    width: 9.975vw;
+    padding: 1vw;
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*This affects the actual duel.*/
+@-moz-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@-o-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+.game-avatar {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    border: 0.5vw solid rgba(193, 158, 77, 0.7);
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px rgba(193, 158, 77, 0.7), 0px 0px 2px black;
+    position: relative;
+    right: 0.5vw;
+}
+.game-avatar:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.game-avatar-area {
+    font-size: 1.125vw;
+    text-indent: -0.5vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.7), 0.9px 0.9px 0.9px rgba(193, 158, 77, 0.9), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+}
+.game-field-zone.game-field-zone-selectable {
+	cursor: pointer;
+	animation: 1s game-field-zone-flash infinite alternate linear;
+}
+.game-field-zone {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 0.25vw, rgba(75, 75, 75, 0.5) 0.25vw, rgba(0, 0, 0, 0.5) 0.5vw), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    border: 1px solid antiquewhite;
+    height: 300%;
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+}
+.game-field-card {
+    z-index: 2;
+}
+.game-field-stats-text {
+    color: antiquewhite !important;
+    z-index: 3;
+}
+.game-field-zone-content p {
+    color: antiquewhite !important;
+    z-index: 4 !important;
+}
+.game-card-negated {
+    z-index: 5;
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+    z-index: 7;
+}
+.game-field-zone-activate {
+    z-index: 9;
+    position: absolute;
+}
+#game-announce-window {
+    cursor: s-resize;
+    height: 10vw;
+    width: 10vw;
+    overflow-y: scroll;
+    z-index: 6;
+}
+#game-option-list {
+    padding: 0.5vw
+}
+#game-option-list .engine-button {
+    margin: 0.25vw;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+}
+#game-option-list .engine-button:before, #game-option-list .engine-button:after {
+    content: "~";
+    font-size: 0;
+}
+#game-selection-window, #game-announce-card-window {
+    transform: translateY(-10vw) translateX(35vw);
+    cursor: s-resize;
+    overflow-y: scroll;
+    height: 20vw;
+    width: 40vw;
+    margin: 0;
+    padding-top: 0;
+}
+#game-tooltip {
+    color: antiquewhite !important;
+    font-size: 1.25vw;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+    padding: 1vh;
+    z-index: 7;
+    position: fixed;
+}
+}
+@-moz-document url-prefix("https://duelingnexus.com/editor/") {
+/*This section affects the editor pages.*/
+body {
+    font: 1vw/1 'noto sans', arial, sans-serif
+}
+html {
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    background: url(https://cdn.discordapp.com/attachments/256871791983591424/294678118415859713/57585438_p0.jpg) 0 0/cover fixed; /*Image by Moribuden.*/;
+}
+.editor-search-result {
+    color: antiquewhite;
+    cursor: pointer;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 0.15vw solid #F0F0F0;
+    width: 50.3%;
+    margin: -0.11vw 0 0 -0.11vw;
+}
+.editor-search-card {
+    width: 33%;
+    float: left;
+    position: relative;
+}
+.editor-search-description {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-size: 1vw;
+    margin-left: 33%;
+    position: absolute;
+}
+.editor-search-description:hover {
+    font-size: 0.666666vw;
+    overflow: visible;
+    margin-left: 0px;
+    position: absolute;
+}
+.engine-button {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    font-family: 'oxygen', arial, sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+    background-color: rgba(100, 100, 100, 0.4);
+    border: 0.5px solid #F0F0F0;
+    height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
+    padding: 0 1.5vw;
+    float: left;
+    position: relative;
+    left: 2vh;
+}
+.engine-button:hover, .engine-button:focus {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    background-color: rgba(140, 140, 140, 0.8);
+    padding: 0 1.5vw;
+}
+.engine-button:active {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    font-style: italic;
+    background-color: rgba(145, 145, 145, 0.9);
+    padding: 0 1.5vw;
+}
+.engine-button-primary {
+    background-color: rgba(193, 158, 77, 0.5)
+}
+.engine-button-primary:hover, .engine-button-primary:focus {
+    background-color: rgba(193, 158, 77, 0.7)
+}
+.engine-button-primary:active {
+    background-color: rgba(193, 158, 77, 0.9)
+}
+.engine-button-danger {
+    background-color: rgba(48, 167, 145, 0.5)
+}
+.engine-button-danger:hover, .engine-button-danger:focus {
+    background-color: rgba(48, 167, 145, 0.7)
+}
+.engine-button-danger:active {
+    background-color: rgba(48, 167, 145, 0.9)
+}
+#editor-menu-container {
+    font-weight: bold;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    height: 3vw;
+    max-height: 10vh;
+}
+#editor-menu-title {
+    color: #C19E4D;
+    font-size: 1.75vw;
+    text-shadow: 0px 0px 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
+    position: absolute;
+    left: 59vw;
+}
+#editor-menu-title:after {
+    color: black;
+    content: "Dueling Nexus";
+    font: 1.75vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
+    height: 7vw;
+    width: 14vw;
+    position: fixed;
+    bottom: 6vh;
+    right: 3vw;
+}
+#editor-search-column {
+    border-bottom: 0.15vw solid #F0F0F0
+}
+#editor-search-results {
+    border-left: 0.15vw solid #F0F0F0;
+    height: 24.4vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+}
+/*With the release of MR4, and the changes to Firefox in mind, I'm releasing my biggest patch yet! For V2.0, I started from scratch using previous versions as a reference for colours and whatnot. Without further ado, here's some patch notes.*/
+/*Changelog
+2.0 Added a solid colour to the background for before the huge background image loads, completely rewrote the navbar from the ground up, found a way to set apart the Chat button from the disabled buttons since it still works while logged out, designated "a" more specifically, designated buttons more specifically, designated tables more specifically, styled a link on the register page, fixed the checkbox label, fixed a bug that affected an animation on the login button, moved the login/register container down to allow room for the alert on smaller resolutions, adjusted said alert, specified padding around the new .profile-if-not-contributer (ads and progress bar), removed the margin from .profile-if-not-contributer, styled the new buttons found on the news tab, added padding to #newsMain so the computer's taskbar doesn't block the interface, styled the progress bar, made .mlabel a lot more noticable (you can't miss it!), adjusted the padding on the duel home buttons, hid the duel tab's overflow to prevent a scrollbar from appearing, changed the quote on the Decks tab from Jaden's "Get your game on!" to Yubel's "Now prepare to feel my wrath!" as this is where you prepare for a duel, replaced the duel table background with a higher quality version, replaced the decks table background with a new image, moved the buttons on the deck tab, added a new background to the container in login/register, resized the login/register container to fit the new background, adjusted the a links in the login/register container, added the words "Dueling Nexus" to duels, added a bouncing ball animation while waiting for a duel to connect, added a Yu-Gi-Oh! logo behind "Dueling Nexus", rewrote the entire siding screen, rewrote much of the deck pages into siding to reduce lines of code, imported some Google Fonts into the style, added effects to the avatar, set min-height/min-width for engine buttons so empty buttons are easier to click, added content to all of the engine buttons in the game option list so the bottoms line up, made minor changes to the duel field gradients, coded the name announce window, resized the rps pictures so they fit better on all resolutions, changed the colour of selectable field zones.
+
+1.4 Adjusted buttons to match the new VRAINS-era Dueling Nexus, added a scrollbar to the announce window.
+1.3 Tested in multiple resolutions, tested using multiple browsers, darkened and resized table, added an indent + word-break to the username under the Avatar in-duel, cleaned up the deck constructor on 720p, moved the chat box away from the bottom of the screen, messed around with transparency, fixed the siding screen, moved the loading container down, added an animation to the options pop-up, and added a delay to the spinning buttons.
+1.2 Tested in multiple resolutions, changed some units of measurements to reflect those resolutions, collapsed the border of the search result table, added a few scroll bars, added more transparent gradient backgrounds, made the search description move when hovered over, hid .loadmore, more green h4, got rid of some things made obsolete by an update, fixed the buttons on the login screen, tried a new "not-allowed" button setup, modified most of the text shadows, changed some colours around in the .engine-buttons, added more scrollbars, and contained chat inside a box.
+1.1 Made text even larger, fixed a border collapse (kinda), pulled in #tab-duel p to top left corner, added a new background image, moved some things around, "Ready" button no longer flips upside down when hovered over, increased the size of the duel menu, and changed the colour of the bar on the top.
+1.0 I made everything bigger, with a goal of seeing it across the room. I also added some images that match a theme. While waiting for a duel, click-and-hold the "Ready" button and pull down. The button will spin like and hourglass.
+*/
