@@ -13,3 +13,5 @@ Color the password reset popup and the adblocker notice
 Code the new Settings tab
 
 Move hovered buttons to z-index: 2
+
+Adjust the card information to remove the scrollbar along the bottom
