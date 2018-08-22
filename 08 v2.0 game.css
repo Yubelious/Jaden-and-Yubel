@@ -123,16 +123,10 @@ h4 {
     bottom: 40px;
 }
 #game-chat-area:after {
-    color: black;
-    content: "Dueling Nexus";
-    font: 1.75vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
-    text-align: center;
-    text-shadow: 0 0 0.5em #666, 0 0 0.5em #666, 0 0 1em white, 0 0 1em white;
-    letter-spacing: 0.1vw;
-    word-spacing: 0.2vw;
-    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
-    height: 7vw;
-    width: 14vw;
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/403735097498664960/481926055670579220/Jaden_and_Yubel_logo.png) 0 0/20.54vw 5.33vw;
+    height: 5.33vw;
+    width: 20.54vw;
     position: fixed;
     bottom: 40px;
     right: 5vw;
