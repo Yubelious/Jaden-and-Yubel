@@ -4,13 +4,15 @@ body {
     font: 0/1 'noto sans', arial, sans-serif
 }
 button#game-siding-done {
+    z-index: 2;
     position: absolute;
-    bottom: 0;
+    bottom: 1vw;
+    left: 1vw;
 }
 .engine-text-box {
     font: 1vw/1 'Times New Roman', serif;
     background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5));
-    border: 0.375vw double #f0f0f0;
+    border: 0.375vw double #F0F0F0;
     height: 2vw;
 }
 #game-container, #editor-container {
@@ -55,7 +57,7 @@ button#game-siding-done {
     padding: 0 0.25vw;
 }
 #editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
-    color: #30a791;
+    color: #30A791;
     font-size: 1.5vw;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
     background-color: rgba(118, 109, 135, 0.7);
@@ -87,14 +89,15 @@ button#game-siding-done {
 }
 #game-siding-column-2:after {
     content: 'To side on desktop, right click a card(s) in the "side" area and it will automatically move to the "deck", then right click a card(s) in the "deck" and it will automatically move to the "side". If you are on Android, drag a card(s) to the bottom right corner with your finger. Note that you will note be able to complete siding until the cards you sided in are in the bottom right corner of the "deck", and there are the same number of cards in the "deck" after siding as before siding. When you are done, click the buttom below.';
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     color: antiquewhite;
     font-family: arial, san-serif;
     text-align: justify;
-    background-color: black;
-    padding: 1vw;
-    height: 28.7vw;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    box-sizing: border-box;
+    height: 26.45vw;
     width: 35.5vw;
+    padding: 1vw;
     position: fixed;
 }
 }
