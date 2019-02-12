@@ -61,7 +61,7 @@ html {
     transition-duration: 1s;
     font-style: italic;
     background-color: rgba(145, 145, 145, 0.9);
-    padding: 0.25vw 1.25vw;
+    padding: 0 1.5vw;
 }
 .engine-button-primary {
     background-color: rgba(193, 158, 77, 0.5)
