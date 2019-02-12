@@ -137,7 +137,7 @@ html {
 .navbar-text:not(.navbar-right) {
     position: fixed;
     top: 0;
-    left: 50vw;
+    left: 55vw;
 }
 .navbar-right {
     position: fixed;
@@ -194,6 +194,12 @@ html {
 #cf_alert_div a, #cf_alert_div p{
     font-size: 1vw !important;
 }
+#link-login {
+    left: 5vw
+}
+#link-register {
+    left: 9.5vw
+}
 #link-chat {
     -moz-transition: 2s ease-in-out;
     -o-transition: 2s ease-in-out;
@@ -211,7 +217,7 @@ html {
     padding: 1vw;
     position: fixed;
     top: 0;
-    left: 10vw;
+    left: 15vw;
 }
 #link-chat:focus, #link-chat:hover {
     -moz-transition: 2s ease-in-out;
@@ -220,21 +226,21 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px dashed;
 }#link-news {
-    left: 15.25vw
+    left: 20.25vw
 }
 #link-decks {
-    left: 20.45vw
+    left: 25.45vw
 }
 #link-duel {
-    left: 25.85vw
+    left: 30.85vw
 }
 #link-profile {
-    left: 30.95vw
+    left: 35.95vw
 }
 #link-settings {
-    left: 36.7vw
+    left: 41.7vw
 }
 #link-logout {
-    left: 43vw
+    left: 48vw
 }
 }
