@@ -1,7 +1,8 @@
 @-moz-document url("https://duelingnexus.com/") {
 /*If it shows up on the Login or Register tab, it's in here.*/
-.alert-success, .alert-danger {
+.alert-success, .alert-danger, .alert-warning {
     font-size: 1vw;
+    background-color: gray;
     background: radial-gradient(silver, rgba(169, 169, 169, 0.75), rgba(169, 169, 169, 0.5)) !important;
     margin: 0 !important;
     padding: 0.5vw;
@@ -48,7 +49,7 @@
 }
 .form-group {
     font-size: 1.5vw;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 #alerts {
     margin: 1vw;
@@ -96,8 +97,8 @@
     cursor: pointer
 }
 #tab-login .container, #tab-register .container {    
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 40vw;
-    height: 37vw;
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.5vw/75vw 50vw;
+    height: 47vw;
     width: 75vw;
     float: none;
 }
