@@ -79,7 +79,7 @@
 }
 #register-login-label {
     line-height: 1;
-    margin: -2.5vw 4vw 0 0;
+    margin: -1.5vw 4vw 0 0;
 }
 #login-create-label:focus, #login-recover-label:focus, #register-login-label:focus {
     font-style: italic
