@@ -1,4 +1,5 @@
 /*Changelog*/
+
 2.2 Positioned and sized each button on the navbar to fix mobile issues, resized the login/register tabs, moved some things around to make them appear better on mobile, fixed the buttons in the deck editor, added solid fallback colours to gradients/transparency.
 
 2.1 Coded the settings tab that showed up a couple months ago, added settings tab related things to the global code, set min-width of buttons to 0 for smaller resolutions, adjusted the padding on .h3, adjusted the margin on .h2, resized .h2 and .h4, added a new logo to the duel and editor pages, moved the #downloadDeck.engine-button away from the standard buttons, fixed a bug with padding that caused the .engine-buttons to push beyond the bottom of the #editor-menu-container on lower resolutions, adjusted said .engine-buttons to be more similar on all resolutions, reduced the font size in #card-description-box to prevent an unsightly horizontal scrollbar, set the font weight of #card-if-monster to bold to match the bold in the card image, coded in a box in siding, filled the box with a description on how to side, z-indexed the button#game-siding-done.
