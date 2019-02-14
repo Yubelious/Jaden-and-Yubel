@@ -12,29 +12,33 @@ html {
     display: none
 }
 .h2, h2 {
-    font: italic 2.5vw 'noto sans';
+    font: italic 2.25vw 'noto sans';
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 0 0;
     padding-top: 3.5vw;
+    padding-bottom: 0;
 }
 .h3, h3 {
     color: antiquewhite;
     font: italic 1.5vw 'noto sans';
+    text-shadow: 0 0 0.5vw black;
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    background-color: black;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    height: 2vw;
+    height: 2.5vw;
     width: 100%;
     margin: 0;
     padding: 0.5vw 0 0 0.5vw;
 }
 .h4, h4 {
     color: #30A791;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    text-shadow: 0.5px 0.5px 0.5px #30A791, 1px 1px 1px #C19E4D, 0.7px 0.7px 0.7px black;
     text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
     -moz-user-select: none;
     -o-user-select: none;
@@ -51,6 +55,7 @@ html {
     font-weight: bold
 }
 .checkbox label {
+    color: #C19E4D;
     color: rgba(193, 158, 77, 0.75);
     font: 1.1vw/22px 'noto sans';
 }
@@ -91,7 +96,7 @@ html {
     right: 0; 
 }
 /*Here we have some general button rules.*/
-#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button {
+#tab-login .button, #tab-register .button, #tab-news .button, #tab-duel .button, #tab-decks .button, #tab-profile .button, #tab-settings .button {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
@@ -100,14 +105,15 @@ html {
     font-family: 'oxygen', arial, sans-serif;
     text-align: center;
     border: 2px solid;
+    min-width: 0;
 }
-#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus {
+#tab-login .button:focus, #tab-register .button:focus, #tab-duel .button:focus, #tab-decks .button:focus, #tab-profile .button:focus, #tab-settings .button:focus {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
     font-style: italic;
 }
-#tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover {
+#tab-login .button:hover, #tab-register .button:hover, #tab-duel .button:hover, #tab-decks .button:hover, #tab-profile .button:hover, #tab-settings .button:hover {
     -moz-transition-duration: 2s;
     -o-transition-duration: 2s;
     transition-duration: 2s;
@@ -132,14 +138,26 @@ html {
     line-height: 3;
     margin: 0 0 0 3vw;
 }
+.navbar-text:not(.navbar-right) {
+    position: fixed;
+    top: 0;
+    left: 55vw;
+}
+.navbar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 .navbar-nav>li>.menu-link {
     -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: #C19E4D;
     color: rgba(193, 158, 77, 0.9) !important;
     font-size: 0.8vw;
     line-height: 1vw;
     text-shadow: none;
+    border: 1px dotted #C19E4D;
     border: 1px dotted rgba(193, 158, 77, 0.9);
     height: 3vw;
     min-height: 0;
@@ -147,21 +165,28 @@ html {
     width:auto;
     margin-left: 0.25vw;
     padding: 1vw;
+    position: fixed;
+    top: 0;
 }
 .nav>li>a:focus {
     -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: #30A791;
     color: rgba(48, 167, 145, 0.9) !important;
     font-style: italic;
+    background-color: #766D87;
     background-color: rgba(118, 109, 135, 0.8);
+    border-color: #30A791;
     border-color: rgba(48, 167, 145, 0.9);
 }
 .nav>li>a:hover {
     -moz-transition: color 2s ease-in-out, border 2s ease-in-out;
     -o-transition: color 2s ease-in-out, border 2s ease-in-out;
     transition: color 2s ease-in-out, border 2s ease-in-out;
+    color: #30A791;
     color: rgba(48, 167, 145, 0.9) !important;
+    background-color: #766D87;
     background-color: rgba(118, 109, 135, 0.8);
     border-color: rgba(48, 167, 145, 0.9);
 }
@@ -180,6 +205,12 @@ html {
 #cf_alert_div a, #cf_alert_div p{
     font-size: 1vw !important;
 }
+#link-login {
+    left: 5vw
+}
+#link-register {
+    left: 9.5vw
+}
 #link-chat {
     -moz-transition: 2s ease-in-out;
     -o-transition: 2s ease-in-out;
@@ -195,12 +226,34 @@ html {
     width: auto;
     margin-left: 0.25vw;
     padding: 1vw;
+    position: fixed;
+    top: 0;
+    left: 15vw;
 }
 #link-chat:focus, #link-chat:hover {
     -moz-transition: 2s ease-in-out;
     -o-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
+    background-color: black;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px dashed;
+}
+#link-news {
+    left: 20.25vw
+}
+#link-decks {
+    left: 25.45vw
+}
+#link-duel {
+    left: 30.85vw
+}
+#link-profile {
+    left: 35.95vw
+}
+#link-settings {
+    left: 41.7vw
+}
+#link-logout {
+    left: 48vw
 }
 }

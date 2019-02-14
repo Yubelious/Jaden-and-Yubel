@@ -39,22 +39,21 @@ html {
     -o-transition-duration: 2s;
     transition-duration: 2s;
     font-family: 'oxygen', arial, sans-serif;
+    font-size: 1vw;
     font-weight: bold;
     color: antiquewhite;
     background-color: rgba(100, 100, 100, 0.4);
     border: 0.5px solid #F0F0F0;
-    height: 3.14159265358979323846264338327950288419716939937511vh /*2.71828182845904523536028747135266249775724709369995vh*/; /*pi and e*/
-    padding: 0 1.5vw;
+    padding: 0.25vw 1.25vw;
     float: left;
-    position: relative;
-    left: 2vh;
+    min-height: 0;
+    min-width: 0;
 }
 .engine-button:hover, .engine-button:focus {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
     background-color: rgba(140, 140, 140, 0.8);
-    padding: 0 1.5vw;
 }
 .engine-button:active {
     -moz-transition-duration: 1s;
@@ -62,7 +61,7 @@ html {
     transition-duration: 1s;
     font-style: italic;
     background-color: rgba(145, 145, 145, 0.9);
-    padding: 0 1.5vw;
+    padding: 0.25vw 1.25vw;
 }
 .engine-button-primary {
     background-color: rgba(193, 158, 77, 0.5)
@@ -82,11 +81,16 @@ html {
 .engine-button-danger:active {
     background-color: rgba(48, 167, 145, 0.9)
 }
+#downloadDeck {
+    margin-left: 5vw;
+}
 #editor-menu-container {
     font-weight: bold;
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     height: 3vw;
-    max-height: 10vh;
+}
+#editor-menu-content {
+    padding: 0.5vw;
 }
 #editor-menu-title {
     color: #C19E4D;
@@ -96,16 +100,10 @@ html {
     left: 59vw;
 }
 #editor-menu-title:after {
-    color: black;
-    content: "Dueling Nexus";
-    font: 1.75vw/6.25 'berkshire swash', papyrus, 'comic sans ms', cursive, sans-serif;
-    text-align: center;
-    text-shadow: 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 6vw #666666, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC, 0 0 12vw #CCC;
-    letter-spacing: 0.1vw;
-    word-spacing: 0.2vw;
-    background: url(https://img00.deviantart.net/f91b/i/2013/008/5/2/yu_gi_oh__japanese_logo_by_kingvegito-d5qu0xw.png) 0 0/14vw 7vw;
-    height: 7vw;
-    width: 14vw;
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/403735097498664960/481926055670579220/Jaden_and_Yubel_logo.png) 0 0/20.54vw 5.33vw;
+    height: 5.33vw;
+    width: 20.54vw;
     position: fixed;
     bottom: 6vh;
     right: 3vw;
