@@ -118,6 +118,7 @@ table {
     z-index: 2;
     position: fixed;
 }
+/*This is resizes the Rock Paper Scissors to fit more displays.*/
 #game-rps-container, #game-rps-first, #game-rps-second, #game-rps-result {
     text-align: center;
     margin-top: 15vh;
