@@ -1,0 +1,62 @@
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/home") {
+#adsense {
+    width: auto;
+    margin: 0 25%;
+    z-index: 4;
+    position: fixed;
+}
+#home-area div {
+    padding-top: 3vh
+}
+p button {
+    font-size: 1.75vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    color: rgba(193, 158, 77, 0.75);
+    background-color: black;
+    border-color: rgba(193, 158, 77, 0.75);
+}
+#home-area button {
+    color: #C19E4D;
+    width: 100%;
+    margin-top: 4vh; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#home-area button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: #c0c0c0;
+    background-color: rgba(192, 192, 192, 0.25);
+}
+#news-area {
+    height: 2vw;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 4vh 0;
+    padding: .5vw;
+    position: absolute;
+    top: 50vh;
+    right: 1vw;
+    left: 1vw;
+}
+#news-area:hover {
+    height: 20vh;
+    overflow-y: auto;
+}
+#news-area strong {
+    margin: 1vw
+}
+#news-area p {
+    margin: 2vw
+}
+#news-area::after {
+    content: "J×Y v3.0 by Yubelious!";
+    font-size: 0;
+    text-align: right;
+    display: block;
+    margin: 1.5vw;
+    position: relative;
+}
+#news-area:hover::after {
+    font-size: .1vw
+}
+}
