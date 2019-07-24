@@ -1,0 +1,118 @@
+@-moz-document url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame") {
+/*Section 04 DUEL*/
+/*This section applies to /duel and /gamelist, which are both found by clicking Duel Zone from the navbar. But it doesn't affect duels in any way.*/
+/*This affects the donation article.*/
+#duel-area-donations {
+    transition-duration: .5s;
+    font-size: 1vw;
+    color: antiquewhite;
+    background: radial-gradient(silver 3%, darkgray 9%, rgba(0, 0, 0, 0.5) 81%);
+    border: none;
+    width: auto;
+    margin: 0 25%;
+    z-index: 4;
+    position: fixed;
+}
+#duel-area-donations:hover {
+    transition-duration: .5s;
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.5), 2px 2px 2px rgba(250, 235, 215, 0.25), 3px 3px 3px rgba(250, 235, 215, 0.125);
+}
+#duel-area-donations-bar {
+    background-color: silver;
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
+#duel-area div {
+    padding-top: 3vh
+}
+/*This affects the buttons and the region selector below them.*/
+p button, #gamelist-buttons button, .button {
+    font-size: 1.75vw;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
+    color: rgba(193, 158, 77, 0.75);
+    background-color: black;
+    border-color: rgba(193, 158, 77, 0.75);
+}
+#duel-area button:not(.bigger-button) {
+    color: #C19E4D;
+    width: 100%;
+    margin-top: 4vh; /*Reduce this number if the taskbar covers the interface on the duel home tab, or change your resolution.*/
+}
+#duel-area button:hover, #gamelist-buttons button:hover, .button:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
+    background-color: #c0c0c0;
+    background-color: rgba(192, 192, 192, 0.25);
+}
+p#region-select {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    text-align: left;
+    text-indent: 2vw;
+    transform: translateX(-1vw)
+}
+/*This adds an animation to the button you click when a game is found.*/
+@keyframes button {
+    from {background-position: left top}
+    to {background-position: right bottom}
+}
+button.bigger-button {
+    color: rgba(48, 167, 145, 0.9);
+    border-color: rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -50vh;
+}
+button.bigger-button:focus {
+    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed /*Image by either Dyunasumon or Moribuden.*/;
+    opacity: 1;
+    height: 105vh;
+    width: 110%;
+    margin-top: 0;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+button.bigger-button:hover {
+    animation: button 5s infinite;
+    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
+}
+/*This affects the boxes above the table.*/
+#gamelist-buttons, #gamelist-filters {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 75vw;
+    z-index: 2;
+    position: absolute;
+    top: 10vh;
+    left: 13.5vw;
+}
+#gamelist-buttons p, #gamelist-buttons button {
+    font-size: 1.5vw;
+    text-align: center;
+    width: 25vw;
+}
+#gamelist-filters {
+    top: 20vh
+}
+/*This affects the table that lists the available duels.*/
+#gamelist-container table {
+    font-size: 1.5vw;
+    color: #30a791;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+#gamelist-container table::before {
+    font-size: 1.25vw;
+    content: "Get Your Game On!";
+    background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100%; /*I have a morbid Moribuden for this one.*/
+}
+.button {
+    font-size: 1.25vw;
+    width: 50.07%;
+    margin: 0 -0.3vw -2px -2px;
+    padding: 1px;
+}
+}
