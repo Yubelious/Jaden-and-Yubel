@@ -1,14 +1,39 @@
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/home") {
+@keyframes disappear {
+    0% {opacity: 1}
+    25% {opacity: 1}
+    100% {opacity: 0}
+}
+p:nth-child(2) {
+    animation: disappear 3s;
+    font-size: 5vh;
+    color: #30A791;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    padding-top: 40vh;
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+p:nth-child(3) {
+    margin-top: 7vh
+}
 #adsense {
     width: auto;
     margin: 0 25%;
     z-index: 4;
     position: fixed;
+    top: 7vh;
 }
 #home-area div {
     padding-top: 3vh
 }
 p button {
+    animation-name: appear;
+    animation-duration: 5s;
     font-size: 1.75vw;
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25), 0 0 0.5vw rgba(0, 0, 0, 0.25);
     color: rgba(193, 158, 77, 0.75);
@@ -25,38 +50,5 @@ p button {
     text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75), 0 0 0.5vw rgba(0, 0, 0, 0.75);
     background-color: #c0c0c0;
     background-color: rgba(192, 192, 192, 0.25);
-}
-#news-area {
-    height: 2vw;
-    width: auto;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 4vh 0;
-    padding: .5vw;
-    position: absolute;
-    top: 50vh;
-    right: 1vw;
-    left: 1vw;
-}
-#news-area:hover {
-    height: 20vh;
-    overflow-y: auto;
-}
-#news-area strong {
-    margin: 1vw
-}
-#news-area p {
-    margin: 2vw
-}
-#news-area::after {
-    content: "J×Y v3.0 by Yubelious!";
-    font-size: 0;
-    text-align: right;
-    display: block;
-    margin: 1.5vw;
-    position: relative;
-}
-#news-area:hover::after {
-    font-size: .1vw
 }
 }
