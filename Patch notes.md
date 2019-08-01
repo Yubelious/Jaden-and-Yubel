@@ -1,6 +1,6 @@
 /*Changelog*/
 
-3.0 Version 2 didn't last as long as I expected. Dueling Nexus released a patch that killed half my theme. So I moved all of my CSS fixes to a new project, and started this from scratch after I stablized that one. Wrote new CSS to affect the new nav pages with mostly the same colour scheme and images (some of the positioning can no longer be duplicated), resized, button images, and added a new log-in animation.
+3.0 Version 2 didn't last as long as I expected. Dueling Nexus released a patch that killed half my theme. So I moved all of my CSS fixes to a new project, and started this from scratch after I stablized that one. Wrote new CSS to affect the new nav pages with mostly the same colour scheme and images (some of the positioning can no longer be duplicated), resized button images, and added a new log-in animation.
 
 2.2 Positioned and sized each button on the navbar to fix mobile issues, resized the login/register tabs, moved some things around to make them appear better on mobile, fixed the buttons in the deck editor, added solid fallback colours to gradients/transparency.
 
