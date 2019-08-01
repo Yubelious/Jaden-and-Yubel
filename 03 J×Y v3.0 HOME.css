@@ -1,4 +1,6 @@
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/home") {
+/*SECTION 03 HOME*/
+/*This section applies to the home page, as well as an awesome login animation I made.*/
 @keyframes disappear {
     0% {opacity: 1}
     25% {opacity: 1}
