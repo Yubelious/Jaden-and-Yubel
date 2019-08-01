@@ -1,102 +1,33 @@
-@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile") {
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/donate") {
 /*SECTION 01 NAVGLOBAL*/
 /*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
 body {
     color: #C19E4D;
-    font: 1vw/1 'noto sans', arial, sans-serif;
+    font-family: 'noto sans', sans-serif;
     background-color: rgba(0, 0, 0, 0);
 }
 html {
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 0/cover fixed /*Image by the amazing Moribuden*/
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 6vh/cover fixed /*Image by the amazing Moribuden*/
 }
-/*Here's some headers*/
-h2 {
-    font: italic 2.25vw 'noto sans';
-    text-transform: none;
-    letter-spacing: .1vw;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    transform: translateY(0);
+#home-area h2, #duel-area h2, #gamelist-area h2, #custom-game-area h2, #decks-area h2 {
     position: absolute;
     top: 0;
-}
-h3 {
-    font-size: 1.25vw
-}
-h4 {
-    color: #30A791;
-    font-size: 1.5vw;
-    text-shadow: 0.5px 0.5px 0.5px #30A791, 1px 1px 1px #C19E4D, 0.7px 0.7px 0.7px black;
-    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.6), 1px 1px 1px rgba(193, 158, 77, 0.7), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-h6 {
-    color: antiquewhite;
-    font-size: 1vw;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+    left: 2vw;
 }
 /*Here we have some general button and label rules.*/
 a {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
     color: #C19E4D;
-    font-size: 1vw;
     text-shadow: 0 0 1vw #30A791, 0 0 2vw #30A791, 1vw 2vw 3vw black;
-    padding: 1vw;
-}
-a:focus {
-    font-style: italic
 }
 a:hover, a:focus {
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
     color: #30A791;
     text-shadow: 0 0 1vw #C19E4D, 0 0 2vw #C19E4D, 1vw 2vw 3vw black;
 }
-button {
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'oxygen', arial, sans-serif;
-    text-align: center;
-    border: 1vw solid;
-    min-width: 0;
-}
-button:focus {
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    font-style: italic;
-}
-button:hover {
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-}
-hr {
-    display: none
+button, input {
+    font-family: 'oxygen', sans-serif
 }
 label {
-    color: #C19E4D;
-    color: rgba(193, 158, 77, 0.75);
-    font: 1.1vw/22px 'noto sans';
-}
-label:hover {
-    color: #C19E4D
+    font-family: 'noto sans', sans-serif
 }
 /*This is table code that sets up for some other sections.*/
 table {
@@ -125,27 +56,26 @@ table::before {
     right: 0; 
 }
 /*This is the code for the navbar, which can be seen from any tab.*/
-@keyframes fadein {
-    from {opacity: 0}
-    to {opacity: 0.85}
+@keyframes appear {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1}
 }
-#navbar-left button, #navbar-middle button, #navbar-right button, .fake-button {
-    animation: fadein 2s;
+#navbar-left button, #navbar-middle button, #navbar-right button {
+    animation: appear 3s;
+    padding: 0;
+}
+#navbar-left button, #navbar-middle button, #navbar-right button, #decks-buttons button, .fake-button[data-v-6f705b54], .fake-button[data-v-0262afa4], #my-profile button {
     color: antiquewhite;
     color: rgba(250, 235, 215, 0.5);
-    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.5), 2px 2px 2px rgba(250, 235, 215, 0.25), 3px 3px 3px rgba(250, 235, 215, 0.125);
+    text-shadow: .15vw .15vw .15vw rgba(250, 235, 215, 0.5), .3vw .3vw .3vw rgba(250, 235, 215, 0.25), .45vw .45vw .45vw rgba(250, 235, 215, 0.125);
     border-color: antiquewhite;
     border-color: rgba(250, 235, 215, 0.5);
-    height: auto;
-    min-height: 0;
-    width: auto;
-    min-width: 0;
-    padding: 0;
 }
 #navbar-left button:focus, #navbar-middle button:focus, #navbar-right button:focus, .fake-button:focus {
     color: antiquewhite;
     color: rgba(250, 235, 215, 0.25);
-    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.25), 2px 2px 2px rgba(250, 235, 215, 0.125), 3px 3px 3px rgba(250, 235, 215, 0.0625);
+    text-shadow: .15vw .15vw .15vw rgba(250, 235, 215, 0.25), .3vw .3vw .3vw rgba(250, 235, 215, 0.125), .45vw .45vw .45vw rgba(250, 235, 215, 0.0625);
     background-color: gray;
     background-color: rgba(200, 200, 200, 0.25);
     border-color: antiquewhite;
@@ -153,11 +83,14 @@ table::before {
 }
 #navbar-left .button:hover, #navbar-middle button:hover, #navbar-right button:hover, .fake-button:hover {
     color: antiquewhite;
-    text-shadow: 1px 1px 1px rgba(250, 235, 215, 1), 2px 2px 2px rgba(250, 235, 215, 0.5), 3px 3px 3px rgba(250, 235, 215, 0.25);
+    text-shadow: .15vw .15vw .15vw rgba(250, 235, 215, 1), .3vw .3vw .3vw rgba(250, 235, 215, 0.5), .45vw .45vw .45vw rgba(250, 235, 215, 0.25);
     border-color: antiquewhite;
 }
+#navbar-middle button:first-of-type {
+    display: none
+}
 /*This removes a black background from elements, and resizes the box to 100% of your screen's width.*/
-#home-area, #duel-area, #gamelist-container, #gamelist-area, #custom-game-area, #decks-container, #decks-area {
+#home-area, #duel-area, #gamelist-container, #gamelist-area, #custom-game-area[data-v-2bb19dd4], #decks-container, #decks-area {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     width: 100vw;
@@ -165,7 +98,7 @@ table::before {
     margin: 0;
     padding: 5vh 1vw;
     position: absolute;
-    top: 6vh;
+    top: 7vh;
     left: 0;
 }
 }
