@@ -42,32 +42,6 @@ button, input {
 label {
     font-family: 'noto sans', sans-serif
 }
-/*This is table code that sets up for some other sections.*/
-table {
-    text-align: justify;
-    background:  black;
-    opacity: 1;
-    width: 75vw;
-    margin: 45vh 0.1vw 10vh -0.1vw;
-    float: right;
-    z-index: 1;
-    position: relative;
-    right: 12.5%;
-}
-table::before {
-    color: antiquewhite;
-    font-family: arial, san-serif;
-    text-align: center;
-    background-size: 100%;
-    opacity: .5;
-    padding: 0.5vw;
-    z-index: -1;
-    position: absolute;
-    top: -2vw;
-    left: 0;
-    bottom: 0;
-    right: 0; 
-}
 /*This is the code for the navbar, which can be seen from any tab.*/
 @keyframes appear {
     0% {opacity: 0}
@@ -113,6 +87,36 @@ table::before {
     position: absolute;
     top: 7vh;
     left: 0;
+}
+/*This is table code that sets up for some other sections.*/
+table {
+    text-align: justify;
+    background:  black;
+    opacity: 1;
+    width: 75vw;
+    margin: 45vh 0.1vw 10vh -0.1vw;
+    float: right;
+    z-index: 2;
+    position: relative;
+    right: 12.5%;
+}
+table::before {
+    color: antiquewhite;
+    font-family: arial, san-serif;
+    text-align: center;
+    background-size: 100%;
+    opacity: .5;
+    padding: 0.5vw;
+    z-index: 1;
+    position: absolute;
+    top: -2vw;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+td {
+    z-index: 3;
+    position: relative;
 }
 }
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover") {
