@@ -1,59 +1,8 @@
-@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover") {
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("") {
 /*SECTION 02 LOGIN*/
 /*This affects the login, register, and recover pages, since they all key off of the same things.*/
 #login-area, #register-area, #recover-area {    
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.2vw/60vw 39.5vw
-}
-#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: rgba(193, 158, 77, 0.7);
-    text-indent: 0.5vw;
-    background-color: #766D87;
-    background-color: rgba(118, 109, 135, 0.7);
-    border-color: #C19E4D;
-    border-color: rgba(193, 158, 77, 0.8);
-    box-shadow: 0 .15vw .3vw #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
-    height: 2.75vw;
-    padding: 0;
-}
-#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: #C19E4D;
-    background-color: #766D87;
-    border-color: #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
-}
-#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: #30A791;
-    background-color: #766D87;
-    background-color: rgba(118, 109, 135, 0.3);
-    border: 4px solid;
-    box-shadow: 0 1px 8px black;
-    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.39vw/60vw 42.5vw
 }
 #links-area {
     background: radial-gradient(rgba(16, 16, 16, 0.4), rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0), rgba(0, 0, 0, 0))
