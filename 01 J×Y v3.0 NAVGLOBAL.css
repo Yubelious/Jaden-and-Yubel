@@ -14,7 +14,7 @@ html {
     top: 0;
     left: 2vw;
 }
-/*Here we have some general button and label rules.*/
+/*Here we have some general clicky thingies rules.*/
 a {
     color: #C19E4D;
     text-shadow: 0 0 1vw #30A791, 0 0 2vw #30A791, 1vw 2vw 3vw black;
@@ -28,6 +28,28 @@ button, input {
 }
 label {
     font-family: 'noto sans', sans-serif
+}
+#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit, #donate-once input[type="text"] {
+    color: rgba(193, 158, 77, 0.7);
+    background-color: #766D87;
+    background-color: rgba(118, 109, 135, 0.7);
+    border-color: #C19E4D;
+    border-color: rgba(193, 158, 77, 0.8);
+    box-shadow: 0 .15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover, #donate-once input[type="text"]:hover {
+    background-color: #766D87;
+    border-color: #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus, #donate-once input[type="text"]:focus {
+    color: #30A791;
+    background-color: #766D87;
+    background-color: rgba(118, 109, 135, 0.3);
+    border-color: #30A791;
+    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
 }
 /*This is the code for the navbar, which can be seen from any tab.*/
 @keyframes appear {
