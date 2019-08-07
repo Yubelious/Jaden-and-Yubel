@@ -1,16 +1,17 @@
 /* ==UserStyle==
-@name           J×Y - 2/13/2019, 8:30:04 PM
+@name           J×Y - ?, ?
 @namespace      github.com/openstyles/stylus
-@version        0.2.2
-@description   Jaden and Yubel v2.0 (featuring Chatbox and other scrolling fixes)
+@version        0.3.0
+@description   Jaden and Yubel v3.0
 Inspired by O OO/The XAZ.
-Special thanks to Skeletonxf for finally coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
+Special thanks to Skeletonxf for coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
 Open for testing and feedback. Potentially compatible with any resolution on almost any device.
-For optimal viewing, press F11.
+For optimal viewing, press F11 for full screen.
 @author         Userstyle © 2017 Yubelious! under MIT liecence.
 ==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Noto+Sans|Oxygen');
+
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/donate") {
 /*SECTION 01 NAVGLOBAL*/
 /*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
@@ -27,7 +28,7 @@ html {
     top: 0;
     left: 2vw;
 }
-/*Here we have some general button and label rules.*/
+/*Here we have some general clicky thingies rules.*/
 a {
     color: #C19E4D;
     text-shadow: 0 0 1vw #30A791, 0 0 2vw #30A791, 1vw 2vw 3vw black;
@@ -41,6 +42,28 @@ button, input {
 }
 label {
     font-family: 'noto sans', sans-serif
+}
+#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit, #donate-once input[type="text"] {
+    color: rgba(193, 158, 77, 0.7);
+    background-color: #766D87;
+    background-color: rgba(118, 109, 135, 0.7);
+    border-color: #C19E4D;
+    border-color: rgba(193, 158, 77, 0.8);
+    box-shadow: 0 .15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover, #donate-once input[type="text"]:hover {
+    background-color: #766D87;
+    border-color: #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus, #donate-once input[type="text"]:focus {
+    color: #30A791;
+    background-color: #766D87;
+    background-color: rgba(118, 109, 135, 0.3);
+    border-color: #30A791;
+    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
 }
 /*This is the code for the navbar, which can be seen from any tab.*/
 @keyframes appear {
@@ -119,67 +142,18 @@ td {
     position: relative;
 }
 }
+
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover") {
 /*SECTION 02 LOGIN*/
 /*This affects the login, register, and recover pages, since they all key off of the same things.*/
 #login-area, #register-area, #recover-area {    
-    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.2vw/60vw 39.5vw
-}
-#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: rgba(193, 158, 77, 0.7);
-    text-indent: 0.5vw;
-    background-color: #766D87;
-    background-color: rgba(118, 109, 135, 0.7);
-    border-color: #C19E4D;
-    border-color: rgba(193, 158, 77, 0.8);
-    box-shadow: 0 .15vw .3vw #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
-    height: 2.75vw;
-    padding: 0;
-}
-#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: #C19E4D;
-    background-color: #766D87;
-    border-color: #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw #C19E4D;
-    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
-}
-#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus {
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    color: #30A791;
-    background-color: #766D87;
-    background-color: rgba(118, 109, 135, 0.3);
-    border: 4px solid;
-    box-shadow: 0 1px 8px black;
-    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/55637910.jpg) 0 -1.39vw/60vw 42.5vw
 }
 #links-area {
     background: radial-gradient(rgba(16, 16, 16, 0.4), rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0), rgba(0, 0, 0, 0))
 }
 }
+
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/home") {
 /*SECTION 03 HOME*/
 /*This section applies to the home page, as well as an awesome login animation I made.*/
@@ -236,6 +210,7 @@ p button {
     background-color: rgba(192, 192, 192, 0.25);
 }
 }
+
 @-moz-document url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame") {
 /*Section 04 DUEL*/
 /*This section applies to /duel and /gamelist, which are both found by clicking Duel Zone from the navbar. But it doesn't affect duels in any way.*/
@@ -364,6 +339,7 @@ button.bigger-button:hover {
     margin: 5vh 0
 }
 }
+
 @-moz-document url("https://duelingnexus.com/decks") {
 /*SECTION 05 DECKS*/
 /*This affects the deck page, but not the editor pages.*/
@@ -423,13 +399,7 @@ button.bigger-button:hover {
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/65591110.jpg") 0 0/100%; /*Here's a less morbid Moribuden.*/
 }
 }
-@-moz-document url("https://duelingnexus.com/hostgame") {
-/*SECTION 06 HOSTGAME*/
-/*This section affects the page that opens when you click "host a custom game" from /gamelist.*/
-#custom-game-area p {
-    margin: 5vh 0
-}
-}
+
 @-moz-document url("https://duelingnexus.com/profile") {
 /*Section 06 PROFILE*/
 /*This code affects the settings and profile page.*/
