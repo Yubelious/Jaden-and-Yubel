@@ -1,7 +1,0 @@
-@-moz-document url("https://duelingnexus.com/hostgame") {
-/*SECTION 06 HOSTGAME*/
-/*This section affects the page that opens when you click "host a custom game" from /gamelist.*/
-#custom-game-area p {
-    margin: 5vh 0
-}
-}
