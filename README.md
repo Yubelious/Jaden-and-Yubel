@@ -1,11 +1,12 @@
 # J×Y
 
 **Description:**
-J×Y (Jaden and Yubel v2 featuring chat box and other scrolling fixes) is a Yu-Gi-Oh! GX themed style affecting the online Yu-Gi-Oh! TCG simulator Dueling Nexus (or DNx for short). This theme applies to here:
+J×Y (Jaden and Yubel v3 skin to the CSS Fixes Project for Dueling Nexus) is a Yu-Gi-Oh! GX themed style affecting the online Yu-Gi-Oh! TCG simulator Dueling Nexus (or DNx for short). This theme applies to here:
 
 https://duelingnexus.com/
 
-I'd like to give special thanks to Skeleton for helping me get back into this. If you don't want a background or themed colours, check out his fixes at https://userstyles.org/styles/144946/duelingnexus-chat-monster-info-split-view. J×Y is mainly a theme for a game we like to play, but also includes some much-needed fixes. Expect to see new background images, larger more visible text, scrollbars where there were once no scrollbars, and the use of most of your display. It should now work on most displays, including mobile.
+J×Y should not be run by itself. It is a skin that can be run over (and is a part of) the CSS Fixes Project for Dueling Nexus. The base of the project can be found here: https://userstyles.org/styles/169750/css-fixes-project-for-dueling-nexus.
+Expect to see new background images and larger more colorful text, as well as some interesting features you won't find on other themes. If you need help, these skins come with complementary customer support, so feel free to DM me on Discord @Yubelious#5584, or find me on the official Dueling Nexus Discord Server.
 
 MIT License
 
@@ -13,4 +14,4 @@ Copyright © 2017 Yubelious!
 (except credited images and Google Fonts)
 
 **Notes from latest update:**
-2.2 Positioned and sized each button on the navbar to fix mobile issues, resized the login/register tabs, moved some things around to make them appear better on mobile, fixed the buttons in the deck editor, added solid fallback colours to gradients/transparency.
+3.0 Version 2 didn't last as long as I expected. Dueling Nexus released a patch that killed half my theme. So I moved all of my CSS fixes to a new project, and started this from scratch after I stablized that one. Wrote new CSS to affect the new nav pages with mostly the same colour scheme and images (some of the positioning can no longer be duplicated), resized button images, and added a new log-in animation. A lot of things were lost during the move.
