@@ -1,7 +1,7 @@
 # J×Y
 
 **Description:**
-J×Y (Jaden and Yubel v3 skin to the CSS Fixes Project for Dueling Nexus) is a Yu-Gi-Oh! GX themed style affecting the online Yu-Gi-Oh! TCG simulator Dueling Nexus (or DNx for short). This theme applies to here:
+J×Y (Jaden and Yubel v3 skin affecting CSS Fixes Project for Dueling Nexus) is a Yu-Gi-Oh! GX themed style affecting the online Yu-Gi-Oh! TCG simulator Dueling Nexus (or DNx for short). This theme applies to here:
 
 https://duelingnexus.com/
 
