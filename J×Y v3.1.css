@@ -1,0 +1,405 @@
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/leaderboard"), url("https://duelingnexus.com/donate") {
+/*SECTION 01 NAVGLOBAL*/
+/*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
+body {
+    color: #C19E4D;
+    font-family: 'noto sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+html {
+    background: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg) #766D87 0 0/cover fixed /*Image by the amazing Moribuden*/
+}
+article {
+    border: 0
+}
+/*Here we have some general clicky thingies rules.*/
+a {
+    color: #C19E4D;
+    text-shadow: 0 0 .5vh #30A791, 0 0 1vh rgba(48, 167, 145, .8), 0 0 2vh black;
+}
+a:hover, a:focus {
+    color: #30A791;
+    text-shadow: 0 0 .5vh #C19E4D, 0 0 1vh rgba(193, 158, 77, .8), 0 0 2vh black;
+}
+button, input {
+    font-family: 'oxygen', sans-serif
+}
+label {
+    font-family: 'noto sans', sans-serif
+}
+#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit, #donate-once input[type="text"] {
+    opacity: .75;
+    color: #C19E4D;
+    background-color: #766D87;
+    border-color: #C19E4D;
+    box-shadow: 0 .15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus, #donate-once input[type="text"]:focus {
+    color: #30A791;
+    background-color: #766D87;
+    background-color: rgba(118, 109, 135, 0.3);
+    border-color: #30A791;
+    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
+}
+#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover, #donate-once input[type="text"]:hover {
+    opacity: 1
+}
+/*This is the code for the navbar, which can be seen from any tab.*/
+@keyframes appear {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: .75}
+}
+#navbar {
+    background-image: linear-gradient(90deg, rgba(1, 7, 17, 0.75), rgba(18, 23, 36, 0.5));
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 0 2.5vw 0 0;
+    border-image-source: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(18, 23, 36, .5) .25%);
+    border-image-slice: 1;
+}
+#navbar-left button, #navbar-middle button, #navbar-right button {
+    animation: appear 1s
+}
+#navbar button:focus, #navbar button:hover, .fake-button:focus {
+    background-color: rgba(80, 84, 91, .75)
+}
+#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button, #decks-buttons button, .fake-button[data-v-6f705b54], .fake-button[data-v-0262afa4], #my-profile button {
+    color: white;
+    text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
+    opacity: .8;
+    border: 0;
+}
+#navbar-left button:focus, #navbar-middle button:focus, #logout-button:focus, button:focus, .fake-button:focus {
+    opacity: .7
+}
+#navbar-left .button:hover, #navbar-middle button:hover, #logout-button:hover, button:hover, .fake-button:hover {
+    opacity: 1
+}
+#navbar-middle button {
+    font-weight: 555;
+    text-transform: uppercase;
+    letter-spacing: .25vw;
+}
+#logout-button {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, .25) 85%,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+#navbar-left:before {
+    color: #30A791;
+    font-weight: 555;
+}
+#socket-connection {
+    color: #30A791
+}
+.success {
+    background-color: #30A791
+}
+#togglenavbar {
+    color: #30A791;
+    background-color: transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(90deg,rgba(18, 23, 36, 0), rgba(18, 23, 36, .5), rgba(18, 23, 36, .75));
+    border: 0;
+    box-shadow: .5vw .5vw rgba(18, 23, 36, .1);
+}/*This is table code that sets up for some other sections.*/
+#gamelist-area[data-v-33d70790] {
+    background-color: transparent;
+    overflow: visible;
+}
+#gamelist-area::before {
+    content: " ";
+    background-color: rgba(0, 0, 0, .333);
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+}
+#gamelist-area::after {
+    color: rgba(255, 255, 255, .333);
+    font-family: arial, san-serif;
+    font-weight: 333;
+    text-align: center;
+    background-clip: text;
+    box-sizing: border-box;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#gamelist-container[data-v-33d70790] {
+    height: 58%;
+    margin-top: 1.5vw;
+    position: absolute;
+}
+table {
+    text-align: justify;
+    background:  black;
+    height: 75%;
+    width: auto;
+    opacity: 1;
+    float: right;
+    z-index: 2;
+    position: relative;
+}
+table::before {
+    background-size: 100%;
+    opacity: .5;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+td {
+    z-index: 3;
+    position: relative;
+}
+}
+
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/donate") {
+#login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit, #donate-once input[type="text"] {
+    opacity: .75;
+    color: #C19E4D;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #C19E4D;
+    box-shadow: 0 .15vw .3vw #C19E4D;
+    box-shadow: -.15vw -.15vw .3vw rgba(193, 158, 77, 0.8), -.15vw .15vw .3vw rgba(193, 158, 77, 0.8), .15vw -.15vw .3vw rgba(193, 158, 77, 0.8), .15vw .15vw .3vw rgba(193, 158, 77, 0.8);
+}
+#login-email:focus, #login-password:focus, #register-email:focus, #register-username:focus, #register-password:focus, #register-password2:focus, #recover-email:focus, #login-submit:focus, #register-area button:focus, #recover-submit:focus, #donate-once input[type="text"]:focus {
+    color: #30A791;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: #30A791;
+    box-shadow: -.3vh -.3vw .6vw #30A791, -.3vh .3vw .6vw #30A791, .3vh -.3vw .6vw #30A791, .3vh .3vw .6vw #30A791;
+}
+#login-email:hover, #login-password:hover, #register-email:hover, #register-username:hover, #register-password:hover, #register-password2:hover, #recover-email:hover, #login-submit:hover, #register-area button:hover, #recover-submit:hover, #donate-once input[type="text"]:hover {
+    opacity: 1
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #766D87;
+}
+}
+
+@-moz-document url("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/home") {
+#home-area {
+    color: #30A791;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/duel"), url-prefix("https://duelingnexus.com/gamelist"), url-prefix("https://duelingnexus.com/hostgame"), url-prefix("https://duelingnexus.com/hostbotgame") {
+/*SECTION 5 DUEL ZONE*/
+/*This section effects the pages that show up when you click the Duel Zone button.*/
+#app {
+    overflow-y: auto
+}
+#navbar-middle > button:nth-of-type(2) {
+    background-color: rgba(80, 84, 91, .75) !important
+}
+
+/*duel area*/
+#duel-area p {
+    margin: 0
+}
+h3, #duel-area > div > p:nth-of-type(7) {
+    text-align: left;
+    margin: 0;
+}
+h2, h3, #duel-area > div > p:nth-of-type(7) {
+    font-weight: 555;
+    text-shadow: -.15vw -.15vw .15vw rgba(0, 0, 0, 1), -.3vw -.3vw .3vw rgba(0, 0, 0, 0.5), -.15vw .15vw .15vw rgba(0, 0, 0, 1), -.3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw -.15vw .15vw rgba(0, 0, 0, 1), .3vw -.3vw .3vw rgba(0, 0, 0, 0.5)
+}
+h3 {
+    padding: 1vh 0 .5vh 10%
+}
+hr {
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    width: 100%;
+    box-shadow: .25vh .25vh .5vh #595e67, .25vh .25vh .75vh #595e67, .25vh .25vh 1vh #595e67;
+}
+select {
+    height: 100%;
+    padding: 0;
+}
+#duel-area {
+    background-color: rgba(0, 0, 0, 0);
+    width: 95%;
+    margin: 0 3.14%;
+    position: absolute;
+    top: 22%;
+}
+#duel-area-donations {
+    transition-duration: .5s;
+    transition-property: text-shadow;
+    font-size: 2vh;
+    color: antiquewhite;
+    background: radial-gradient(silver 3%, darkgray 9%, rgba(0, 0, 0, 0.5) 81%);
+    border: none;
+    width: auto;
+    margin: 0 10%;
+    z-index: 4;
+    position: fixed;
+    top: 9vh;
+}
+#duel-area-donations:hover {
+    transition-duration: .5s;
+    transition-property: text-shadow;
+    text-shadow: .15vw .15vw .15vw rgba(250, 235, 215, 0.5), .3vw .3vw .3vw rgba(250, 235, 215, 0.25), 4.5vw 4.5vw 4.5vw rgba(250, 235, 215, 0.125);
+}
+#duel-area-donations-bar {
+    color: #766D87;
+    font-weight: bold;
+    background-color: transparent;
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    margin: 0;
+    padding: 0;    
+}
+#duel-area > div > p > button {
+    font-size: 1.4vw;
+    text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
+    opacity: .8;
+    border: 0;
+    height: 90%;
+    width: 95%;
+    padding: 4%;
+}
+#duel-area > div > p > button, select {
+    text-align: left
+}
+#duel-area button img {
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0;
+    padding: 0 1%;
+    float: right;
+}
+#duel-area > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .1fr .5fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr;
+    grid-template-areas: "hr1 hr1 hr1" "serversettings1 serversettings1 serversettings1" "hr2 hr2 hr2" "quickplay duelstatus duelstatus" "quickplay1 quickplay2 quickplay3" "hr3 hr3 hr3" "singlemode . ." "singlemode1 singlemode2 singlemode3" "hr4 hr4 hr4" "competitiveplay currentrating currentrating" "competitiveplay1 competitiveplay2 competitiveplay3" "hr5 hr5 hr5" "customgame . ." "customgame1 . .";
+}
+#duel-area > div > h3:first-of-type {
+    grid-area: quickplay
+}
+#duel-area > div > h3:nth-of-type(2) {
+    grid-area: singlemode
+}
+#duel-area > div > h3:nth-of-type(3) {
+    grid-area: competitiveplay
+}
+#duel-area > div > h3:nth-of-type(4) {
+    grid-area: customgame
+}
+#duel-area > div > h3:nth-of-type(5) {
+    display: none
+}
+#duel-area > div > p:first-of-type {
+    grid-area: quickplay1
+}
+#duel-area > div > p:nth-of-type(2) {
+    grid-area: quickplay2
+}
+#duel-area > div > p:nth-of-type(3) {
+    grid-area: quickplay3
+}
+#duel-area > div > p:nth-of-type(4) {
+    grid-area: singlemode1
+}
+#duel-area > div > p:nth-of-type(5) {
+    grid-area: singlemode2
+}
+#duel-area > div > p:nth-of-type(6) {
+    grid-area: competitiveplay1
+}
+#duel-area > div > p:nth-of-type(7) {
+    grid-area: currentrating;
+    color: #30A791;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 1vh 10% .5vh 0;
+}
+#duel-area > div > p:nth-of-type(8) {
+    grid-area: customgame1
+}
+#duel-area > div > p:nth-of-type(9) {
+    grid-area: serversettings1
+}
+hr:first-of-type {
+    grid-area: hr1
+}
+hr:nth-of-type(2) {
+    grid-area: hr2
+}
+hr:nth-of-type(3) {
+    grid-area: hr3
+}
+hr:nth-of-type(4) {
+    grid-area: hr4
+}
+hr:nth-of-type(5) {
+    grid-area: hr5
+}
+/*This adds an animation to the button you click when a game is found.*/
+@keyframes button {
+    from {background-position: left top}
+    to {background-position: right bottom}
+}
+button.bigger-button {
+    color: rgba(48, 167, 145, 0.9);
+    border-color: rgba(48, 167, 145, 0.9);
+    opacity: 0.9;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -50vh;
+}
+button.bigger-button:focus {
+    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
+    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed /*Image by either Dyunasumon or Moribuden.*/;
+    opacity: 1;
+    height: 105vh;
+    width: 110%;
+    margin-top: 0;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+button.bigger-button:hover {
+    animation: button 5s infinite;
+    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
+}
+/**/
+#gamelist-buttons, #hide-started-games {
+    background-color: rgba(0, 0, 0, .333)
+}
+/*This affects the table that lists the available duels.*/
+#gamelist-container table {
+    color: #30a791;
+    border: .3vw solid rgba(0, 0, 0, 0.1);
+}
+#gamelist-area::after {
+    content: "Get Your Game On!";
+    font-size: 1.25vw;
+    text-indent: 25vw;
+    background-image: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg);
+    background-size: cover;
+    padding: 39vh 0 55vh 0;
+}
+#gamelist-container table::before {
+    content: " ";
+    background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100% /*I have a morbid Moribuden for this one.*/
+}
+}
