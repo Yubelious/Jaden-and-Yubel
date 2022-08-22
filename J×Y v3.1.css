@@ -12,6 +12,10 @@ html {
 article {
     border: 0
 }
+h2, h3, #duel-area > div > p:nth-of-type(7) {
+    font-weight: 555;
+    text-shadow: -.15vw -.15vw .15vw rgba(0, 0, 0, 1), -.3vw -.3vw .3vw rgba(0, 0, 0, 0.5), -.15vw .15vw .15vw rgba(0, 0, 0, 1), -.3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw -.15vw .15vw rgba(0, 0, 0, 1), .3vw -.3vw .3vw rgba(0, 0, 0, 0.5)
+}
 /*Here we have some general clicky thingies rules.*/
 a {
     color: #C19E4D;
@@ -67,11 +71,11 @@ label {
 #navbar button:focus, #navbar button:hover, .fake-button:focus {
     background-color: rgba(80, 84, 91, .75)
 }
-#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button, #decks-buttons button, .fake-button[data-v-6f705b54], .fake-button[data-v-0262afa4], #my-profile button {
+#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button[data-v-33d70790], #gamelist-buttons .fake-button[data-v-33d70790], #decks-buttons button[data-v-417e0dbe], #decks-buttons .fake-button[data-v-417e0dbe], #my-profile button[data-v-dc2d7148], #my-profile .fake-button[data-v-dc2d7148] {
     color: white;
     text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
     opacity: .8;
-    border: 0;
+    border-color: transparent;
 }
 #navbar-left button:focus, #navbar-middle button:focus, #logout-button:focus, button:focus, .fake-button:focus {
     opacity: .7
@@ -105,7 +109,7 @@ label {
     border: 0;
     box-shadow: .5vw .5vw rgba(18, 23, 36, .1);
 }/*This is table code that sets up for some other sections.*/
-#gamelist-area[data-v-33d70790] {
+#gamelist-area[data-v-33d70790], #decks-area[data-v-417e0dbe] {
     background-color: transparent;
     overflow: visible;
 }
@@ -138,7 +142,7 @@ label {
     margin-top: 1.5vw;
     position: absolute;
 }
-table {
+table[data-v-33d70790], table[data-v-417e0dbe] {
     text-align: justify;
     background:  black;
     height: 75%;
@@ -165,6 +169,8 @@ td {
 }
 
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/donate") {
+/*SECTION 02 LOGIN*/
+/*This affects the login, register, and recover pages, since they all key off of the same things.*/
 #login-email, #login-password, #register-email, #register-username, #register-password, #register-password2, #recover-email, #login-submit, #register-area button, #recover-submit, #donate-once input[type="text"] {
     opacity: .75;
     color: #C19E4D;
@@ -190,6 +196,8 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
 }
 
 @-moz-document url("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/home") {
+/*SECTION 03 HOME*/
+/*This section applies to the home page, as well as an awesome login animation I made.*/
 #home-area {
     color: #30A791;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
@@ -197,15 +205,14 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/duel"), url-prefix("https://duelingnexus.com/gamelist"), url-prefix("https://duelingnexus.com/hostgame"), url-prefix("https://duelingnexus.com/hostbotgame") {
-/*SECTION 5 DUEL ZONE*/
-/*This section effects the pages that show up when you click the Duel Zone button.*/
+/*SECTION 04 DUEL ZONE*/
+/*This section applies to /duel and /gamelist, which are both found by clicking Duel Zone from the navbar. But it doesn't affect duels in any way.*/
 #app {
     overflow-y: auto
 }
 #navbar-middle > button:nth-of-type(2) {
-    background-color: rgba(80, 84, 91, .75) !important
+    background-color: rgba(80, 84, 91, .75)
 }
-
 /*duel area*/
 #duel-area p {
     margin: 0
@@ -213,10 +220,6 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
 h3, #duel-area > div > p:nth-of-type(7) {
     text-align: left;
     margin: 0;
-}
-h2, h3, #duel-area > div > p:nth-of-type(7) {
-    font-weight: 555;
-    text-shadow: -.15vw -.15vw .15vw rgba(0, 0, 0, 1), -.3vw -.3vw .3vw rgba(0, 0, 0, 0.5), -.15vw .15vw .15vw rgba(0, 0, 0, 1), -.3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw -.15vw .15vw rgba(0, 0, 0, 1), .3vw -.3vw .3vw rgba(0, 0, 0, 0.5)
 }
 h3 {
     padding: 1vh 0 .5vh 10%
@@ -239,6 +242,7 @@ select {
     position: absolute;
     top: 22%;
 }
+/*This affects the donation article.*/
 #duel-area-donations {
     transition-duration: .5s;
     transition-property: text-shadow;
@@ -265,6 +269,7 @@ select {
     margin: 0;
     padding: 0;    
 }
+/*This affects buttons*/
 #duel-area > div > p > button {
     font-size: 1.4vw;
     text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
@@ -284,6 +289,7 @@ select {
     padding: 0 1%;
     float: right;
 }
+/*I put the duel area into a grid.*/
 #duel-area > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -351,11 +357,28 @@ hr:nth-of-type(4) {
 hr:nth-of-type(5) {
     grid-area: hr5
 }
-/*This adds an animation to the button you click when a game is found.*/
-@keyframes button {
-    from {background-position: left top}
-    to {background-position: right bottom}
+/*Here's some gamelist stuff.*/
+#gamelist-buttons, #hide-started-games {
+    background-color: rgba(0, 0, 0, .333)
 }
+/*This affects the table that lists the available duels.*/
+#gamelist-container table {
+    color: #30a791;
+    border: .3vw solid rgba(0, 0, 0, 0.1);
+}
+#gamelist-area::after {
+    content: "Get Your Game On!";
+    font-size: 1.25vw;
+    text-indent: 25vw;
+    background-image: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg);
+    background-size: cover;
+    padding: 39vh 0 55vh 0;
+}
+#gamelist-container table::before {
+    content: " ";
+    background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100% /*I have a morbid Moribuden for this one.*/
+}
+/*This affects the bigger button.*/
 button.bigger-button {
     color: rgba(48, 167, 145, 0.9);
     border-color: rgba(48, 167, 145, 0.9);
@@ -381,25 +404,12 @@ button.bigger-button:hover {
     animation: button 5s infinite;
     background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
 }
-/**/
-#gamelist-buttons, #hide-started-games {
-    background-color: rgba(0, 0, 0, .333)
 }
-/*This affects the table that lists the available duels.*/
-#gamelist-container table {
-    color: #30a791;
-    border: .3vw solid rgba(0, 0, 0, 0.1);
-}
-#gamelist-area::after {
-    content: "Get Your Game On!";
-    font-size: 1.25vw;
-    text-indent: 25vw;
-    background-image: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg);
-    background-size: cover;
-    padding: 39vh 0 55vh 0;
-}
-#gamelist-container table::before {
-    content: " ";
-    background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100% /*I have a morbid Moribuden for this one.*/
+
+@-moz-document url-prefix("https://duelingnexus.com/decks") {
+/*SECTION 05 DECKS*/
+/*This section applies to /decks, but it doesn't affect the editor in anyway.*/
+#navbar-middle > button:nth-of-type(3) {
+    background-color: rgba(80, 84, 91, .75)
 }
 }
