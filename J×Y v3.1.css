@@ -13,8 +13,10 @@ article {
     border: 0
 }
 h2, h3, #duel-area > div > p:nth-of-type(7) {
+    font-variant: small-caps;
+    text-transform: capitalize;
     font-weight: 555;
-    text-shadow: -.15vw -.15vw .15vw rgba(0, 0, 0, 1), -.3vw -.3vw .3vw rgba(0, 0, 0, 0.5), -.15vw .15vw .15vw rgba(0, 0, 0, 1), -.3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .15vw -.15vw .15vw rgba(0, 0, 0, 1), .3vw -.3vw .3vw rgba(0, 0, 0, 0.5)
+    text-shadow: -.1vw -.1vw .1vw rgba(75, 75, 75, .5), -.1vw .1vw .1vw rgba(75, 75, 75, .5), .1vw .1vw .1vw rgba(75, 75, 75, .5), .1vw -.1vw .1vw rgba(75, 75, 75, .5), -.5vw -.5vw .5vw rgba(100, 100, 100, .25), -.5vw .5vw .5vw rgba(100, 100, 100, 0.25), .3vw .3vw .3vw rgba(100, 100, 100, 0.25), .3vw -.3vw .3vw rgba(100, 100, 100, 0.25);
 }
 /*Here we have some general clicky thingies rules.*/
 a {
