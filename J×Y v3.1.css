@@ -77,6 +77,10 @@ label {
     color: white;
     text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
     opacity: .8;
+    box-sizing: content-box;/*
+  border-style: solid;
+  border-image: linear-gradient(to left, #8f6B29, #FDE08D, #DF9F28);
+  border-image-slice: 1;*/
     border-color: transparent;
 }
 #navbar-left button:focus, #navbar-middle button:focus, #logout-button:focus, button:focus, .fake-button:focus {
@@ -110,13 +114,15 @@ label {
     background-image: linear-gradient(90deg,rgba(18, 23, 36, 0), rgba(18, 23, 36, .5), rgba(18, 23, 36, .75));
     border: 0;
     box-shadow: .5vw .5vw rgba(18, 23, 36, .1);
-}/*This is table code that sets up for some other sections.*/
+}
+/*This is table code that sets up for some other sections.*/
 #gamelist-area[data-v-33d70790], #decks-area[data-v-417e0dbe] {
     background-color: transparent;
     overflow: visible;
 }
 #gamelist-container[data-v-33d70790] {
-    margin-top: 1.5vw
+    margin-top: 0;
+    max-height: calc(64% - 1.5vw);
 }
 table[data-v-33d70790], table[data-v-417e0dbe] {
     text-align: justify;
@@ -131,7 +137,7 @@ table::before {
     opacity: .5;
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: -1vh;
     left: 0;
     bottom: 0;
     right: 0; 
@@ -239,7 +245,7 @@ select {
     color: #766D87;
     font-weight: bold;
     background-color: transparent;
-    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0));
+    background: linear-gradient(to right, silver, darkgray, rgba(169, 169, 169, 0.1));
     margin: 0;
     padding: 0;    
 }
@@ -340,28 +346,18 @@ hr:nth-of-type(5) {
     color: #30a791;
     border: .3vw solid rgba(0, 0, 0, 0.1);
 }
-#gamelist-area::after {
+#gamelist-filters::after {
     content: "Get Your Game On!";
     font-size: 1.25vw;
-    text-indent: 25vw;
-    background-image: url(https://i62.servimg.com/u/f62/17/89/30/88/57448310.jpg);
-    background-size: cover;
-    padding: 37vh 0 55vh 0;
+    text-align: center;
+    text-shadow: .1vw .1vh rgba(20, 20, 20, .1);
 }
-#gamelist-area::after {
-    color: rgba(255, 255, 255, .333);
+#gamelist-filters::after {
+    color: rgba(255, 255, 255, .25);
     font-family: arial, san-serif;
     font-weight: 333;
-    text-align: center;
-    -webkit-background-clip: text;
     box-sizing: border-box;
     display: block;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 #gamelist-container table::before {
     content: " ";
@@ -371,7 +367,7 @@ hr:nth-of-type(5) {
 button.bigger-button {
     color: rgba(48, 167, 145, 0.9);
     border-color: rgba(48, 167, 145, 0.9);
-    opacity: 0.9;
+    opacity: 1;
     width: 100%;
     position: relative;
     left: 0;
