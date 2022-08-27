@@ -124,6 +124,16 @@ label {
     margin-top: 0;
     max-height: calc(64% - 1.5vw);
 }
+#gamelist-filters::after, #decks-buttons::after {
+    color: rgba(255, 255, 255, .25);
+    font-size: 1.25vw;
+    font-family: arial, san-serif;
+    font-weight: 333;
+    text-align: center;
+    text-shadow: .1vw .1vh rgba(20, 20, 20, .1);
+    box-sizing: border-box;
+    display: block;
+}
 table[data-v-33d70790], table[data-v-417e0dbe] {
     text-align: justify;
     background:  black;
@@ -132,7 +142,7 @@ table[data-v-33d70790], table[data-v-417e0dbe] {
     z-index: 2;
     position: relative;
 }
-table::before {
+table[data-v-33d70790]::before, table[data-v-417e0dbe]::before {
     background-size: 100%;
     opacity: .5;
     z-index: 1;
@@ -347,17 +357,7 @@ hr:nth-of-type(5) {
     border: .3vw solid rgba(0, 0, 0, 0.1);
 }
 #gamelist-filters::after {
-    content: "Get Your Game On!";
-    font-size: 1.25vw;
-    text-align: center;
-    text-shadow: .1vw .1vh rgba(20, 20, 20, .1);
-}
-#gamelist-filters::after {
-    color: rgba(255, 255, 255, .25);
-    font-family: arial, san-serif;
-    font-weight: 333;
-    box-sizing: border-box;
-    display: block;
+    content: "Get Your Game On!"
 }
 #gamelist-container table::before {
     content: " ";
@@ -396,6 +396,13 @@ button.bigger-button:hover {
 /*This section applies to /decks, but it doesn't affect the editor in anyway.*/
 #navbar-middle > button:nth-of-type(3) {
     background-color: rgba(80, 84, 91, .75)
+}
+#decks-buttons {
+    flex-wrap: wrap
+}
+#decks-buttons::after {
+    content: "Here goes something.";
+    flex-basis: 100%;
 }
 }
 
