@@ -73,7 +73,7 @@ label {
 #navbar button:focus, #navbar button:hover, .fake-button:focus {
     background-color: rgba(80, 84, 91, .75)
 }
-#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button[data-v-33d70790], #gamelist-buttons .fake-button[data-v-33d70790], #decks-buttons button[data-v-417e0dbe], #decks-buttons .fake-button[data-v-417e0dbe], #my-profile button[data-v-dc2d7148], #my-profile .fake-button[data-v-dc2d7148] {
+#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button[data-v-33d70790], #gamelist-buttons .fake-button[data-v-33d70790], #decks-buttons button[data-v-417e0dbe], #decks-buttons .fake-button[data-v-417e0dbe], #my-profile button[data-v-dc2d7148]:not(.arrow-button), #my-profile .fake-button[data-v-dc2d7148] {
     color: white;
     text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
     opacity: .8;
@@ -143,6 +143,7 @@ table[data-v-33d70790], table[data-v-417e0dbe] {
     position: relative;
 }
 table[data-v-33d70790]::before, table[data-v-417e0dbe]::before {
+    content: " ";
     background-size: 100%;
     opacity: .5;
     z-index: 1;
@@ -150,7 +151,7 @@ table[data-v-33d70790]::before, table[data-v-417e0dbe]::before {
     top: -1vh;
     left: 0;
     bottom: 0;
-    right: 0; 
+    right: 0;
 }
 td {
     z-index: 3;
@@ -360,7 +361,6 @@ hr:nth-of-type(5) {
     content: "Get Your Game On!"
 }
 #gamelist-container table::before {
-    content: " ";
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100% /*I have a morbid Moribuden for this one.*/
 }
 /*This affects the bigger button.*/
@@ -397,12 +397,21 @@ button.bigger-button:hover {
 #navbar-middle > button:nth-of-type(3) {
     background-color: rgba(80, 84, 91, .75)
 }
+button[data-v-417e0dbe], .fake-button[data-v-417e0dbe] {
+    border-radius: 3vw 3vh
+}
 #decks-buttons {
     flex-wrap: wrap
 }
 #decks-buttons::after {
     content: "Here goes something.";
     flex-basis: 100%;
+}
+table[data-v-417e0dbe]::before {
+    background-image: url(https://cdn.discordapp.com/attachments/932053526539014144/1013176109493399652/c0482b6dd7e489b49e5ac22e99d2eabb.jpg)
+}
+.td-big {
+    font-weight: bold
 }
 }
 
@@ -411,6 +420,9 @@ button.bigger-button:hover {
 /*This code affects the profile page.*/
 #navbar-middle > button:nth-of-type(4) {
     background-color: rgba(80, 84, 91, .75)
+}
+.arrow-button {
+    opacity: .8
 }
 }
 
