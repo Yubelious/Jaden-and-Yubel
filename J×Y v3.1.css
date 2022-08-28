@@ -70,10 +70,10 @@ label {
 #navbar-left button, #navbar-middle button, #navbar-right button {
     animation: appear 1s
 }
-#navbar button:focus, #navbar button:hover, .fake-button:focus {
+#navbar button:not(:first-of-type):focus, #navbar button:not(:first-of-type):hover, .fake-button:focus {
     background-color: rgba(80, 84, 91, .75)
 }
-#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button[data-v-33d70790], #gamelist-buttons .fake-button[data-v-33d70790], #decks-buttons button[data-v-417e0dbe], #decks-buttons .fake-button[data-v-417e0dbe], #my-profile button[data-v-dc2d7148]:not(.arrow-button), #my-profile .fake-button[data-v-dc2d7148] {
+#navbar button, #navbar-left button, #navbar-middle button, #gamelist-buttons button[data-v-33d70790], #gamelist-buttons .fake-button[data-v-33d70790], #decks-buttons button, #decks-buttons .fake-button[data-v-417e0dbe], #my-profile button[data-v-dc2d7148]:not(.arrow-button), #my-profile .fake-button[data-v-dc2d7148] {
     color: white;
     text-shadow: .15vw .15vw .15vw rgba(0, 0, 0, 1), .3vw .3vw .3vw rgba(0, 0, 0, 0.5), .45vw .45vw .45vw rgba(0, 0, 0, 0.25), -.1vw -.1vw .15vw rgba(255, 255, 255, 1), -.25vw -.25vw .3vw rgba(255, 255, 255, 0.5), -.4vw -.4vw .4vw rgba(255, 255, 255, 0.25);
     opacity: .8;
@@ -137,8 +137,7 @@ label {
 table[data-v-33d70790], table[data-v-417e0dbe] {
     color: #30a791;
     text-align: justify;
-    background:  black;/*
-    border: .3vw solid rgba(0, 0, 0, 0.1);*/
+    background:  black;
     opacity: 1;
     float: right;
     z-index: 2;
@@ -395,8 +394,10 @@ button.bigger-button:hover {
 #navbar-middle > button:nth-of-type(3) {
     background-color: rgba(80, 84, 91, .75)
 }
-button[data-v-417e0dbe], .fake-button[data-v-417e0dbe] {
-    border-radius: 3vw 3vh
+#decks-buttons button, #decks-buttons .fake-button {
+    border-radius: 3vw 3vh;
+    max-width: 22%;
+    margin: 0;
 }
 #decks-buttons {
     flex-wrap: wrap
@@ -410,6 +411,9 @@ table[data-v-417e0dbe]::after {
 }
 .td-big {
     font-weight: bold
+}
+.ui-sortable .deck-entry:hover {
+    background-color: rgba(40, 40, 40, .5)
 }
 }
 
