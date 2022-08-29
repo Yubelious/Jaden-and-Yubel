@@ -451,3 +451,160 @@ hr[data-v-dc2d7148], #avatar-choice-in[data-v-dc2d7148] {
     background-color: rgba(80, 84, 91, .75)
 }
 }
+
+@-moz-document url-prefix("https://duelingnexus.com/game/"), url-prefix("https://duelingnexus.com/editor/") {
+/*SECTION 08 GAMEGLOBAL*/
+/*This affects the game and editor sections.*/
+body {
+    color: #C19E4D;
+    font: 1vw/1 'noto sans', arial, sans-serif;
+}
+hr {
+    display: none
+}
+h4 {
+    color: #30A791
+}
+/*poke*/
+.engine-button {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    color: #C19E4D;
+    cursor: pointer;
+    text-shadow: .15vw .15vw .15vw black, .15vw .15vw .15vw gold, .15vw .15vw .15vw silver, .15vw .15vw .15vw antiquewhite;
+    background: gray;
+    background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.7));
+    border: 0.5px solid antiquewhite;
+}
+.engine-button:hover {
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.7));
+}
+.engine-button-success {
+    background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(150, 150, 150, 0.5))
+}
+.engine-button-success:hover {
+    color: #30A791;
+    background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(150, 150, 150, 0.7));
+}
+.engine-button-danger {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.5) 10px, rgba(0, 0, 0, 0.5) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7))
+}
+.engine-button-danger:hover {
+    color: #ED4337;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.7) 10px, rgba(0, 0, 0, 0.7) 20px), linear-gradient(to bottom, rgba(100, 100, 100, 0.9), rgba(50, 50, 50, 0.9));  
+}
+/*This section has code for the siding screen, and its shared elements with the editor.*/
+#editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
+    color: #87AF87;
+    background-color: rgba(125, 131, 163, 0.7);
+}
+.engine-text-box {
+    background: radial-gradient(rgba(50, 50, 50, 0.5), rgba(100, 100, 100, 0.5))
+}
+#card-name {
+    color: black;
+    text-shadow: 0 0 0.5em #666666, 0 0 0.5em #666666, 0 0 1em antiquewhite, 0 0 1em antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: .15vh dashed antiquewhite;
+    margin: 0;
+}
+#card-description-box {
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+    border: 1px dashed antiquewhite;
+}
+#editor-decks-column h4, #editor-search-column h4, #game-siding-column h4, #game-siding-column-2 h4 {
+    color: #30A791;
+    background-color: rgba(118, 109, 135, 0.7);
+}
+#game-siding-column-2:after {
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5))
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/game/") {
+/*SECTION 09 GAME*/
+/*This affects the actual duel.*/
+@-moz-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@-o-keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+@keyframes game-field-zone-flash {
+	from { background-color: rgba(86,206,184, 0.1); }
+	to { background-color: rgba(86,206,184, 0.9); }
+}
+html {/*Image by either Dyunasumon or Moribuden.*/
+    background: url(https://cdn.discordapp.com/attachments/403735097498664960/1013587003935309885/unknown.png) skyblue 0 0/cover fixed /*Image by either Dyunasumon or Moribuden.*/
+}
+/*Avatar*/
+.game-avatar {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.game-avatar:hover {
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.game-avatar-area {
+    font-size: 1.125vw;
+    text-indent: -0.5vw;
+    text-shadow: 0.5px 0.5px 0.5px rgba(48, 167, 145, 0.7), 0.9px 0.9px 0.9px rgba(193, 158, 77, 0.9), 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.5);
+}
+/*Game field*/
+.game-field-zone.game-field-zone-selectable {
+	cursor: pointer;
+	animation: 1s game-field-zone-flash infinite alternate linear;
+}
+.game-field-zone {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 0.25vw, rgba(75, 75, 75, 0.5) 0.25vw, rgba(0, 0, 0, 0.5) 0.5vw), linear-gradient(to bottom, rgba(100, 100, 100, 0.7), rgba(50, 50, 50, 0.7));
+    border: 1px solid antiquewhite;
+    height: 300%;
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw;
+}
+.game-field-stats-text, .game-field-zone-content p {
+    color: antiquewhite
+}
+.game-selection-card {
+    margin: 1vh 1vw 1vh 1vw
+}
+#game-tooltip {
+    color: antiquewhite;
+    font-size: 1.25vw;
+    background: radial-gradient(rgba(100, 100, 100, 0.6), rgba(40, 40, 40, .6));
+    border: 1px dashed antiquewhite;
+    position: fixed;
+}
+/*Custom logo*/
+#game-chat-area {
+    color: antiquewhite;
+    background: radial-gradient(rgba(100, 100, 100, 0.6), rgba(40, 40, 40, 0.6));
+}
+#game-chat-area::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/403735097498664960/481926055670579220/Jaden_and_Yubel_logo.png) 0 0/20vw 7vw;
+    height: 7vw;
+    width: 20vw;
+    position: fixed;
+    bottom: 40px;
+    right: 5vw;
+}
+/*It's over!*/
+#game-end-text {
+    color: antiquewhite
+}
+}
