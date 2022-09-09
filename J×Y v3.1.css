@@ -436,9 +436,6 @@ hr[data-v-dc2d7148], #avatar-choice-in[data-v-dc2d7148] {
     position: absolute;
     z-index: -1;
 }
-#my-profile h3[data-v-dc2d7148] {
-    
-}
 .arrow-button {
     opacity: .8
 }
@@ -458,6 +455,16 @@ hr[data-v-dc2d7148], #avatar-choice-in[data-v-dc2d7148] {
 body {
     color: #C19E4D;
     font: 1vw/1 'noto sans', arial, sans-serif;
+}
+body::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/403735097498664960/481926055670579220/Jaden_and_Yubel_logo.png) 0 0/20vw 7vw;
+    height: 7vw;
+    width: 20vw;
+    z-index: -1;
+    position: fixed;
+    bottom: 40px;
+    right: 5vw;
 }
 hr {
     display: none
@@ -553,15 +560,6 @@ h4 {
     background: radial-gradient(rgba(100, 100, 100, 0.6), rgba(40, 40, 40, 0.6));
     z-index: 2;
 }
-body::after {
-    content: " ";
-    background: url(https://cdn.discordapp.com/attachments/403735097498664960/481926055670579220/Jaden_and_Yubel_logo.png) 0 0/20vw 7vw;
-    height: 7vw;
-    width: 20vw;
-    position: fixed;
-    bottom: 40px;
-    right: 5vw;
-}
 #game-room-container {
     z-index: 2
 }
@@ -627,5 +625,55 @@ body::after {
 /*It's over!*/
 #game-end-text {
     color: antiquewhite
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/editor/") {
+html {
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+    background: url(https://i.servimg.com/u/f62/17/89/30/88/57585410.jpg) 0 0/cover fixed; /*Image by Moribuden.*/;
+}
+body {
+    font: 1vw/1 'noto sans', arial, sans-serif
+}.editor-search-result {
+    color: antiquewhite;
+    background: radial-gradient(rgba(150, 150, 150, 0.5), rgba(50, 50, 50, 0.5));
+}
+.engine-button {
+    font-family: 'oxygen', arial, sans-serif;
+    color: antiquewhite;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+.engine-button:hover, .engine-button:focus {
+    background-color: rgba(140, 140, 140, 0.8)
+}
+.engine-button:active {
+    background-color: rgba(145, 145, 145, 0.9)
+}
+.engine-button-primary {
+    background-color: rgba(193, 158, 77, 0.5)
+}
+.engine-button-primary:hover, .engine-button-primary:focus {
+    background-color: rgba(193, 158, 77, 0.7)
+}
+.engine-button-primary:active {
+    background-color: rgba(193, 158, 77, 0.9)
+}
+.engine-button-danger {
+    background-color: rgba(48, 167, 145, 0.5)
+}
+.engine-button-danger:hover, .engine-button-danger:focus {
+    background-color: rgba(48, 167, 145, 0.7)
+}
+.engine-button-danger:active {
+    background-color: rgba(48, 167, 145, 0.9)
+}
+#editor-menu-container {
+    font-weight: bold;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
+}
+#editor-menu-title {
+    color: #C19E4D;
+    text-shadow: 0 0 2px black, 1px 1px 2px gold, 1px 1px 1px silver;
 }
 }
