@@ -1,4 +1,4 @@
-@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/leaderboard"), url("https://duelingnexus.com/donate") {
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/hostbotgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/leaderboard"), url("https://duelingnexus.com/donate") {
 /*SECTION 01 NAVGLOBAL*/
 /*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
 body {
@@ -360,32 +360,6 @@ hr:nth-of-type(5) {
 #gamelist-container table::after {
     background: url("https://i62.servimg.com/u/f62/17/89/30/88/55637911.jpg") 0 0/100% /*I have a morbid Moribuden for this one.*/
 }
-/*This affects the bigger button.*/
-button.bigger-button {
-    color: rgba(48, 167, 145, 0.9);
-    border-color: rgba(48, 167, 145, 0.9);
-    opacity: 1;
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: -50vh;
-}
-button.bigger-button:focus {
-    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
-    background: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg) no-repeat center center fixed /*Image by either Dyunasumon or Moribuden.*/;
-    opacity: 1;
-    height: 105vh;
-    width: 110%;
-    margin-top: 0;
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-button.bigger-button:hover {
-    animation: button 5s infinite;
-    background-image: url(http://www.wallpapermaiden.com/wallpaper/5402/download/1920x1080/yu-gi-oh-gx-yubel-jaden-yuki-beyond-the-clouds.jpg);
-}
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/decks") {
@@ -420,6 +394,9 @@ table[data-v-417e0dbe]::after {
 @-moz-document url-prefix("https://duelingnexus.com/profile") {
 /*SECTION 06 PROFILE*/
 /*This code affects the profile page.*/
+div#app {
+    overflow-y: auto
+}
 #navbar-middle > button:nth-of-type(4) {
     background-color: rgba(80, 84, 91, .75)
 }
@@ -629,6 +606,7 @@ h4 {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/editor/") {
+/*SECTION 10 EDITOR*/
 html {
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(75, 75, 75, 0.9) 10px, rgba(0, 0, 0, 0.9) 20px), linear-gradient(45deg, rgba(50, 50, 50, 0.9), rgba(100, 100, 100, 0.9));
     background: url(https://i.servimg.com/u/f62/17/89/30/88/57585410.jpg) 0 0/cover fixed; /*Image by Moribuden.*/;
