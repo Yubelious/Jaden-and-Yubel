@@ -2,10 +2,14 @@
 @name           J×Y (Jaden and Yubel skin affecting CSS Fixes Project for Dueling Nexus) 2022-09-14, 5:36:18 p.m.
 @namespace      github.com/openstyles/stylus
 @version        3.1
-@description    J×Y should not be run by itself. It is a skin that can be run over (and is a part of) the CSS Fixes Project for Dueling Nexus.
+@description    Inspired by O OO/The XAZ.
+Special thanks to Skeletonxf for coming up with a chatbox and getting me back into this. This style wouldn't have a licence without you.
+This theme is now a skin for the CSS Fixes Project for Dueling Nexus. Open for testing and feedback. Potentially compatible with any resolution on almost any horizontally capable device, except iPhone.
+For optimal viewing, press F11 for full screen.
 @author         Yubelious!
 ==/UserStyle== */
 
+/*PUT THOSE FONTS HERE*/
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html"), url("https://duelingnexus.com/home"), url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame"), url("https://duelingnexus.com/hostbotgame"), url("https://duelingnexus.com/decks"), url("https://duelingnexus.com/profile"), url("https://duelingnexus.com/leaderboard"), url("https://duelingnexus.com/donate") {
 /*SECTION 01 NAVGLOBAL*/
 /*This section is global code that applies to all of the navigation pages. For global code for the game and deckbuilding pages, go to GAMEGLOBAL*/
