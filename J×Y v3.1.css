@@ -545,13 +545,13 @@ h4 {
     border-radius: 2vh;
 }
 /*RPS*/
-#game-rps-rock-hidden {
+#game-rps-rock-hidden[src="assets/images/hidden.png"] {
     filter: hue-rotate(141.5deg) brightness(223.5%)
 }
-#game-rps-paper-hidden {
+#game-rps-paper-hidden[src="assets/images/hidden.png"] {
     filter: hue-rotate(246deg) brightness(197%)
 }
-#game-rps-scissors-hidden {
+#game-rps-scissors-hidden[src="assets/images/hidden.png"] {
     filter: hue-rotate(38deg) saturate(100%) brightness(90%)
 }
 /*Avatar*/
