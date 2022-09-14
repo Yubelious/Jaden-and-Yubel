@@ -1,4 +1,5 @@
 /*Changelog*/
+3.1 Small changes to match the new version of the CSS fixes project. Adjusted the text shadows. Added a filter to the opponent's RPS buttons.
 
 3.0 Version 2 didn't last as long as I expected. Dueling Nexus released a patch that killed half my theme. So I moved all of my CSS fixes to a new project, and started this from scratch after I stablized that one. Wrote new CSS to affect the new nav pages with mostly the same colour scheme and images (some of the positioning can no longer be duplicated), resized button images, and added a new log-in animation. A lot of things were lost during the move.
 
